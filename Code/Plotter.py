@@ -33,6 +33,7 @@ from rasterio.transform import from_bounds, from_origin
 from rasterio.mask import mask
 import earthpy.spatial as es
 from scipy.interpolate import RegularGridInterpolator
+from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.colors as mcolors
 
 
@@ -45,7 +46,7 @@ def Altitude_Alkalinity(df):
     
     # filter so df_copy only contains "Spring" in the "Type" column
     #df_copy = df_copy[df_copy['Sample Type'] == 'Spring']
-    df_copy = df_copy[df_copy['Sample Type'] == 'Rain']
+    df_copy = df_copy[df_copy['Sample type'] == 'Spring']
     
     # print length of df_copy
     print(len(df_copy))
@@ -53,60 +54,176 @@ def Altitude_Alkalinity(df):
     fig, axs = plt.subplots(3, 2, figsize=(15, 18))
     fig.suptitle('Various Parameters vs Elevation and Alkalinity')
 
+    # Define a color map for the seasons
+    season_colors = {
+        'Nov_22': 'blue',
+        'Apr_23': 'green',
+        'Oct_23': 'red',
+        'Sep_24': 'purple'
+    }
+
+    # Create a PdfPages object to save multiple plots in a single PDF
+    pdf_pages = PdfPages('RainPlots.pdf')
+
     # Alkalinity vs Elevation
-    axs[0, 0].scatter(df_copy['Elevation (m)'], df_copy['Alkalinity'], alpha=0.7, s=70, c=df_copy['Longitude'], cmap='viridis')
-    axs[0, 0].set_xlabel('Elevation (m)')
+    for season, color in season_colors.items():
+        season_data = df_copy[df_copy['Season'] == season]
+        axs[0, 0].scatter(season_data['Elevation'], season_data['Alkalinity'], alpha=0.7, s=70, color=color, label=season)
+    axs[0, 0].set_xlabel('Elevation')
     axs[0, 0].set_ylabel('Alkalinity')
     axs[0, 0].set_title('Alkalinity vs Elevation')
     for index, row in df_copy.iterrows():
-        axs[0, 0].text(row['Elevation (m)'], row['Alkalinity'], row['Sample#'], fontsize=8, ha='center', va='bottom')
+        axs[0, 0].text(row['Elevation'], row['Alkalinity'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
 
     # Temperature vs Elevation
-    axs[0, 1].scatter(df_copy['Elevation (m)'], df_copy['T'], alpha=0.7, s=70, c=df_copy['Longitude'], cmap='viridis')
-    axs[0, 1].set_xlabel('Elevation (m)')
+    for season, color in season_colors.items():
+        season_data = df_copy[df_copy['Season'] == season]
+        axs[0, 1].scatter(season_data['Elevation'], season_data['Temperature'], alpha=0.7, s=70, color=color, label=season)
+    axs[0, 1].set_xlabel('Elevation')
     axs[0, 1].set_ylabel('Temperature')
     axs[0, 1].set_title('Temperature vs Elevation')
     for index, row in df_copy.iterrows():
-        axs[0, 1].text(row['Elevation (m)'], row['T'], row['Sample#'], fontsize=8, ha='center', va='bottom')
+        axs[0, 1].text(row['Elevation'], row['Temperature'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
 
     # pH vs Elevation
-    axs[1, 0].scatter(df_copy['Elevation (m)'], df_copy['pH'], alpha=0.7, s=70, c=df_copy['Longitude'], cmap='viridis')
-    axs[1, 0].set_xlabel('Elevation (m)')
+    for season, color in season_colors.items():
+        season_data = df_copy[df_copy['Season'] == season]
+        axs[1, 0].scatter(season_data['Elevation'], season_data['pH'], alpha=0.7, s=70, color=color, label=season)
+    axs[1, 0].set_xlabel('Elevation')
     axs[1, 0].set_ylabel('pH')
     axs[1, 0].set_title('pH vs Elevation')
     for index, row in df_copy.iterrows():
-        axs[1, 0].text(row['Elevation (m)'], row['pH'], row['Sample#'], fontsize=8, ha='center', va='bottom')
+        axs[1, 0].text(row['Elevation'], row['pH'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
 
     # TDS vs Elevation
-    axs[1, 1].scatter(df_copy['Elevation (m)'], df_copy['TDS'], alpha=0.7, s=70, c=df_copy['Longitude'], cmap='viridis')
-    axs[1, 1].set_xlabel('Elevation (m)')
+    for season, color in season_colors.items():
+        season_data = df_copy[df_copy['Season'] == season]
+        axs[1, 1].scatter(season_data['Elevation'], season_data['TDS'], alpha=0.7, s=70, color=color, label=season)
+    axs[1, 1].set_xlabel('Elevation')
     axs[1, 1].set_ylabel('TDS')
     axs[1, 1].set_title('TDS vs Elevation')
     for index, row in df_copy.iterrows():
-        axs[1, 1].text(row['Elevation (m)'], row['TDS'], row['Sample#'], fontsize=8, ha='center', va='bottom')
+        axs[1, 1].text(row['Elevation'], row['TDS'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
 
     # TDS vs Alkalinity
-    axs[2, 0].scatter(df_copy['Alkalinity'], df_copy['TDS'], alpha=0.7, s=70, c=df_copy['Longitude'], cmap='viridis')
+    for season, color in season_colors.items():
+        season_data = df_copy[df_copy['Season'] == season]
+        axs[2, 0].scatter(season_data['Alkalinity'], season_data['TDS'], alpha=0.7, s=70, color=color, label=season)
     axs[2, 0].set_xlabel('Alkalinity')
     axs[2, 0].set_ylabel('TDS')
     axs[2, 0].set_title('TDS vs Alkalinity')
     for index, row in df_copy.iterrows():
-        axs[2, 0].text(row['Alkalinity'], row['TDS'], row['Sample#'], fontsize=8, ha='center', va='bottom')
+        axs[2, 0].text(row['Alkalinity'], row['TDS'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
 
+
+   
     # Hide the empty subplot (bottom right)
     fig.delaxes(axs[2, 1])
 
-    cbar = plt.colorbar(axs[0, 0].collections[0], ax=axs, location='right', label='Longitude')
-    cbar.ax.set_position([0.92, 0.1, 0.02, 0.8])  # Adjust the position of the colorbar
+    # Add legend for seasons
+    handles, labels = axs[0, 0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc='upper right')
+
     plt.tight_layout(rect=[0, 0, 0.9, 0.96])
     plt.savefig('RainPlots.png')
     plt.show()
+
     plt.close()
 
 
+    import matplotlib.pyplot as plt
+def Altitude_Alkalinity_PDF(df):
+    df_copy = df.copy()
     
+    # Filter so df_copy only contains "Spring" in the "Sample type" column
+    df_copy = df_copy[df_copy['Sample type'] == 'Spring']
+    
+    # Print length of df_copy
+    print(len(df_copy))
 
-    
+    fig, axs = plt.subplots(3, 2, figsize=(15, 18))
+    fig.suptitle('Various Parameters vs Elevation and Alkalinity')
+
+    # Define a color map for the seasons
+    season_colors = {
+        'Nov_22': 'blue',
+        'Apr_23': 'green',
+        'Oct_23': 'red',
+        'Sep_24': 'purple'
+    }
+
+    # Create a PdfPages object to save multiple plots in a single PDF
+    with PdfPages('RainPlots.pdf') as pdf_pages:
+        
+        # Alkalinity vs Elevation
+        fig, ax = plt.subplots(figsize=(8, 6))
+        for season, color in season_colors.items():
+            season_data = df_copy[df_copy['Season'] == season]
+            ax.scatter(season_data['Elevation'], season_data['Alkalinity'], alpha=0.7, s=70, color=color, label=season)
+        ax.set_xlabel('Elevation')
+        ax.set_ylabel('Alkalinity')
+        ax.set_title('Alkalinity vs Elevation')
+        for index, row in df_copy.iterrows():
+            ax.text(row['Elevation'], row['Alkalinity'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
+        ax.legend()
+        pdf_pages.savefig(fig)  # Save the current plot as a separate page in the PDF
+        plt.close(fig)
+
+        # Temperature vs Elevation
+        fig, ax = plt.subplots(figsize=(8, 6))
+        for season, color in season_colors.items():
+            season_data = df_copy[df_copy['Season'] == season]
+            ax.scatter(season_data['Elevation'], season_data['Temperature'], alpha=0.7, s=70, color=color, label=season)
+        ax.set_xlabel('Elevation')
+        ax.set_ylabel('Temperature')
+        ax.set_title('Temperature vs Elevation')
+        for index, row in df_copy.iterrows():
+            ax.text(row['Elevation'], row['Temperature'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
+        ax.legend()
+        pdf_pages.savefig(fig)  # Save the current plot as a separate page in the PDF
+        plt.close(fig)
+
+        # pH vs Elevation
+        fig, ax = plt.subplots(figsize=(8, 6))
+        for season, color in season_colors.items():
+            season_data = df_copy[df_copy['Season'] == season]
+            ax.scatter(season_data['Elevation'], season_data['pH'], alpha=0.7, s=70, color=color, label=season)
+        ax.set_xlabel('Elevation')
+        ax.set_ylabel('pH')
+        ax.set_title('pH vs Elevation')
+        for index, row in df_copy.iterrows():
+            ax.text(row['Elevation'], row['pH'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
+        ax.legend()
+        pdf_pages.savefig(fig)  # Save the current plot as a separate page in the PDF
+        plt.close(fig)
+
+        # TDS vs Elevation
+        fig, ax = plt.subplots(figsize=(8, 6))
+        for season, color in season_colors.items():
+            season_data = df_copy[df_copy['Season'] == season]
+            ax.scatter(season_data['Elevation'], season_data['TDS'], alpha=0.7, s=70, color=color, label=season)
+        ax.set_xlabel('Elevation')
+        ax.set_ylabel('TDS')
+        ax.set_title('TDS vs Elevation')
+        for index, row in df_copy.iterrows():
+            ax.text(row['Elevation'], row['TDS'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
+        ax.legend()
+        pdf_pages.savefig(fig)  # Save the current plot as a separate page in the PDF
+        plt.close(fig)
+
+        # TDS vs Alkalinity
+        fig, ax = plt.subplots(figsize=(8, 6))
+        for season, color in season_colors.items():
+            season_data = df_copy[df_copy['Season'] == season]
+            ax.scatter(season_data['Alkalinity'], season_data['TDS'], alpha=0.7, s=70, color=color, label=season)
+        ax.set_xlabel('Alkalinity')
+        ax.set_ylabel('TDS')
+        ax.set_title('TDS vs Alkalinity')
+        for index, row in df_copy.iterrows():
+            ax.text(row['Alkalinity'], row['TDS'], row['Sample ID'], fontsize=8, ha='center', va='bottom')
+        ax.legend()
+        pdf_pages.savefig(fig)  # Save the current plot as a separate page in the PDF
+        plt.close(fig)
 def Altitude_Temperature(df):
     # want to include only NICB valid samples. Takes only the unique code rows from dfneat if they also appear on unique_codes_valid
     
@@ -144,9 +261,6 @@ def Altitude_Temperature(df):
     plt.show()
     #plt.savefig('nepal/eltemp.png')
     plt.close()    
-    
-    
-    
 def Altitude_pH(df):
     # want to include only NICB valid samples. Takes only the unique code rows from dfneat if they also appear on unique_codes_valid
     
@@ -183,9 +297,7 @@ def Altitude_pH(df):
     plt.title('pH vs Elevation')
     plt.show()
     #plt.savefig('nepal/eltemp.png')
-    plt.close()     
-    
-    
+    plt.close()       
 def Altitude_TDS(df):
     # want to include only NICB valid samples. Takes only the unique code rows from dfneat if they also appear on unique_codes_valid
     
@@ -223,10 +335,6 @@ def Altitude_TDS(df):
     plt.show()
     #plt.savefig('nepal/eltemp.png')
     plt.close()     
-
-
-
-
 def Alkalinity_TDS(df):
     # want to include only NICB valid samples. Takes only the unique code rows from dfneat if they also appear on unique_codes_valid
     
@@ -265,16 +373,53 @@ def Alkalinity_TDS(df):
     #plt.savefig('nepal/eltemp.png')
     plt.close()     
 
+
+
+
+
+def Ratios(df):
     
-df = pd.read_excel('FieldDataNepal24.xlsx')
+    df_copy = df.copy()
     
+    # Filter so df_copy only contains "Spring" in the "Sample type" column
+    df_copy = df_copy[df_copy['Sample type'] == 'Spring water']
+    
+    # Print length of df_copy
+    print(len(df_copy))
+
+    # Define a color map for the seasons
+    season_colors = {
+        'Nov_22': 'blue',
+        'Apr_23': 'green',
+        'Oct_23': 'red',
+        'Sep_24': 'purple'
+    }
+    
+    fig, ax = plt.subplots(figsize=(8, 6))
+    for season, color in season_colors.items():
+        season_data = df_copy[df_copy['Season'] == season]
+        ax.scatter(season_data['Elevation'], season_data['Sr/Ca'], alpha=0.7, s=70, color=color, label=season)
+    ax.set_xlabel('Elevation')
+    ax.set_ylabel('Sr/Ca')
+    ax.set_title('Sr/Ca vs Elevation')
+    
+    ax.legend()
+    plt.show()
+    plt.close(fig)
+
+
+
+
+
+    
+df = pd.read_excel('Datasets/Nepal Master Sheet.xlsx', sheet_name='Final_compiled')
     
 
-Altitude_Alkalinity(df)
+#Altitude_Alkalinity_PDF(df)
 #Altitude_Temperature(df)
 #Altitude_pH(df)
 #Altitude_TDS(df)
-
-
 #Alkalinity_TDS(df)
 
+
+Ratios(df)  
