@@ -225,7 +225,7 @@ for file in files:
 output = output.sort_values(by='SampleID')
 
 # Output the final dataframe
-print(output.tail(10))
+print(output.tail(60))
 
 # Save output to CSV
 output.to_excel("data/processed/alkalinity_results.xlsx", index=False)
