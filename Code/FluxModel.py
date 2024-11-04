@@ -73,50 +73,78 @@ def calculate_molar_concentration(df):
         df_copy.loc[:, element + ' (uM)'] = df_copy[col_name] / molar_mass * 1000
         df_copy.loc[:, element + ' (ueq/L)'] = df_copy.loc[:, element + ' (uM)'] * valency * 1000
 
-    print(df_copy.columns)
+    #print(df_copy.columns)
 
     return df_copy
 
 
 def chloride_correction(df):
-    
-    rain_df = pd.read_excel('/Users/enrico/Downloads/Nepal Master Sheet.xlsx', sheet_name='Rainwater') ### FOR EXAMPLE
+    rain_values = {
+        'Ca/Cl': 2.97,
+        'Mg/Cl': 1.99,
+        'K/Cl': 0.72,
+        'Na/Cl': 1.35,
+        'Si/Cl': 0.41,
+        'Sr/Cl': 4.05e-3
+    }
 
     df_copy = df.copy()
 
-    # Iterate over each element (column) in the rain_processed DataFrame
-    for element in rain_df.columns:
+    # Iterate over each element in the rain_values dictionary
+    for element_ratio, ratio_value in rain_values.items():
+        element = element_ratio.split('/')[0] + ' (uM)'
         
-        if ' (uM)' in element:
-            
-            if element in df_copy.columns:
-                
-                
-                # Get the value of the current element from the rain_processed DataFrame (assuming there's only one value)
-                
-                for i, sample in rain_df.iterrows():
-                    
-                    rain_element_value = sample[element]
-                    
-                    # Get the value of 'Cl [aq] (mM)' from the rain_processed DataFrame (assuming there's only one value)
-                    
-                    cl_rain_value = sample['Cl (uM)']
-                    
-                    # Perform the correction calculation:
-                    # For each row in df_copy, subtract the rain element value from the river element value
-                    
-                    df_copy['*' + str(sample['rain_sample_id']) + element] = df_copy[element] - rain_element_value / cl_rain_value * df_copy['Cl (uM)']
-            else:
-                # Print a message if the current element is not found in the df_copy DataFrame
-                print(f"Element {element} not found in df_copy")
+        # Lowest Cl value in the river:
+        riverlowestCl = df_copy['Cl_molar'].min()
+        
+        if element in df_copy.columns:
+            # Perform the correction calculation
+            df_copy['*' + element] = df_copy[element] - ratio_value * riverlowestCl
+        else:
+            # Print a message if the current element is not found in the df_copy DataFrame
+            print(f"Element {element} not found in df_copy")
+
+    return df_copy
 
 
 
+def XSil(df):
+    
+    df_copy = df.copy()
+    
+    #Gaillardet's ratios
+    #We assign the following chemical composition to the silicate end member: 
+    # WE can refine this with our own data
+    
+    #Ca/Na = 0.35
+    #Mg/Na = 0.24
+    #HCO3/Na =  2
+    #1000*Sr/Na = 3
+    
+    CaNa_sil = 0.35
+    
+    MgNa_sil = 0.24
+
+    df_copy['Ca_Sil'] = df_copy['*Na (uM)'] * CaNa_sil
+    
+    df_copy['Mg_Sil'] = df_copy['*Na (uM)'] * MgNa_sil
+    
+    df_copy['X_Sil'] = ((2*df_copy['Ca_Sil']) + (2*df_copy['Mg_Sil']) + df_copy['*K (uM)'] + df_copy['*Na (uM)'])/((2*df_copy['*Ca (uM)']) + (2*df_copy['*Ca (uM)']) + df_copy['*K (uM)'] + df_copy['*Na (uM)'])
+    
+    
+    
+    return df_copy
+    
+    
+    
+    
+    
 
 def main():
     
     
-    df = pd.read_excel('/Users/enrico/Downloads/Nepal Master Sheet.xlsx', sheet_name='Final_compiled')
+    df = pd.read_excel('Datasets/Nepal Master Sheet.xlsx')
+    
     
     # filter data for sample type = spring water
     df = df[df['Sample type'] == 'Spring water']
@@ -124,6 +152,42 @@ def main():
     # calculate molar concentrations
     df_molar = calculate_molar_concentration(df)
     
+    df_corrected = chloride_correction(df_molar)
+    
+    #print(df_corrected.head())
+    
+    df_XSil = XSil(df_corrected)
+    
+    print(df_XSil.head())
+    
+    
+    
+    
+    # filtered_df = df_XSil[df_XSil['X_Sil'] > 1.0]
+    # print("These samples had XSil >1:")
+    # for index, row in filtered_df.iterrows():
+    #     print(row['Sample ID'])
+    
+    
+    # Plot XSil against elevation:
+    
+    # Plot XSil against elevation
+    fig, ax = plt.subplots()
+    ax.scatter(df_XSil['X_Sil'], df_XSil['Sr87/Sr86'])
+    ax.set_xlabel('XSil')
+    ax.set_ylabel('Sr87/Sr86')
+    ax.set_title('Sr87/Sr86 vs XSil')
+    #plt.show()
+    
+    df_XSil['Si/Ca'] = df_XSil['Si (uM)'] / df_XSil['Ca (uM)']
+    df_XSil['Na/Ca'] = df_XSil['Na (uM)'] / df_XSil['Ca (uM)']
+    
+    fig, ax = plt.subplots()
+    ax.scatter(df_XSil['Na/Ca'], df_XSil['Si/Ca'])
+    ax.set_xlabel('Na/Ca')
+    ax.set_ylabel('Si/Ca')
+    ax.set_title('Na/Ca vs Si/Ca')
+    plt.show()
     
     
 

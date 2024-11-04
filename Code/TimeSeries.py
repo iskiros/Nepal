@@ -54,7 +54,10 @@ def timeseries(df):
     # Make individual graphs of elements over time. Time is given by the "Date" column, which is in the DD/MM/YY format.
     #elements = ['Ca_ppm', 'Fe_ppm', 'K_ppm', 'Li_ppm', 'Mg_ppm', 'Mn_ppm', 'Na_ppm', 'S_ppm', 'Si_ppm', 'Sr_ppm', 'd13C_DIC']
     
-    elements = ['Al/Ca', 'Ba/Ca', 'Fe/Ca', 'K/Ca', 'Li/Ca', 'Mg/Ca', 'Mn/Ca', 'Na/Ca', 'S/Ca', 'Si/Ca', 'Sr/Ca', 'Na/Si', 'Na/Cl', 'Li/Na']
+    #elements = ['Al/Ca', 'Ba/Ca', 'Fe/Ca', 'K/Ca', 'Li/Ca', 'Mg/Ca', 'Mn/Ca', 'Na/Ca', 'S/Ca', 'Si/Ca', 'Sr/Ca', 'Na/Si', 'Na/Cl', 'Li/Na']
+    
+    elements = ['Na/Ca']
+    
     
     # First, we need to convert the date to a datetime object:
     df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y', errors='coerce')
@@ -62,31 +65,44 @@ def timeseries(df):
     # Now, we can sort the dataframe by date:
     df = df.sort_values(by='Date')
     
-    # Create a PDF to save the plots
-    with PdfPages('thalo_timeseries_ratios_plots.pdf') as pdf:
-        fig, axs = plt.subplots(len(elements), 1, figsize=(8.27, 11.69))  # A4 size in inches (8.27 x 11.69)
+    # Plot Na/Ca against Date
+    plt.figure(figsize=(10, 6))
+    plt.plot(df['Date'], df['Na/Ca'], label='Na/Ca')
+    plt.xlabel('Date')
+    plt.ylabel('Na/Ca')
+    plt.title('Na/Ca Time Series')
+    plt.legend()
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+    
+    
+    
+    # # Create a PDF to save the plots
+    # with PdfPages('thalo_timeseries_ratios_plots.pdf') as pdf:
+    #     fig, axs = plt.subplots(len(elements), 1, figsize=(8.27, 11.69))  # A4 size in inches (8.27 x 11.69)
         
-        for i, element in enumerate(elements):
-            ax = axs[i]
-            ax.plot(df['Date'], df[element], label=element)
+    #     for i, element in enumerate(elements):
+    #         ax = axs[i]
+    #         ax.plot(df['Date'], df[element], label=element)
             
-            if i == 0:
-                ax.set_title(f'Kyul Time Series')
-            if i == len(elements) - 1:
-                ax.set_xlabel('Date')
-            if i == len(elements) // 2:
-                ax.set_ylabel('Concentration (ppm)')
-            ax.legend(loc='upper right')
+    #         if i == 0:
+    #             ax.set_title(f'Thalo Time Series')
+    #         if i == len(elements) - 1:
+    #             ax.set_xlabel('Date')
+    #         if i == len(elements) // 2:
+    #             ax.set_ylabel('Concentration')
+    #         ax.legend(loc='upper right')
             
-            ax.xaxis.set_major_formatter(mdates.DateFormatter('%d/%m/%Y'))
-            plt.xticks(rotation=45)
-            plt.tight_layout()
+    #         ax.xaxis.set_major_formatter(mdates.DateFormatter('%d/%m/%Y'))
+    #         plt.xticks(rotation=45)
+    #         plt.tight_layout()
         
-        plt.show()
+    #     plt.show()
         
-        # Save the current figure to the PDF
-        pdf.savefig(fig)
-        plt.close(fig)
+    #     # Save the current figure to the PDF
+    #     pdf.savefig(fig)
+    #     plt.close(fig)
     
     
     
@@ -217,10 +233,13 @@ def plot_superimposed_elements_with_multiple_y_axes(df):
     
     
     
-df = pd.read_excel('Datasets/Nepal Master Sheet.xlsx', sheet_name='Final_compiled')
+df = pd.read_excel('Datasets/Nepal Master Sheet.xlsx')
 
 
-#timeseries(df)
+
+
+
+timeseries(df)
 
 #perform_pca(df)
 

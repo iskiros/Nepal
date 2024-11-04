@@ -105,11 +105,7 @@
 \counterwithin{figure}{section}
 %%%% modifying toc fonts so they are conssitent
 \usepackage{titletoc}
-\titlecontents{section}[1em]{\sffamily}
-{\thecontentslabel\enspace}
-{}
-{\titlerule*[1pc]{.}\quad\contentspage}[\vskip 4pt]
-
+\titlecontents{section}[1em]{\ttfamily}{\thecontentslabel\enspace}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}[\vskip 4pt]
 
 \usepackage{soul}
 
@@ -129,8 +125,8 @@
 %\renewcommand{\cftsubsecfont}{\sffamily}
 %%%%%
 
-\renewcommand*\ttdefault{cmvtt}
-\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+%\renewcommand*\ttdefault{cmvtt}
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
 \usepackage[OT1]{fontenc}
 
 %%% END Article customizations
@@ -166,14 +162,17 @@
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}}
 
 \usepackage{hyperref}
-
+%\usepackage{mathptmx} % Loads a Times-like font for text and math
+%\usepackage{newtxtext} % Alternative with a similar appearance
+\usepackage[sfdefault]{cabin}
+\usepackage[T1]{fontenc}
 
 
 % Customize the table of contents font to use typewriter style
-\titlecontents{section}[1em]{\ttfamily}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{subsection}[2em]{\ttfamily}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{subsubsection}[3em]{\ttfamily}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{paragraph}[4em]{\ttfamily}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
+\titlecontents{section}[1em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
+\titlecontents{subsection}[2em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
+\titlecontents{subsubsection}[3em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
+\titlecontents{paragraph}[4em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
 
 
 %\renewcommand*\familydefault{\sfdefault} % Uncomment this if you want the entire document in sans-serif
@@ -191,34 +190,34 @@
 
 
 
-\begin{figure}[h]
-\includegraphics[scale=0.08]{front2.png}
-\centering
+% \begin{figure}[h]
+% \includegraphics[scale=0.08]{front2.png}
+% \centering
 
-\end{figure}
+% \end{figure}
 
 
-University of Cambridge \\
-Part III Project Report \\
+% University of Cambridge \\
+% Part III Project Report \\
 
-\begin{figure}
-    \centering
-    \begin{subfigure}{.45\textwidth} % Adjust width to leave space between figures
-        \centering
-        \includegraphics[height=4.5cm]{girton.png} % Set the height of the image
-        %\caption{A subfigure}
-        \label{fig:sub1}
-    \end{subfigure}%
-    \hspace{1.5cm} % Add horizontal space between the figures
-    \begin{subfigure}{.45\textwidth} % Adjust width to leave space between figures
-        \centering
-        \includegraphics[height=4.5cm]{cambridge.png} % Set the height of the image
-        %\caption{A subfigure}
-        \label{fig:sub2}
-    \end{subfigure}
-    %\caption{A figure with two subfigures}
-    \label{fig:test}
-\end{figure}
+% \begin{figure}
+%     \centering
+%     \begin{subfigure}{.45\textwidth} % Adjust width to leave space between figures
+%         \centering
+%         \includegraphics[height=4.5cm]{girton.png} % Set the height of the image
+%         %\caption{A subfigure}
+%         \label{fig:sub1}
+%     \end{subfigure}%
+%     \hspace{1.5cm} % Add horizontal space between the figures
+%     \begin{subfigure}{.45\textwidth} % Adjust width to leave space between figures
+%         \centering
+%         \includegraphics[height=4.5cm]{cambridge.png} % Set the height of the image
+%         %\caption{A subfigure}
+%         \label{fig:sub2}
+%     \end{subfigure}
+%     %\caption{A figure with two subfigures}
+%     \label{fig:test}
+% \end{figure}
 
 
 }
@@ -283,8 +282,6 @@ This is the abstract. Feel free to add anything insightful... or not :).
 
 \input{discussion.tex}
 
-
-\input{conclusions.tex}
 
 
 \input{references.tex}
