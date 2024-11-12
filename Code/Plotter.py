@@ -5,6 +5,7 @@ from matplotlib.lines import Line2D
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.stats import linregress
 import geodatasets
 import geopandas as gpd
 import re
@@ -532,6 +533,13 @@ def Investigation(df):
     df_copy['Si/Ca'] = df_copy['Si_mM'] / df_copy['Ca_mM']
     df_copy['Na/Ca'] = df_copy['Na_mM'] / df_copy['Ca_mM']
     
+    # δ87Sr = [(87Sr/86Srsample/87Sr/86Srmsw)-1]×1000,
+    
+    # 87Sr/86Srmsw is the value for modern sea water (msw) of 0.70920
+    
+    df_copy['Delta87Sr'] = ((df_copy['Sr87/Sr86'] / 0.70920) - 1) * 1000
+    
+    
        
     ##################################################################
        
@@ -545,20 +553,24 @@ def Investigation(df):
     
     
     # Just accept traverse 3:
-    df_copy = df_copy[df_copy['Traverse'] == 'Traverse 3']
+    #df_copy = df_copy[df_copy['Traverse'] == 'Traverse 3']
     
     #Filter the latitude to be less than 27.9410 # taking in traverse 3a:
-    df_copy = df_copy[(df_copy['Latitude'] < 27.9410) & (df_copy['Latitude'] > 27.9203)]
+    #df_copy = df_copy[(df_copy['Latitude'] < 27.9410) & (df_copy['Latitude'] > 27.9203)]
     
     
-    
+    ##################################################################
+
     
     
     
     # Create the figure and axes for side-by-side plots
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 6))
     
-    variable = 'Na/Ca'
+    variable = 'd13C_DIC'
+    
+    ##################################################################
+
     
     
     # Adjust the size of ax2 to 10:6
@@ -569,6 +581,11 @@ def Investigation(df):
     
     # Plot the shapefile
     gdf.plot(ax=ax1, facecolor='none', edgecolor='yellow', alpha=1, linewidth=1, label='Melamchi Watershed')
+
+
+    ##################################################################
+    
+    
 
     # Define marker styles for the traverses
     traverse_markers = {
@@ -585,6 +602,16 @@ def Investigation(df):
         'Oct_23': 'red',
         'Sep_24': 'purple'
     }
+    
+    ##################################################################
+    
+    # print number of samples with alkalinity in traverse 1, 2, 3, 4
+    # print('Number of samples with alkalinity in traverse 1:', len(df_copy[(df_copy['Traverse'] == 'Traverse 1') & (df_copy['Alkalinity'] > 0)]))
+    # print('Number of samples with alkalinity in traverse 2:', len(df_copy[(df_copy['Traverse'] == 'Traverse 2') & (df_copy['Alkalinity'] > 0)]))
+    # print('Number of samples with alkalinity in traverse 3:', len(df_copy[(df_copy['Traverse'] == 'Traverse 3') & (df_copy['Alkalinity'] > 0)]))
+    # print('Number of samples with alkalinity in traverse 4:', len(df_copy[(df_copy['Traverse'] == 'Traverse 4') & (df_copy['Alkalinity'] > 0)]))
+    
+    
 
     # Plot the points from df_copy, using the chosen variable for color and marker style for traverses
     for traverse, marker in traverse_markers.items():
@@ -598,7 +625,7 @@ def Investigation(df):
     # Add a color legend for the seasons
     handles = [Line2D([0], [0], marker='o', color='w', markerfacecolor=color, markersize=10, label=season) 
                for season, color in season_colors.items()]
-    ax1.legend(handles=handles, title='Season')
+    #ax1.legend(handles=handles, title='Season', loc = 'upper left')
 
 
 
@@ -610,15 +637,26 @@ def Investigation(df):
     ax1.set_xlabel('Longitude')
     ax1.set_ylabel('Latitude')
     ax1.set_title(f'DEM Map with {variable} Samples')
+    
+    
+    ##################################################################
+    ##################################################################
 
     ######### PLOT 2: Variable vs. Elevation #########
 
     # Colour the ax2 for traverse in the "Traverse" column, it will be Traverse 1, 2, 3 or 4
-    traverse_colors = {
-        'Traverse 1': 'blue',
-        'Traverse 2': 'green',
-        'Traverse 3': 'red',
-        'Traverse 4': 'purple'
+    # traverse_colors = {
+    #     'Traverse 1': 'blue',
+    #     'Traverse 2': 'green',
+    #     'Traverse 3': 'red',
+    #     'Traverse 4': 'purple'
+    # }
+    
+    season_colors = {
+        'Nov_22': 'blue',
+        'Apr_23': 'green',
+        'Oct_23': 'red',
+        'Sep_24': 'purple'
     }
 
     traverse_markers = {
@@ -628,16 +666,209 @@ def Investigation(df):
         'Traverse 4': 'o'   # Circle
     }
     
-    for season, color in season_colors.items():
-        season_data = df_copy[df_copy['Season'] == season]
-        ax2.scatter(season_data['Elevation'], season_data[variable], alpha=0.7, s=70, color=color, marker='o', label=season)
+    # for season, color in season_colors.items():
+    #     season_data = df_copy[df_copy['Season'] == season]
+    #     ax2.scatter(season_data['Alkalinity'], season_data[variable], alpha=0.7, s=70, color=color, marker='o', label=season)
+        
+    for traverse, marker in traverse_markers.items():
+        traverse_data = df_copy[df_copy['Traverse'] == traverse]
+        for season, color in season_colors.items():
+            season_data = traverse_data[traverse_data['Season'] == season]
+            scatter = ax2.scatter(season_data['Alkalinity'], season_data[variable], 
+                                  c=color, s=70, alpha=0.7, edgecolor='k', 
+                                  marker=marker, label=f'{traverse} - {season}')    
+            
+            
+    handles = [Line2D([0], [0], marker='o', color='w', markerfacecolor=color, markersize=10, label=season) 
+               for season, color in season_colors.items()]
+    traverse_handles = [Line2D([0], [0], marker=marker, color='w', markerfacecolor='k', markersize=10, label=traverse) 
+                        for traverse, marker in traverse_markers.items()]
+    ax2.legend(handles=handles + traverse_handles, title='Season and Traverse', bbox_to_anchor=(-0.4, 1), loc='upper left', borderaxespad=0.)
 
-    ax2.set_xlabel('Elevation')
+    ax2.set_xlabel('Alkalinity')
     ax2.set_ylabel(f'{variable}')
-    ax2.legend()
-    plt.show()
+    #ax2.legend()
+    plt.savefig('d13Calk-all.png')
+    #plt.show()
+    plt.close()
+    
     
 
+
+
+    # Create the figure and axes for side-by-side plots
+    fig, axs = plt.subplots(4, 2, figsize=(20, 24))
+    
+    variables = ['Delta87Sr', 'Sr_mM']
+    tributaries = ['Traverse 1', 'Traverse 2', 'Traverse 3', 'Traverse 4']
+    
+    for i, traverse in enumerate(tributaries):
+        ax1 = axs[i, 0]
+        ax2 = axs[i, 1]
+        
+        # Plot the DEM data in grayscale
+        c = ax1.contourf(x, y, z, cmap='Greys', alpha=0.7)
+        
+        # Plot the shapefile
+        gdf.plot(ax=ax1, facecolor='none', edgecolor='yellow', alpha=1, linewidth=1, label='Melamchi Watershed')
+
+        # Plot the points from df_copy, using the chosen variable for color and marker style for traverses
+        traverse_data = df_copy[df_copy['Traverse'] == traverse]
+        for season, color in season_colors.items():
+            season_data = traverse_data[traverse_data['Season'] == season]
+            scatter = ax1.scatter(season_data['Longitude'], season_data['Latitude'], 
+                                  c=color, s=70, alpha=0.7, edgecolor='k', 
+                                  marker=traverse_markers[traverse], label=f'{traverse} - {season}')
+
+        # Add a color legend for the seasons
+        handles = [Line2D([0], [0], marker='o', color='w', markerfacecolor=color, markersize=10, label=season) 
+                   for season, color in season_colors.items()]
+        ax1.legend(handles=handles, title='Season', loc='upper left')
+
+        # Set custom axis limits to match specified lat/long extents
+        ax1.set_xlim(85.5, 85.6)
+        ax1.set_ylim(27.82, 28.05)
+
+        # Set labels and title
+        ax1.set_xlabel('Longitude')
+        ax1.set_ylabel('Latitude')
+        ax1.set_title(f'DEM Map with {variables[0]} Samples for {traverse}')
+
+        # # Plot variable vs. Elevation
+        # for season, color in season_colors.items():
+        #     season_data = traverse_data[traverse_data['Season'] == season]
+        #     scatter = ax2.scatter(season_data[variables[1]], season_data[variables[0]], 
+        #                           c=color, s=70, alpha=0.7, edgecolor='k', 
+        #                           marker=traverse_markers[traverse], label=f'{traverse} - {season}')    
+                
+                # Plot variable vs. Elevation with seasonal colors
+        # for season, color in season_colors.items():
+        #     season_data = traverse_data[traverse_data['Season'] == season]
+        #     scatter = ax2.scatter(season_data[variables[1]], season_data[variables[0]], 
+        #                         c=color, s=70, alpha=0.7, edgecolor='k', 
+        #                         marker=traverse_markers[traverse], label=f'{traverse} - {season}')    
+
+
+
+        # # Fit line and compute R² for the entire traverse data, ignoring NaN values
+        # if len(traverse_data) > 1:
+        #     # Remove rows with NaN in either 'Sr_mM' or 'Delta87Sr' columns
+        #     valid_data = traverse_data.dropna(subset=[variables[1], variables[0]])
+            
+        #     if len(valid_data) > 1:  # Ensure there's enough data after dropping NaNs
+        #         x_data = np.log10(valid_data[variables[1]].values)
+        #         y_data = valid_data[variables[0]].values
+        #         slope, intercept, r_value, _, _ = linregress(x_data, y_data)
+                
+        #         # Generate line of best fit
+        #         line_x = np.linspace(min(x_data), max(x_data), 100)
+        #         line_y = slope * line_x + intercept
+        #         ax2.plot(10**line_x, line_y, color='black', linestyle='--', label='Best Fit')
+                
+        #         # Display R² value
+        #         ax2.text(0.05, 0.95, f'R² = {r_value**2:.2f}', transform=ax2.transAxes, fontsize=10,
+        #                 verticalalignment='top', color='black', horizontalalignment='right') 
+        
+        
+
+        # # Plot variable vs. Elevation
+        # scatter = ax2.scatter(traverse_data[variables[1]], traverse_data[variables[0]], 
+        #                     c=traverse_data['Season'].map(season_colors), s=70, alpha=0.7, edgecolor='k', 
+        #                     marker=traverse_markers[traverse])    
+
+        # Initialize variables to store the slope and intercept for the first traverse
+        first_traverse_slope = None
+        first_traverse_intercept = None
+
+        # Initialize variables to store the slope and intercept for the first traverse
+        first_traverse_slope = None
+        first_traverse_intercept = None
+
+        # Loop through each traverse
+        for i, traverse in enumerate(tributaries):
+            # Set up the subplot axis for each traverse
+            ax1 = axs[i, 0]
+            ax2 = axs[i, 1]
+            
+            # Plot variable vs. Elevation with seasonal colors
+            traverse_data = df_copy[df_copy['Traverse'] == traverse]
+            for season, color in season_colors.items():
+                season_data = traverse_data[traverse_data['Season'] == season]
+                scatter = ax2.scatter(season_data[variables[1]], season_data[variables[0]], 
+                                    c=color, s=70, alpha=0.7, edgecolor='k', 
+                                    marker=traverse_markers[traverse], label=f'{traverse} - {season}')  
+
+            # Calculate and store the best-fit line for Traverse 1 only
+            if i == 0:
+                if len(traverse_data) > 1:
+                    # Remove rows with NaN in either 'Sr_mM' or 'Delta87Sr' columns
+                    valid_data = traverse_data.dropna(subset=[variables[1], variables[0]])
+                    
+                    if len(valid_data) > 1:  # Ensure there's enough data after dropping NaNs
+                        x_data = np.log10(valid_data[variables[1]].values)
+                        y_data = valid_data[variables[0]].values
+                        slope, intercept, r_value, _, _ = linregress(x_data, y_data)
+                        
+                        # Store the slope and intercept from Traverse 1
+                        first_traverse_slope, first_traverse_intercept = slope, intercept
+                        
+                        # Generate and plot the line of best fit for Traverse 1
+                        line_x = np.linspace(min(x_data), max(x_data), 100)
+                        line_y = first_traverse_slope * line_x + first_traverse_intercept
+                        ax2.plot(10**line_x, line_y, color='black', linestyle='--', label='Best Fit')
+                        ax2.set_xscale('log')
+                        
+                        # Display the equation of the line
+                        equation_text = f'y = {first_traverse_slope:.2f}x + {first_traverse_intercept:.2f}'
+                        ax2.text(0.05, 0.90, equation_text, transform=ax2.transAxes, fontsize=10,
+                                 verticalalignment='top', color='black')
+                        # Display R² value for Traverse 1
+                        ax2.text(0.95, 0.95, f'R² = {r_value**2:.2f}', transform=ax2.transAxes,
+                                fontsize=10, verticalalignment='top', horizontalalignment='right', color='black')
+            
+            # For Traverse 2, 3, and 4, use the stored slope and intercept from Traverse 1
+            else:
+                if first_traverse_slope is not None and first_traverse_intercept is not None:
+                    # Generate the imposed line using the stored slope and intercept
+                    line_x = np.linspace(np.log10(traverse_data[variables[1]].min()), 
+                                        np.log10(traverse_data[variables[1]].max()), 100)
+                    line_y = first_traverse_slope * line_x + first_traverse_intercept
+                    ax2.set_xscale('log')
+                    ax2.plot(10**line_x, line_y, color='red', linestyle='--')
+
+        ax2.set_xscale('log')
+        ax2.set_xlabel('log 'f'{variables[1]}')
+        ax2.set_ylabel(f'{variables[0]}')
+        ax2.set_title(f'{variables[0]} vs {variables[1]} for {traverse}')
+
+    plt.tight_layout()
+    plt.savefig('Srisotopes-Sr.png')
+    plt.show()
+
+    plt.close(fig)
+    
+    
+    
+    
+    df_copy['Delta87Sr/log10Sr(mM)'] = df_copy['Delta87Sr'] / np.log10(df_copy['Sr_mM'])
+    
+    # Plot Delta87Sr/Sr(mM) against latitude
+    plt.figure(figsize=(10, 6))
+    
+    #traverse_data = df_copy[df_copy['Traverse'] == 'Traverse 1'] # Traverse 1 only
+    
+    traverse_data = df_copy # All traverses
+    plt.scatter(traverse_data['Latitude'], traverse_data['Delta87Sr/log10Sr(mM)'], alpha=0.7, s=70, c=traverse_data['Sr_mM'], cmap='viridis')
+    plt.xlabel('Latitude')
+    plt.ylabel('Delta87Sr/log10Sr(mM)')
+    plt.colorbar(label='Sr (mM)')
+    plt.title('Delta87Sr/log10Sr(mM) vs Latitude for ALL TRAVERSES')
+    #plt.show()
+    plt.close()
+    
+
+ 
+    
     
     
 
