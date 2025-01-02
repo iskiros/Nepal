@@ -1,0 +1,24 @@
+% !TEX TS-program = xelatex
+\documentclass{article}
+\usepackage{fontspec}
+
+% Explicitly specify the Menlo font from the system path
+\setmonofont[
+    Path = /System/Library/Fonts/, % Path to Menlo font on macOS
+    UprightFont = Menlo.ttc,
+    BoldFont = Menlo.ttc,
+    ItalicFont = Menlo.ttc,
+    BoldItalicFont = Menlo.ttc
+]{Menlo}
+
+\begin{document}
+
+This is text in the Menlo font.
+
+\textbf{Bold text in Menlo.}
+
+\textit{Italic text in Menlo.}
+
+\textbf{\textit{Bold Italic text in Menlo.}}
+
+\end{document}

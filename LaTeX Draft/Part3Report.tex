@@ -1,238 +1,93 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-% This is a simple template for a LaTeX document using the "article" class.
-% See "book", "report", "letter" for other types of document.
-
-\documentclass[hidelinks, 12pt]{article} % use larger type; default would be 10pt
-\linespread{1.5} 
-\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
-\usepackage{amsmath}
-\usepackage{pdflscape}
-\usepackage{placeins}
-\usepackage{hvfloat}
-
-
-\usepackage{gensymb} %%for degrees C sign
-
-%%%%5FOR COLOR
-
-\usepackage{xcolor}
-
-%%%% IF NOT CAN USE \phantom{} for invisible text
-
-
-%%% Examples of Article customizations
-% These packages are optional, depending whether you want the features they provide.
-% See the LaTeX Companion or other references for full information.
-\usepackage{textcomp}
-\usepackage{amsmath}
-\usepackage{array, multirow, bigdelim, makecell, booktabs} 
-
+\documentclass[hidelinks, 12pt]{article} % Use larger type; default is 10pt
+\linespread{1.5}
+\usepackage[utf8]{inputenc} % Set input encoding (not needed with XeLaTeX)
+\usepackage{amsmath, amssymb, array, booktabs, multirow, makecell, bigdelim, pdflscape, placeins, hvfloat, longtable, rotating, pdfpages, textcomp, fancyhdr, graphicx, float, upgreek, gensymb, hyperref, xcolor}
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Include bibliography in ToC
+\usepackage[titles,subfigure]{tocloft} % Customize ToC style
+\usepackage{titletoc, sectsty, soul} % Formatting for ToC and sections
 \usepackage[super]{nth}
-\usepackage{amssymb}	
-\newcommand\ddfrac[2]{%
-    \frac{\displaystyle \raisebox{0.5ex}{$#1$}}%
-         {\displaystyle \raisebox{-0.5ex}{$#2$}}%
-}
-
-\newcommand\dddfrac[2]{%
-    \frac{\displaystyle \raisebox{1ex}{$#1$}}%
-         {\displaystyle \raisebox{-1ex}{$#2$}}%
-}
-
-%%% PAGE DIMENSIONS
-\usepackage{geometry} % to change the page dimensions
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- } % or letterpaper (US) or a5paper or....
-% \geometry{margin=2in} % for example, change the margins to 2 inches all round
-% \geometry{landscape} % set up the page for landscape
-%   read geometry.pdf for detailed page layout information
-\usepackage{lscape}
-\usepackage{graphicx} % support the \includegraphics command and options
-\usepackage{longtable}[=v4.13]
-% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an
-% empty line rather than an indent
-
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-\usepackage{rotating}
-\usepackage{pdfpages}
-%%% PACKAGES
-\usepackage{booktabs} % for much better looking tables
-\usepackage{array} % for better arrays (eg matrices) in maths
-\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
-\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
-%\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
-% These packages are all incorporated in the memoir class to one degree or another...
-
-\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
-
-%%% HEADERS & FOOTERS
-\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot[C]{\thepage} % page number in the center of the footer % options: empty , plain , fancy
-\renewcommand{\headrulewidth}{0pt} % customise the layout...
-\lhead{}\chead{}\rhead{}
-\lfoot{}\cfoot{\thepage}\rfoot{}
-
-
-\fancypagestyle{lscape}{%
-\fancyhf{} % Clear all header and footer fields
-
-\fancyfootoffset[R]{-50cm} % Adjust the offset to position the number higher up
-\fancyfoot[R]{\makebox[0pt][r]{\rotatebox{90}{\thepage}}} % Page number at bottom right
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}}
-%%% SECTION TITLE APPEARANCE
-\usepackage{sectsty}
-%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
-% (This matches ConTeXt defaults)
-
-	
-\newcommand{\bsk}{\vspace{\baselineskip}}
-\usepackage{float}
-%%% ToC (table of contents) APPEARANCE
-\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
-\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
-%%	
-%%
-
-\counterwithin{figure}{section}
-%%%% modifying toc fonts so they are conssitent
-\usepackage{titletoc}
-\titlecontents{section}[1em]{\ttfamily}{\thecontentslabel\enspace}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}[\vskip 4pt]
-
-\usepackage{soul}
-
-%%%%%making a line which is only x cm long
-\newcommand{\myline}{\par\noindent\makebox[\linewidth]{\hspace*{-0.4\textwidth}\rule{0.6\textwidth}{0.4pt}}}
-
-%%%%
-
-
-%\renewcommand\cftchapafterpnum{\vskip6pt}
-%\renewcommand\cftsecafterpnum{\vskip6pt}
-%\renewcommand\cftsubsecafterpnum{\vskip6pt}
-% 
-%\renewcommand{\cftchapfont}{\sffamily}
-%{\sffamily\tableofcontents}
-%\renewcommand{\cftsecfont}{\sffamily}
-%\renewcommand{\cftsubsecfont}{\sffamily}
-%%%%%
-
-%\renewcommand*\ttdefault{cmvtt}
-%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
 \usepackage[OT1]{fontenc}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{geometry} % Ensure the geometry package is loaded
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm}
 
-%%% END Article customizations
-%Structure you want:
-%CHP 1
-%• Geography - sample sites, a location map, why we went there - a diagram of the Berre? More likely the oyster farming
-%• Geology
-%• Weather - Ed models
-%• Conditions
-%• Chemistry
-%	◦ Piper diagram is good
-%	◦ PHREEQC is good for cations you would expect depending on the composition you have
-\usepackage{upgreek}
-%CHP 2
-%• Describe your data
-%• Metals are good
-%• Plot on latitude and longitude
-%• And colour code for type
-%%% The "real" document content comes below...
-\usepackage{sectsty}
+% Use cmvtt for text and math
 
-%\sectionfont{\bfseries\sffamily}
-%\subsectionfont{\bfseries\sffamily}
-%\subsubsectionfont{\bfseries\sffamily}
-
-
-%%% remove blank pages
-% \let\cleardoublepage=\clearpage 
-
-\setcounter{secnumdepth}{4} % Allow numbering up to 4 levels deep
-\setcounter{tocdepth}{4}    % Include up to 4 levels in the Table of Contents
-
-\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}}
-
-\usepackage{hyperref}
-%\usepackage{mathptmx} % Loads a Times-like font for text and math
-%\usepackage{newtxtext} % Alternative with a similar appearance
-\usepackage[sfdefault]{cabin}
+% Set text to cmvtt font
+\renewcommand*\ttdefault{cmvtt}
+% \renewcommand*\ttdefault{qcr}
+\renewcommand*\familydefault{\ttdefault}
 \usepackage[T1]{fontenc}
 
+% Define math font commands to mimic cmvtt
+\usepackage{amsmath, amssymb}
+\DeclareMathAlphabet{\mathcmtt}{OT1}{cmtt}{m}{n}
 
-% Customize the table of contents font to use typewriter style
-\titlecontents{section}[1em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{subsection}[2em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{subsubsection}[3em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{paragraph}[4em]{}{}{}{\titlerule*[1pc]{.}\quad\contentspage}
-
-
-%\renewcommand*\familydefault{\sfdefault} % Uncomment this if you want the entire document in sans-serif
+% Command for math in typewriter font
+\newcommand{\ttmath}[1]{{\mathcmtt{#1}}}
 
 
-
+% \renewcommand*\ttdefault{fira} % for Latin Modern Mono Proportional
+% \renewcommand*\familydefault{\ttdefault}
 
 
 
+
+
+
+
+
+% Custom commands
+\newcommand{\ddfrac}[2]{\frac{\displaystyle \raisebox{0.5ex}{$#1$}}{\displaystyle \raisebox{-0.5ex}{$#2$}}}
+\newcommand{\dddfrac}[2]{\frac{\displaystyle \raisebox{1ex}{$#1$}}{\displaystyle \raisebox{-1ex}{$#2$}}}
+\newcommand{\bsk}{\vspace{\baselineskip}}
+\newcommand{\myline}{\par\noindent\makebox[\linewidth]{\hspace*{-0.4\textwidth}\rule{0.6\textwidth}{0.4pt}}}
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}}
+
+% Headers & Footers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{lscape}{%
+  \fancyhf{}
+  \fancyfootoffset[R]{-50cm}
+  \fancyfoot[R]{\makebox[0pt][r]{\rotatebox{90}{\thepage}}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}}
+
+% ToC formatting
+\titlecontents{section}[1em]{\ttfamily}{\thecontentslabel\enspace}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}[\vskip 4pt]
+\titlecontents{subsection}[2em]{}{}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}
+\titlecontents{subsubsection}[3em]{}{}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}
+\titlecontents{paragraph}[4em]{}{}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}
+
+% Section numbering
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% Document content
 \title{
-\vspace{-1cm}
-\textbf{Carbon consumption from major mountain belts: \\ The geochemistry of Himalayan groundwaters}
-
-\vspace{0.5cm}
-
-
-
-% \begin{figure}[h]
-% \includegraphics[scale=0.08]{front2.png}
-% \centering
-
-% \end{figure}
-
-
-% University of Cambridge \\
-% Part III Project Report \\
-
-% \begin{figure}
-%     \centering
-%     \begin{subfigure}{.45\textwidth} % Adjust width to leave space between figures
-%         \centering
-%         \includegraphics[height=4.5cm]{girton.png} % Set the height of the image
-%         %\caption{A subfigure}
-%         \label{fig:sub1}
-%     \end{subfigure}%
-%     \hspace{1.5cm} % Add horizontal space between the figures
-%     \begin{subfigure}{.45\textwidth} % Adjust width to leave space between figures
-%         \centering
-%         \includegraphics[height=4.5cm]{cambridge.png} % Set the height of the image
-%         %\caption{A subfigure}
-%         \label{fig:sub2}
-%     \end{subfigure}
-%     %\caption{A figure with two subfigures}
-%     \label{fig:test}
-% \end{figure}
-
-
+  \vspace{-1cm}
+  \textbf{Carbon consumption from major mountain belts: \\
+  The geochemistry of Himalayan groundwaters}
+  \vspace{0.5cm}
 }
 \author{Giovanni Bernardi}
-\date{2024-2025} % Activate to display a given date or no date (if empty),
-         % otherwise the current date is printed 
-
-
-
-
+\date{2024-2025}
 
 
 
 \begin{document}
+%\justifying
+% \raggedright
+
 \maketitle
+
 
 
 
@@ -245,7 +100,7 @@
 \label{sec:abstract}
 \addcontentsline{toc}{section}{\nameref{sec:abstract}}
 
-This is the abstract. Feel free to add anything insightful... or not :).
+This is the abstract. Feel free to add anything insightful... or not :). Hello!
 
 
 \pagenumbering{roman}
@@ -257,6 +112,24 @@ This is the abstract. Feel free to add anything insightful... or not :).
 %need to change this to the main report font
 
 \tableofcontents
+
+\newpage
+
+\thispagestyle{empty}
+
+\section*{Acknowledgements}
+
+\newpage
+
+\thispagestyle{empty}
+
+\section*{List of Tables}
+
+\newpage
+
+\thispagestyle{empty}
+
+\section*{Nomenclature}
 %\thispagestyle{empty}
 
 \newpage
@@ -268,19 +141,34 @@ This is the abstract. Feel free to add anything insightful... or not :).
 \FloatBarrier
 \pagenumbering{arabic}
 
+
+
 \input{intro.tex}
+
+\newpage
 
 
 \input{area.tex}
 
+\newpage
+
+
 
 \input{methods.tex}
+
+\newpage
+
 
 
 \input{results.tex}
 
+\newpage
+
+
 
 \input{discussion.tex}
+
+\newpage
 
 
 

@@ -232,16 +232,129 @@ def plot_superimposed_elements_with_multiple_y_axes(df):
     
     
     
+def pca2(df2):
     
-df = pd.read_excel('Datasets/Nepal Master Sheet.xlsx')
+    df = df2.copy()
+    
+    # Filter the dataframe
+    df = df[df['Season'] == 'Thalo_timeseries']
+
+    # Convert Date column to datetime
+    df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y')
+
+    # Sort the dataframe by date
+    df = df.sort_values(by='Date')
+    
+    print(df.columns)
+    
+    # calculate ratios for elements. concentrations are in ppm so need to convert to mM first
+    elements = ['Al_ppm', 'Ba_ppm', 'Ca_ppm', 'Fe_ppm', 'K_ppm', 'Li_ppm', 'Mg_ppm', 'Mn_ppm', 'Na_ppm', 'S_ppm', 'Si_ppm', 'Sr_ppm']
+    
+    
+    # Convert concentrations to mM from ppm which means divide by Atomic weight of the element
+    
+    # Atomic weights of elements
+    weight = {'Al': 26.98,'Ca': 40.08, 'Ba': 137.33, 'Fe': 55.85, 'K': 39.10, 'Li': 6.94, 'Mg': 24.31, 'Mn': 54.94, 'Na': 22.99, 'S': 32.06, 'Si': 28.09, 'Sr': 87.62, 'C': 12.01}
+    
+    # Convert concentrations to mM
+    for element in elements:
+        element_name = element.replace('_ppm', '')
+        
+        df[element_name] = df[element] 
+        
+        df[element_name + '_mM'] = df[element_name] / weight[element_name]
+        
+        # remove df[element_name]
+        del df[element_name]
+        
+        
+    # Calculate ratios
+    
+    # Ratios to calculate
+    ratios = ['Al/Ca', 'Ba/Ca', 'Fe/Ca', 'K/Ca', 'Li/Ca', 'Mg/Ca', 'Mn/Ca', 'Na/Ca', 'S/Ca', 'Si/Ca', 'Sr/Ca', 'Na/Si', 'Li/Na']
+    
+    for ratio in ratios:
+        elements = ratio.split('/')
+        df[ratio] = df[elements[0] + '_mM'] / df[elements[1] + '_mM']    
+
+
+    # Elements for PCA
+    #elements = ['Al/Ca', 'Ba/Ca', 'Fe/Ca', 'K/Ca', 'Li/Ca', 'Mg/Ca', 
+                #'Mn/Ca', 'Na/Ca', 'S/Ca', 'Si/Ca', 'Sr/Ca', 'Na/Si', 'Li/Na']
+    
+    #elements = ['Ca_mM', 'Si_mM', 'Sr_mM', 'Al_mM', 'Na_mM', 'Li_mM', 'K_mM', 'Mg_mM', 'Mn_mM', 'S_mM', 'Ba_mM', 'Fe_mM']
+
+
+    elements = ['Ca_mM', 'Si_mM', 'Sr_mM', 'Na_mM', 'K_mM', 'Mg_mM', 'S_mM', 'Al_mM']
 
 
 
 
 
-timeseries(df)
+
+    # PCA is affected by scale, so you need to scale the features in your data before applying PCA. 
+    # Use StandardScaler to help you standardize the data set’s features onto unit scale (mean = 0 and variance = 1), 
+    # which is a requirement for the optimal performance of many machine learning algorithms. 
+    # If you don’t scale your data, it can have a negative effect on your algorithm
+
+    x = df.loc[:, elements].values
+    
+    y = df.loc[:,['Date']].values
+
+    # Standardize the data
+    scaler = StandardScaler()
+    scaled_data = scaler.fit_transform(x)
+
+    # Perform PCA
+    pca = PCA(n_components=2)
+    pca_result = pca.fit_transform(scaled_data)
+    
+
+    # Get the loadings
+    loadings = pd.DataFrame(pca.components_.T, index=elements, columns=['PCA1', 'PCA2'])
+    print("PCA Loadings:\n", loadings)
+
+    # Add PCA results to dataframe
+    df['PCA1'] = pca_result[:, 0]
+    df['PCA2'] = pca_result[:, 1]
+
+    # Calculate explained variance
+    explained_variance = pca.explained_variance_ratio_
+    print("Explained Variance Ratio:", explained_variance)
+
+
+    # PC1 vs PC2 Scatter Plot
+    plt.figure(figsize=(8, 6))
+    plt.scatter(df['PCA1'], df['PCA2'], c='blue', edgecolor='k', alpha=0.7)
+    plt.axhline(0, color='gray', linestyle='--', linewidth=0.8)
+    plt.axvline(0, color='gray', linestyle='--', linewidth=0.8)
+    
+    
+    # Add arrows for loadings
+    for element, (x, y) in loadings.iterrows():
+        plt.arrow(0, 0, x, y, color='red', alpha=0.7, head_width=0.05, length_includes_head=True)
+        plt.text(x * 1.2, y * 1.2, element, color='red', fontsize=10)
+
+    
+    plt.xlabel('Principal Component 1 (PCA1)', fontsize=12)
+    plt.ylabel('Principal Component 2 (PCA2)', fontsize=12)
+    plt.title('PC1 vs. PC2 Scatter Plot - THALO', fontsize=14)
+    plt.grid(alpha=0.3)
+    plt.tight_layout()
+    plt.savefig('PCA1_vs_PCA2_Thalo.pdf')
+    plt.show()      
+        
+    
+df = pd.read_excel('Datasets/Nepal Master Sheet.xlsx', sheet_name='Final_compiled')
+
+
+
+
+
+#timeseries(df)
 
 #perform_pca(df)
 
 #plot_superimposed_elements_with_multiple_y_axes(df)
 
+pca2(df)

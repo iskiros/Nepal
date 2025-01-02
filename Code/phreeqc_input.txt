@@ -1,0 +1,731 @@
+
+SOLUTION NEP22-10
+    temp 12.8
+    pH 6.48
+    Ca 1.28806 mg/L
+    Mg 0.2275 mg/L
+    Na 1.82043 mg/L
+    Cl 0.6071695609496665 mg/L
+    S(6) 0.01913 mg/L
+    Si 5.72065 mg/L
+    K 0.33366 mg/L
+    Li 8.298038730894599e-05 mg/L
+    Mn 0.00153 mg/L
+    Ba 0.00654 mg/L
+    Fe 0.00207573704015558 mg/L
+    Al 0.00175004266427383 mg/L
+    Sr 0.02064 mg/L
+    Alkalinity 142.29 as CaCO3
+
+SOLUTION NEP22-11
+    temp 13.3
+    pH 6.59
+    Ca 1.51341 mg/L
+    Mg 0.25994 mg/L
+    Na 2.07327 mg/L
+    Cl 0.5588755776667712 mg/L
+    S(6) 0.04954 mg/L
+    Si 6.30806 mg/L
+    K 0.40248 mg/L
+    Li 0.000105255940337082 mg/L
+    Mn 0.00046 mg/L
+    Ba 0.00653 mg/L
+    Fe 0.00289299969973289 mg/L
+    Al 0.00591794909345342 mg/L
+    Sr 0.02297 mg/L
+    Alkalinity 173.81 as CaCO3
+
+SOLUTION NEP22-12
+    temp 13.4
+    pH 6.77
+    Ca 1.04729 mg/L
+    Mg 0.15207 mg/L
+    Na 1.20067 mg/L
+    Cl 0.1023952546097397 mg/L
+    S(6) 0.07242 mg/L
+    Si 5.02449 mg/L
+    K 0.29977 mg/L
+    Li 3.88652903895792e-05 mg/L
+    Mn 0.00013 mg/L
+    Ba 0.00234 mg/L
+    Fe 0.0012951786448244 mg/L
+    Al 0.00152368585240956 mg/L
+    Sr 0.01507 mg/L
+    Alkalinity 173.4 as CaCO3
+
+SOLUTION NEP22-13
+    temp 15.0
+    pH 6.76
+    Ca 1.5767 mg/L
+    Mg 0.26504 mg/L
+    Na 1.68057 mg/L
+    Cl 0.32009463582261244 mg/L
+    S(6) 0.1528 mg/L
+    Si 5.2939 mg/L
+    K 0.38599 mg/L
+    Li 0.000114287274229517 mg/L
+    Mn 0.00022 mg/L
+    Ba 0.00885 mg/L
+    Fe 0.00211428159034109 mg/L
+    Al 0.0037938103625893703 mg/L
+    Sr 0.0243 mg/L
+    Alkalinity 157.34 as CaCO3
+
+SOLUTION NEP22-15
+    temp 14.6
+    pH 7.29
+    Ca 3.27677 mg/L
+    Mg 0.39015 mg/L
+    Na 2.51746 mg/L
+    Cl 0.1763958347848664 mg/L
+    S(6) 0.25737 mg/L
+    Si 6.78954 mg/L
+    K 0.45937 mg/L
+    Li 0.000342576140997558 mg/L
+    Mn 0.00022 mg/L
+    Ba 0.00201 mg/L
+    Fe 0.00277420402916498 mg/L
+    Al 0.000911074251359241 mg/L
+    Sr 0.02172 mg/L
+    Alkalinity 250.48 as CaCO3
+
+SOLUTION NEP22-16
+    temp 11.7
+    pH 7.14
+    Ca 1.37548 mg/L
+    Mg 0.2295 mg/L
+    Na 1.03096 mg/L
+    Cl 0.03710695204244041 mg/L
+    S(6) 0.11358 mg/L
+    Si 5.07371 mg/L
+    K 0.31253 mg/L
+    Li 0.00018314637336739302 mg/L
+    Mn 3e-05 mg/L
+    Ba 0.00297 mg/L
+    Fe 0.0019076076683123499 mg/L
+    Al 0.00632897532460417 mg/L
+    Sr 0.01391 mg/L
+    Alkalinity 170.85 as CaCO3
+
+SOLUTION NEP22-19
+    temp 15.1
+    pH 6.07
+    Ca 1.59643 mg/L
+    Mg 0.2547 mg/L
+    Na 1.60034 mg/L
+    Cl 0.33472265748513746 mg/L
+    S(6) 0.14061 mg/L
+    Si 5.33169 mg/L
+    K 0.40059 mg/L
+    Li 0.000127182623833959 mg/L
+    Mn 0.00104 mg/L
+    Ba 0.01015 mg/L
+    Fe 0.00161899510385592 mg/L
+    Al 0.00218556740564842 mg/L
+    Sr 0.02407 mg/L
+    Alkalinity 183.6 as CaCO3
+
+SOLUTION NEP22-20
+    temp 11.4
+    pH 7.14
+    Ca 1.10332 mg/L
+    Mg 0.18693 mg/L
+    Na 1.19823 mg/L
+    Cl 0.24362019904279397 mg/L
+    S(6) 0.14612 mg/L
+    Si 4.5581 mg/L
+    K 0.29987 mg/L
+    Li 4.66808766385054e-05 mg/L
+    Mn 0.00055 mg/L
+    Ba 0.00206 mg/L
+    Fe 0.0029765152283134 mg/L
+    Al 0.0125171683646091 mg/L
+    Sr 0.01187 mg/L
+    Alkalinity 210.4 as CaCO3
+
+SOLUTION NEP22-42
+    temp 21.9
+    pH 6.24
+    Ca 2.75517 mg/L
+    Mg 0.35685 mg/L
+    Na 3.33846 mg/L
+    Cl 0.9659863276127809 mg/L
+    S(6) 0.18571 mg/L
+    Si 8.05905 mg/L
+    K 0.73466 mg/L
+    Li 0.00027957490323704797 mg/L
+    Mn 0.00013 mg/L
+    Ba 0.00422 mg/L
+    Fe 0.00264421447920189 mg/L
+    Al 0.0005232497874369439 mg/L
+    Sr 0.03056 mg/L
+    Alkalinity 268.87 as CaCO3
+
+SOLUTION NEP22-45
+    temp 21.6
+    pH 7.57
+    Ca 3.21859 mg/L
+    Mg 0.42603 mg/L
+    Na 4.54859 mg/L
+    Cl 0.8474563285532029 mg/L
+    S(6) 0.13991 mg/L
+    Si 9.31031 mg/L
+    K 0.63925 mg/L
+    Li 0.000313326984997666 mg/L
+    Mn 0.00016 mg/L
+    Ba 0.0022 mg/L
+    Fe 0.0029707221735366697 mg/L
+    Al 0.00140760176362528 mg/L
+    Sr 0.03135 mg/L
+    Alkalinity 354.28 as CaCO3
+
+SOLUTION NEP22-53
+    temp 16.7
+    pH 6.33
+    Ca 3.14942 mg/L
+    Mg 0.52595 mg/L
+    Na 3.32537 mg/L
+    Cl 0.6984096035766696 mg/L
+    S(6) 0.09561 mg/L
+    Si 7.99342 mg/L
+    K 0.84715 mg/L
+    Li 0.000320862850318505 mg/L
+    Mn 0.00077 mg/L
+    Ba 0.0039 mg/L
+    Fe 0.00329276780612551 mg/L
+    Al 0.000975890008736437 mg/L
+    Sr 0.0387 mg/L
+    Alkalinity 258.06 as CaCO3
+
+SOLUTION NEP22-54
+    temp 17.0
+    pH 6.19
+    Ca 2.92386 mg/L
+    Mg 0.4871 mg/L
+    Na 3.17092 mg/L
+    Cl 0.7228797361013449 mg/L
+    S(6) 0.08256 mg/L
+    Si 7.72055 mg/L
+    K 0.7611 mg/L
+    Li 0.000268833666372195 mg/L
+    Mn 7e-05 mg/L
+    Ba 0.00379 mg/L
+    Fe 0.00285353637964085 mg/L
+    Al 0.000469365416983843 mg/L
+    Sr 0.03577 mg/L
+    Alkalinity 239.99 as CaCO3
+
+SOLUTION NEP22-55
+    temp 17.1
+    pH 6.69
+    Ca 2.88305 mg/L
+    Mg 0.47789 mg/L
+    Na 3.06539 mg/L
+    Cl 0.6936872972999779 mg/L
+    S(6) 0.06982 mg/L
+    Si 7.6455 mg/L
+    K 0.76044 mg/L
+    Li 0.000245280280081179 mg/L
+    Mn 0.00016 mg/L
+    Ba 0.00375 mg/L
+    Fe 0.00268223311222332 mg/L
+    Al 0.0013044822755899702 mg/L
+    Sr 0.03517 mg/L
+    Alkalinity 268.311 as CaCO3
+
+SOLUTION NEP22-56
+    temp 19.1
+    pH 6.86
+    Ca 4.24774 mg/L
+    Mg 0.37798 mg/L
+    Na 4.75624 mg/L
+    Cl 0.8239800204796082 mg/L
+    S(6) 0.11309 mg/L
+    Si 10.92715 mg/L
+    K 0.87563 mg/L
+    Li 0.00085699631672758 mg/L
+    Mn 0.00024 mg/L
+    Ba 0.00357 mg/L
+    Fe 0.00434287808053633 mg/L
+    Al 0.00105755134926694 mg/L
+    Sr 0.04036 mg/L
+    Alkalinity 387.09 as CaCO3
+
+SOLUTION NEP22-57
+    temp 19.3
+    pH 6.85
+    Ca 6.279 mg/L
+    Mg 0.84919 mg/L
+    Na 6.38947 mg/L
+    Cl 1.6452320120533575 mg/L
+    S(6) 0.42366 mg/L
+    Si 12.98301 mg/L
+    K 1.40672 mg/L
+    Li 0.00230928704778165 mg/L
+    Mn 0.00029 mg/L
+    Ba 0.00552 mg/L
+    Fe 0.00506086331311566 mg/L
+    Al 0.000736418513246425 mg/L
+    Sr 0.06635 mg/L
+    Alkalinity 532.75 as CaCO3
+
+SOLUTION NEP22-58
+    temp 16.8
+    pH 7.34
+    Ca 3.21539 mg/L
+    Mg 0.31175 mg/L
+    Na 4.16388 mg/L
+    Cl 0.26825043182711567 mg/L
+    S(6) 0.09154 mg/L
+    Si 10.1457 mg/L
+    K 0.69786 mg/L
+    Li 0.000429856236316552 mg/L
+    Mn 0.00022 mg/L
+    Ba 0.00247 mg/L
+    Fe 0.00339374466104222 mg/L
+    Al 0.0024936147405424597 mg/L
+    Sr 0.03249 mg/L
+    Alkalinity 350.77 as CaCO3
+
+SOLUTION NEP22-59
+    temp 20.3
+    pH 7.48
+    Ca 2.50621 mg/L
+    Mg 0.34816 mg/L
+    Na 3.09361 mg/L
+    Cl 0.5287285530437243 mg/L
+    S(6) 0.12357 mg/L
+    Si 7.62627 mg/L
+    K 0.74341 mg/L
+    Li 0.00018266926088190998 mg/L
+    Mn 0.0002 mg/L
+    Ba 0.00238 mg/L
+    Fe 0.00196879939609519 mg/L
+    Al 0.0020276347609979603 mg/L
+    Sr 0.03042 mg/L
+    Alkalinity 250.41 as CaCO3
+
+SOLUTION NEP22-60
+    temp 21.3
+    pH 7.04
+    Ca 3.9896 mg/L
+    Mg 0.64416 mg/L
+    Na 3.91315 mg/L
+    Cl 0.803373593090408 mg/L
+    S(6) 0.29162 mg/L
+    Si 8.06893 mg/L
+    K 1.08304 mg/L
+    Li 0.000299947051030466 mg/L
+    Mn 0.00039 mg/L
+    Ba 0.00391 mg/L
+    Fe 0.00425432702478449 mg/L
+    Al 0.001751501215998 mg/L
+    Sr 0.03601 mg/L
+    Alkalinity 239.99 as CaCO3
+
+SOLUTION NEP22-9
+    temp 12.8
+    pH 6.32
+    Ca 0.5869 mg/L
+    Mg 0.11546 mg/L
+    Na 0.40614 mg/L
+    Cl 0.060554810295605555 mg/L
+    S(6) 0.06822 mg/L
+    Si 2.84147 mg/L
+    K 0.22848 mg/L
+    Li 0.000192566595838409 mg/L
+    Mn 0.00194 mg/L
+    Ba 0.00742 mg/L
+    Fe 0.00061354310442368 mg/L
+    Al 0.00356960309071777 mg/L
+    Sr 0.00491 mg/L
+    Alkalinity 309.4 as CaCO3
+
+SOLUTION Nep23-113
+    temp 20.8
+    pH 7.24
+    Ca 2.65632 mg/L
+    Mg 0.3597 mg/L
+    Na 2.93704 mg/L
+    Cl nan mg/L
+    S(6) 0.08755 mg/L
+    Si 7.00702 mg/L
+    K 0.86468 mg/L
+    Li 0.000277591372508447 mg/L
+    Mn 0.00035 mg/L
+    Ba 0.00267 mg/L
+    Fe 0.0022390648281323798 mg/L
+    Al 0.00260313020428771 mg/L
+    Sr 0.0308 mg/L
+    Alkalinity 262.4420228866632 as CaCO3
+
+SOLUTION Nep23-114
+    temp 21.8
+    pH 6.31
+    Ca 2.74152 mg/L
+    Mg 0.35262 mg/L
+    Na 3.3129 mg/L
+    Cl nan mg/L
+    S(6) 0.08537 mg/L
+    Si 7.76619 mg/L
+    K 0.77156 mg/L
+    Li 0.000279259923932396 mg/L
+    Mn 0.00217 mg/L
+    Ba 0.00405 mg/L
+    Fe 0.0030566291175714 mg/L
+    Al 0.00117201148195366 mg/L
+    Sr 0.03085 mg/L
+    Alkalinity 234.66926007545723 as CaCO3
+
+SOLUTION Nep23-115
+    temp 22.3
+    pH 7.2
+    Ca 2.71472 mg/L
+    Mg 0.36384 mg/L
+    Na 3.03721 mg/L
+    Cl nan mg/L
+    S(6) 0.06827 mg/L
+    Si 7.24647 mg/L
+    K 0.91338 mg/L
+    Li 0.000280853857139136 mg/L
+    Mn 0.0003 mg/L
+    Ba 0.00338 mg/L
+    Fe 0.00139233713591917 mg/L
+    Al -0.00017497628207701 mg/L
+    Sr 0.03407 mg/L
+    Alkalinity 245.71045199601176 as CaCO3
+
+SOLUTION Nep23-116
+    temp 24.0
+    pH 7.45
+    Ca 6.25894 mg/L
+    Mg 0.76467 mg/L
+    Na 4.16629 mg/L
+    Cl nan mg/L
+    S(6) 0.44161 mg/L
+    Si 7.15672 mg/L
+    K 2.24786 mg/L
+    Li 0.000207615999553675 mg/L
+    Mn 0.00154 mg/L
+    Ba 0.00547 mg/L
+    Fe 0.00451857068860511 mg/L
+    Al 0.00119689931603663 mg/L
+    Sr 0.03815 mg/L
+    Alkalinity 353.53964868689434 as CaCO3
+
+SOLUTION Nep23-117
+    temp 23.8
+    pH 7.26
+    Ca 3.15758 mg/L
+    Mg 0.44703 mg/L
+    Na 4.42248 mg/L
+    Cl nan mg/L
+    S(6) 0.09064 mg/L
+    Si 9.21913 mg/L
+    K 0.73834 mg/L
+    Li 0.00052920836298057 mg/L
+    Mn 9e-05 mg/L
+    Ba 0.00223 mg/L
+    Fe 0.00184426895265983 mg/L
+    Al 0.010880475900750398 mg/L
+    Sr 0.02954 mg/L
+    Alkalinity 310.4541322091138 as CaCO3
+
+SOLUTION Nep23-118
+    temp 21.0
+    pH 6.72
+    Ca 4.33345 mg/L
+    Mg 0.37147 mg/L
+    Na 4.47039 mg/L
+    Cl nan mg/L
+    S(6) 0.02323 mg/L
+    Si 10.78037 mg/L
+    K 0.99074 mg/L
+    Li 0.0008935189666364169 mg/L
+    Mn 0.00015 mg/L
+    Ba 0.00335 mg/L
+    Fe 0.0024316217427458498 mg/L
+    Al 0.000153981351056282 mg/L
+    Sr 0.03946 mg/L
+    Alkalinity 351.11750182885305 as CaCO3
+
+SOLUTION Nep23-119
+    temp 19.1
+    pH 6.32
+    Ca 3.88112 mg/L
+    Mg 0.33191 mg/L
+    Na 4.03925 mg/L
+    Cl nan mg/L
+    S(6) -0.00102 mg/L
+    Si 9.64935 mg/L
+    K 0.89306 mg/L
+    Li 0.000343412188127968 mg/L
+    Mn 0.00015 mg/L
+    Ba 0.00302 mg/L
+    Fe 0.0025737246789411202 mg/L
+    Al 0.000990799251266971 mg/L
+    Sr 0.00034 mg/L
+    Alkalinity 261.4178738452527 as CaCO3
+
+SOLUTION Nep23-120
+    temp 16.3
+    pH 6.65
+    Ca 1.46658 mg/L
+    Mg 0.23994 mg/L
+    Na 1.72364 mg/L
+    Cl nan mg/L
+    S(6) 0.03927 mg/L
+    Si 5.43042 mg/L
+    K 0.40121 mg/L
+    Li 0.000119361591205045 mg/L
+    Mn 0.00017 mg/L
+    Ba 0.00848 mg/L
+    Fe 0.0011215520123002102 mg/L
+    Al 0.00185410537444559 mg/L
+    Sr 0.02246 mg/L
+    Alkalinity 119.40486626977888 as CaCO3
+
+SOLUTION Nep23-121
+    temp 15.0
+    pH 6.01
+    Ca 1.46933 mg/L
+    Mg 0.2519 mg/L
+    Na 1.82611 mg/L
+    Cl nan mg/L
+    S(6) -0.00169 mg/L
+    Si 5.55301 mg/L
+    K 0.41416 mg/L
+    Li 9.49392735111214e-05 mg/L
+    Mn 0.00092 mg/L
+    Ba 0.00854 mg/L
+    Fe 0.0011417891810916 mg/L
+    Al 0.000825144441685982 mg/L
+    Sr 0.02378 mg/L
+    Alkalinity 136.34212213914284 as CaCO3
+
+SOLUTION Nep23-122
+    temp 14.6
+    pH 6.0
+    Ca 0.57089 mg/L
+    Mg 0.11622 mg/L
+    Na 0.49997 mg/L
+    Cl nan mg/L
+    S(6) 0.06052 mg/L
+    Si 2.93287 mg/L
+    K 0.26008 mg/L
+    Li 0.000234785581687677 mg/L
+    Mn 0.00165 mg/L
+    Ba 0.00677 mg/L
+    Fe 0.0018204677731309999 mg/L
+    Al 0.004836416302185701 mg/L
+    Sr 0.00503 mg/L
+    Alkalinity 93.05246938873613 as CaCO3
+
+SOLUTION NEP23-15
+    temp 20.4
+    pH 7.15
+    Ca 1.52853 mg/L
+    Mg 0.21962 mg/L
+    Na 2.88376 mg/L
+    Cl nan mg/L
+    S(6) 0.11685 mg/L
+    Si 7.7523 mg/L
+    K 0.596 mg/L
+    Li 0.00015 mg/L
+    Mn -0.00016 mg/L
+    Ba 0.00171 mg/L
+    Fe 0.00199 mg/L
+    Al 0.00277 mg/L
+    Sr 0.01736 mg/L
+    Alkalinity 186.0 as CaCO3
+
+SOLUTION NEP23-16
+    temp 19.7
+    pH 6.35
+    Ca 2.60082 mg/L
+    Mg 0.3831 mg/L
+    Na 3.80301 mg/L
+    Cl nan mg/L
+    S(6) 0.14502 mg/L
+    Si 7.99097 mg/L
+    K 1.84706 mg/L
+    Li 0.00026000000000000003 mg/L
+    Mn 0.00761 mg/L
+    Ba 0.00516 mg/L
+    Fe 0.00369 mg/L
+    Al 0.005860000000000001 mg/L
+    Sr 0.0283 mg/L
+    Alkalinity 193.0 as CaCO3
+
+SOLUTION NEP23-17
+    temp 20.9
+    pH 7.51
+    Ca 3.13595 mg/L
+    Mg 0.46281 mg/L
+    Na 4.81737 mg/L
+    Cl nan mg/L
+    S(6) 0.14283 mg/L
+    Si 10.47364 mg/L
+    K 0.82121 mg/L
+    Li 0.00055 mg/L
+    Mn -3e-05 mg/L
+    Ba 0.00259 mg/L
+    Fe 0.00375 mg/L
+    Al 0.00259 mg/L
+    Sr 0.02787 mg/L
+    Alkalinity 302.0 as CaCO3
+
+SOLUTION NEP23-18
+    temp 21.3
+    pH 6.07
+    Ca 2.99145 mg/L
+    Mg 0.37713 mg/L
+    Na 4.50998 mg/L
+    Cl nan mg/L
+    S(6) 0.12472 mg/L
+    Si 10.11602 mg/L
+    K 0.75902 mg/L
+    Li 0.00028000000000000003 mg/L
+    Mn 0.0001 mg/L
+    Ba 0.0025 mg/L
+    Fe 0.00323 mg/L
+    Al 0.00134 mg/L
+    Sr 0.02967 mg/L
+    Alkalinity 275.0 as CaCO3
+
+SOLUTION NEP23-20
+    temp 15.8
+    pH 7.02
+    Ca 1.46427 mg/L
+    Mg 0.24321 mg/L
+    Na 1.56089 mg/L
+    Cl nan mg/L
+    S(6) 0.0992 mg/L
+    Si 5.28524 mg/L
+    K 0.70195 mg/L
+    Li 7.000000000000001e-05 mg/L
+    Mn -0.00013 mg/L
+    Ba 0.00051 mg/L
+    Fe 0.0014199999999999998 mg/L
+    Al 0.00148 mg/L
+    Sr 0.01118 mg/L
+    Alkalinity 185.0 as CaCO3
+
+SOLUTION NEP23-22
+    temp 13.8
+    pH 6.97
+    Ca 1.44201 mg/L
+    Mg 0.22312 mg/L
+    Na 2.37331 mg/L
+    Cl nan mg/L
+    S(6) 0.016 mg/L
+    Si 6.93201 mg/L
+    K 0.21286 mg/L
+    Li 5.9999999999999995e-05 mg/L
+    Mn 0.00074 mg/L
+    Ba 0.0037 mg/L
+    Fe 0.0028399999999999996 mg/L
+    Al 0.01014 mg/L
+    Sr 0.01782 mg/L
+    Alkalinity 160.0 as CaCO3
+
+SOLUTION NEP23-23
+    temp 13.2
+    pH 5.95
+    Ca 0.59694 mg/L
+    Mg 0.12522 mg/L
+    Na 0.53342 mg/L
+    Cl nan mg/L
+    S(6) 0.09948 mg/L
+    Si 2.94176 mg/L
+    K 0.31733 mg/L
+    Li 0.00017999999999999998 mg/L
+    Mn 0.01347 mg/L
+    Ba 0.00479 mg/L
+    Fe 0.00934 mg/L
+    Al 0.01528 mg/L
+    Sr 0.00429 mg/L
+    Alkalinity 93.0 as CaCO3
+
+SOLUTION NEP23-24
+    temp 15.5
+    pH 5.76
+    Ca 1.22548 mg/L
+    Mg 0.19883 mg/L
+    Na 1.69183 mg/L
+    Cl nan mg/L
+    S(6) 0.08029 mg/L
+    Si 5.86078 mg/L
+    K 0.34599 mg/L
+    Li 8e-05 mg/L
+    Mn 0.00028 mg/L
+    Ba 0.00604 mg/L
+    Fe 0.00102 mg/L
+    Al 0.00063 mg/L
+    Sr 0.01593 mg/L
+    Alkalinity 114.0 as CaCO3
+
+SOLUTION NEP23-25
+    temp 17.9
+    pH 6.97
+    Ca 3.10642 mg/L
+    Mg 0.49738 mg/L
+    Na 3.51692 mg/L
+    Cl nan mg/L
+    S(6) 0.06156 mg/L
+    Si 8.62946 mg/L
+    K 0.96335 mg/L
+    Li 0.00023999999999999998 mg/L
+    Mn 0.0 mg/L
+    Ba 0.00568 mg/L
+    Fe 0.00352 mg/L
+    Al 0.00365 mg/L
+    Sr 0.03437 mg/L
+    Alkalinity 262.0 as CaCO3
+
+SOLUTION NEP23-26
+    temp 22.5
+    pH 7.04
+    Ca 3.58595 mg/L
+    Mg 0.31045 mg/L
+    Na 4.54574 mg/L
+    Cl nan mg/L
+    S(6) 0.08791 mg/L
+    Si 11.44005 mg/L
+    K 1.03947 mg/L
+    Li 0.00075 mg/L
+    Mn 0.00043 mg/L
+    Ba 0.00357 mg/L
+    Fe 0.00445 mg/L
+    Al 0.0058200000000000005 mg/L
+    Sr 0.03135 mg/L
+    Alkalinity 330.0 as CaCO3
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0.0 0.0   # Saturation index for calcite
+    Gypsum 0.0 0.0    # Saturation index for gypsum
+    Quartz 0.0 0.0    # Saturation index for quartz
+    Halite 0.0 0.0    # Saturation index for halite
+    Dolomite 0.0 0.0  # Saturation index for dolomite
+    Apatite 0.0 0.0   # Saturation index for apatite
+    Magnesite 0.0 0.0 # Saturation index for magnesite
+    Chlorite 0.0 0.0  # Saturation index for chlorite
+    Anhydrite 0.0 0.0 # Saturation index for anhydrite
+    Pyrite 0.0 0.0    # Saturation index for pyrite
+    Hematite 0.0 0.0  # Saturation index for hematite
+    Siderite 0.0 0.0  # Saturation index for siderite
+    Kaolinite 0.0 0.0 # Saturation index for kaolinite
+    Gibbsite 0.0 0.0  # Saturation index for gibbsite
+    Goethite 0.0 0.0  # Saturation index for goethite
+    Amorphous_Silica 0.0 0.0 # Saturation index for amorphous silica
+    Anorthite 0.0 0.0 # Saturation index for anorthite
+    Albite 0.0 0.0    # Saturation index for albite
+    K_feldspar 0.0 0.0 # Saturation index for K-feldspar
+    Illite 0.0 0.0    # Saturation index for illite
+    Smectite 0.0 0.0  # Saturation index for smectite
+
+SELECTED_OUTPUT
+    -start 1
+    -end 1
+    -file results.txt  # Output file to store results
+    -saturation_indices
