@@ -1,11 +1,16 @@
-% !TEX TS-program = pdflatex
+% !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 
 \documentclass[hidelinks, 12pt]{article} % Use larger type; default is 10pt
 \linespread{1.5}
 \usepackage[utf8]{inputenc} % Set input encoding (not needed with XeLaTeX)
-\usepackage{amsmath, amssymb, array, booktabs, multirow, makecell, bigdelim, pdflscape, placeins, hvfloat, longtable, rotating, pdfpages, textcomp, fancyhdr, graphicx, float, upgreek, gensymb, hyperref, xcolor}
+\usepackage[x11names]{xcolor} % Enables the use of custom colors
+\usepackage{amsmath, amssymb, array, booktabs, multirow, makecell, bigdelim, pdflscape, placeins, hvfloat, longtable, rotating, pdfpages, textcomp, fancyhdr, graphicx, float, upgreek, gensymb, hyperref}
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Include bibliography in ToC
+\usepackage[most]{tcolorbox} % For coloured information boxes
+% Define your custom color
+\definecolor{customcolor}{HTML}{F1EEE2}
+
 \usepackage[titles,subfigure]{tocloft} % Customize ToC style
 \usepackage{titletoc, sectsty, soul} % Formatting for ToC and sections
 \usepackage[super]{nth}
@@ -14,26 +19,35 @@
 \usepackage{geometry} % Ensure the geometry package is loaded
 \geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm}
 
-% Use cmvtt for text and math
-
-% Set text to cmvtt font
-\renewcommand*\ttdefault{cmvtt}
-% \renewcommand*\ttdefault{qcr}
-\renewcommand*\familydefault{\ttdefault}
-\usepackage[T1]{fontenc}
-
-% Define math font commands to mimic cmvtt
+\usepackage{fontspec} % Required for custom fonts
+\usepackage{unicode-math}
 \usepackage{amsmath, amssymb}
-\DeclareMathAlphabet{\mathcmtt}{OT1}{cmtt}{m}{n}
-
-% Command for math in typewriter font
-\newcommand{\ttmath}[1]{{\mathcmtt{#1}}}
 
 
-% \renewcommand*\ttdefault{fira} % for Latin Modern Mono Proportional
+
+% For pdflatex:
+% Use cmvtt for text and math
+% Set text to cmvtt font
+% \renewcommand*\ttdefault{cmvtt}
+% % \renewcommand*\ttdefault{qcr}
 % \renewcommand*\familydefault{\ttdefault}
+% \usepackage[T1]{fontenc}
+% % Define math font commands to mimic cmvtt
+
+% \DeclareMathAlphabet{\mathcmtt}{OT1}{cmtt}{m}{n}
+% % Command for math in typewriter font
+% \newcommand{\ttmath}[1]{{\mathcmtt{#1}}}
 
 
+% For xelatex:
+\setmainfont{Harding Text Web} % Main document font
+\setmathfont{Harding Text Web}
+
+% Define a math font face for Marcellus
+\setmathfontface\mathmarcellus{Harding Text Web}
+
+% Define the \ttmath command for math mode using Marcellus
+\newcommand{\ttmath}[1]{{\mathmarcellus{#1}}}
 
 
 
@@ -44,7 +58,7 @@
 \newcommand{\ddfrac}[2]{\frac{\displaystyle \raisebox{0.5ex}{$#1$}}{\displaystyle \raisebox{-0.5ex}{$#2$}}}
 \newcommand{\dddfrac}[2]{\frac{\displaystyle \raisebox{1ex}{$#1$}}{\displaystyle \raisebox{-1ex}{$#2$}}}
 \newcommand{\bsk}{\vspace{\baselineskip}}
-\newcommand{\myline}{\par\noindent\makebox[\linewidth]{\hspace*{-0.4\textwidth}\rule{0.6\textwidth}{0.4pt}}}
+\newcommand{\myline}{\par\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}}
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}}
 
 % Headers & Footers
@@ -60,11 +74,15 @@
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}}
 
-% ToC formatting
-\titlecontents{section}[1em]{\ttfamily}{\thecontentslabel\enspace}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}[\vskip 4pt]
-\titlecontents{subsection}[2em]{}{}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{subsubsection}[3em]{}{}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}
-\titlecontents{paragraph}[4em]{}{}{\contentslabel{1em}}{\titlerule*[1pc]{.}\quad\contentspage}
+% Customize Table of Contents
+\renewcommand{\cftsecfont}{\normalfont\bfseries}        % Section font (normal + bold)
+\renewcommand{\cftsecpagefont}{\normalfont\bfseries}    % Page number font (bold)
+\renewcommand{\cftsubsecfont}{\normalfont\itshape}      % Subsection font (italic)
+\renewcommand{\cftsubsecpagefont}{\normalfont\itshape}  % Subsection page number font
+
+% Adjust spacing in the ToC
+\setlength{\cftbeforesecskip}{1em}   % Spacing before section entries
+\setlength{\cftbeforesubsecskip}{0.5em} % Spacing before subsection entries
 
 % Section numbering
 \setcounter{secnumdepth}{4}
@@ -73,7 +91,7 @@
 % Document content
 \title{
   \vspace{-1cm}
-  \textbf{Carbon consumption from major mountain belts: \\
+  \textbf{Uncovering Hidden Carbon Reservoirs:\\
   The geochemistry of Himalayan groundwaters}
   \vspace{0.5cm}
 }
@@ -173,6 +191,13 @@ This is the abstract. Feel free to add anything insightful... or not :). Hello!
 
 
 \input{references.tex}
+
+
+\textbf{Remember to add a box explaining Sr isotopes in the Appendix}
+
+Hello
+
+
 
 
 \end{document}
