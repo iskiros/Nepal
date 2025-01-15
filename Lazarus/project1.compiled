@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/local/bin/fpc" Date="1621181457"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw3 -gl -k-framework -kCocoa -k-weak_framework -kUserNotifications -l -vewnhibq &quot;-Fi/Users/enrico/Desktop/Part III Project/Code/Nepal-1/Lazarus&quot; &quot;-Fi/Users/enrico/Desktop/Part III Project/Code/Nepal-1/Lazarus&quot; -Fu/Users/enrico/.lazarus/lib/units/x86_64-darwin/cocoa -Fu/Users/enrico/.lazarus/lib/LCLBase/units/x86_64-darwin -Fu/Users/enrico/.lazarus/lib/freetypelaz/lib/x86_64-darwin -Fu/Users/enrico/.lazarus/lib/LazUtils/lib/x86_64-darwin -Fu/Users/enrico/.lazarus/lib/units/x86_64-darwin &quot;-FU/Users/enrico/Desktop/Part III Project/Code/Nepal-1/Lazarus/&quot; -FE/Users/enrico/tmp/ -o/Users/enrico/tmp/project1 -dLCL -dLCLcocoa /Users/enrico/tmp/project1.lpr"/>
+</CONFIG>

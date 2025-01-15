@@ -1,588 +1,467 @@
 
 TITLE NEP22-10 -- Geochemical Solution
-SOLUTION 86 NEP22-10
+SOLUTION 1 NEP22-10
     units ppm
     pH 6.48
     temp 12.8
-    Ca 1.28806
-    Mg 0.2275
-    Na 1.82043
-    K 0.33366
+    Ca 1e-12
+    Mg 0.0803014574121835
+    Na 1.5138118675660384
+    Al 0.00175004266427383
+    K 0.19666999143630776
     Fe 0.00207573704015558
     Mn 0.00153
-    Si 5.72065
+    Si 5.422355675330124
     Alkalinity 142.29 as CaCO3
     S(6) 0.01913
 
 TITLE NEP22-11 -- Geochemical Solution
-SOLUTION 87 NEP22-11
+SOLUTION 2 NEP22-11
     units ppm
     pH 6.59
     temp 13.3
-    Ca 1.51341
-    Mg 0.25994
-    Na 2.07327
-    K 0.40248
+    Ca 0.05812756174362836
+    Mg 0.12239777968326945
+    Na 1.788494969332509
+    Al 0.00591794909345342
+    K 0.2731970173143763
     Fe 0.00289299969973289
-    Mn 0.00046
-    Si 6.30806
+    Mn 0.00045999999999999996
+    Si 6.036532826078256
     Alkalinity 173.81 as CaCO3
     S(6) 0.04954
 
 TITLE NEP22-12 -- Geochemical Solution
-SOLUTION 88 NEP22-12
+SOLUTION 3 NEP22-12
     units ppm
     pH 6.77
     temp 13.4
-    Ca 1.04729
-    Mg 0.15207
-    Na 1.20067
-    K 0.29977
+    Ca 0.5821138196743609
+    Mg 0.12544088839955028
+    Na 1.0974545957395296
+    Al 0.00152368585240956
+    K 0.12567008462116194
     Fe 0.0012951786448244
     Mn 0.00013
-    Si 5.02449
+    Si 4.9934533174971145
     Alkalinity 173.4 as CaCO3
     S(6) 0.07242
 
 TITLE NEP22-13 -- Geochemical Solution
-SOLUTION 89 NEP22-13
+SOLUTION 4 NEP22-13
     units ppm
     pH 6.76
     temp 15.0
-    Ca 1.5767
-    Mg 0.26504
-    Na 1.68057
-    K 0.38599
+    Ca 0.2340716299109327
+    Mg 0.1752736742018642
+    Na 1.5038085614488432
+    Al 0.00379381036258937
+    K 0.29483127349538124
     Fe 0.00211428159034109
-    Mn 0.00022
-    Si 5.2939
+    Mn 0.00022000000000000003
+    Si 5.155345945680576
     Alkalinity 157.34 as CaCO3
     S(6) 0.1528
 
 TITLE NEP22-15 -- Geochemical Solution
-SOLUTION 91 NEP22-15
+SOLUTION 5 NEP22-15
     units ppm
     pH 7.29
     temp 14.6
-    Ca 3.27677
-    Mg 0.39015
-    Na 2.51746
-    K 0.45937
+    Ca 2.001854117882585
+    Mg 0.3291101926575111
+    Na 2.405691999417565
+    Al 0.000911074251359241
+    K 0.39115025849804097
     Fe 0.00277420402916498
-    Mn 0.00022
-    Si 6.78954
+    Mn 0.00022000000000000003
+    Si 6.730672034674842
     Alkalinity 250.48 as CaCO3
     S(6) 0.25737
 
 TITLE NEP22-16 -- Geochemical Solution
-SOLUTION 92 NEP22-16
+SOLUTION 6 NEP22-16
     units ppm
     pH 7.14
     temp 11.7
-    Ca 1.37548
-    Mg 0.2295
-    Na 1.03096
-    K 0.31253
+    Ca 1.0564712735031043
+    Mg 0.21553543198790165
+    Na 1.006082041923721
+    Al 0.00632897532460417
+    K 0.2964619846679321
     Fe 0.0019076076683123499
     Mn 3e-05
-    Si 5.07371
+    Si 5.062461288837373
     Alkalinity 170.85 as CaCO3
     S(6) 0.11358
 
 TITLE NEP22-19 -- Geochemical Solution
-SOLUTION 95 NEP22-19
+SOLUTION 7 NEP22-19
     units ppm
     pH 6.07
     temp 15.1
-    Ca 1.59643
-    Mg 0.2547
-    Na 1.60034
-    K 0.40059
+    Ca 0.24689912160354058
+    Mg 0.16200892508253842
+    Na 1.4169624198029533
+    Al 0.00218556740564842
+    K 0.3070950383465585
     Fe 0.00161899510385592
     Mn 0.00104
-    Si 5.33169
+    Si 5.1849937437073566
     Alkalinity 183.6 as CaCO3
     S(6) 0.14061
 
 TITLE NEP22-20 -- Geochemical Solution
-SOLUTION 97 NEP22-20
+SOLUTION 8 NEP22-20
     units ppm
     pH 7.14
     temp 11.4
-    Ca 1.10332
-    Mg 0.18693
-    Na 1.19823
-    K 0.29987
+    Ca 1e-12
+    Mg 0.11248127420475748
+    Na 1.0560652057450015
+    Al 0.0125171683646091
+    K 0.2209254743004037
     Fe 0.0029765152283134
     Mn 0.00055
-    Si 4.5581
+    Si 4.462199123722301
     Alkalinity 210.4 as CaCO3
     S(6) 0.14612
 
 TITLE NEP22-42 -- Geochemical Solution
-SOLUTION 117 NEP22-42
+SOLUTION 9 NEP22-42
     units ppm
     pH 6.24
     temp 21.9
-    Ca 2.75517
-    Mg 0.35685
-    Na 3.33846
-    K 0.73466
+    Ca 1.4867099493052
+    Mg 0.16414604037420902
+    Na 3.0379980903423025
+    Al 0.0005232497874369439
+    K 0.360373192588668
     Fe 0.00264421447920189
     Mn 0.00013
-    Si 8.05905
+    Si 7.743325965927576
     Alkalinity 268.87 as CaCO3
     S(6) 0.18571
 
 TITLE NEP22-45 -- Geochemical Solution
-SOLUTION 118 NEP22-45
+SOLUTION 10 NEP22-45
     units ppm
     pH 7.57
     temp 21.6
-    Ca 3.21859
-    Mg 0.42603
-    Na 4.54859
-    K 0.63925
-    Fe 0.0029707221735366697
+    Ca 2.0060294657433193
+    Mg 0.2570281142309106
+    Na 4.3017334249608705
+    Al 0.00140760176362528
+    K 0.2838923975795482
+    Fe 0.00297072217353667
     Mn 0.00016
-    Si 9.31031
+    Si 9.060312243843978
     Alkalinity 354.28 as CaCO3
     S(6) 0.13991
 
 TITLE NEP22-53 -- Geochemical Solution
-SOLUTION 126 NEP22-53
+SOLUTION 11 NEP22-53
     units ppm
     pH 6.33
     temp 16.7
-    Ca 3.14942
-    Mg 0.52595
-    Na 3.32537
-    K 0.84715
+    Ca 1.628223550212226
+    Mg 0.3604341339983838
+    Na 2.977467252793852
+    Al 0.000975890008736437
+    K 0.6955664754396449
     Fe 0.00329276780612551
     Mn 0.00077
-    Si 7.99342
+    Si 7.644013602917633
     Alkalinity 258.06 as CaCO3
     S(6) 0.09561
 
 TITLE NEP22-54 -- Geochemical Solution
-SOLUTION 127 NEP22-54
+SOLUTION 12 NEP22-54
     units ppm
     pH 6.19
     temp 17.0
-    Ca 2.92386
-    Mg 0.4871
-    Na 3.17092
-    K 0.7611
+    Ca 1.3911297584400264
+    Mg 0.31669597106162
+    Na 2.811949776202403
+    Al 0.000469365416983843
+    K 0.6056140117364184
     Fe 0.00285353637964085
     Mn 7e-05
-    Si 7.72055
+    Si 7.357576957894231
     Alkalinity 239.99 as CaCO3
     S(6) 0.08256
 
 TITLE NEP22-55 -- Geochemical Solution
-SOLUTION 128 NEP22-55
+SOLUTION 13 NEP22-55
     units ppm
     pH 6.69
     temp 17.1
-    Ca 2.88305
-    Mg 0.47789
-    Na 3.06539
-    K 0.76044
+    Ca 1.3640948337051204
+    Mg 0.31332889054281365
+    Na 2.7196256025853014
+    Al 0.00130448227558997
+    K 0.6096148671831536
     Fe 0.00268223311222332
     Mn 0.00016
-    Si 7.6455
+    Si 7.29877589991462
     Alkalinity 268.311 as CaCO3
     S(6) 0.06982
 
 TITLE NEP22-56 -- Geochemical Solution
-SOLUTION 129 NEP22-56
+SOLUTION 14 NEP22-56
     units ppm
     pH 6.86
     temp 19.1
-    Ca 4.24774
-    Mg 0.37798
-    Na 4.75624
-    K 0.87563
+    Ca 3.046204270264884
+    Mg 0.21368529919631662
+    Na 4.520000892170995
+    Al 0.00105755134926694
+    K 0.5240084992238648
     Fe 0.00434287808053633
     Mn 0.00024
-    Si 10.92715
+    Si 10.689950817694884
     Alkalinity 387.09 as CaCO3
     S(6) 0.11309
 
 TITLE NEP22-57 -- Geochemical Solution
-SOLUTION 130 NEP22-57
+SOLUTION 15 NEP22-57
     units ppm
     pH 6.85
     temp 19.3
-    Ca 6.279
-    Mg 0.84919
-    Na 6.38947
-    K 1.40672
+    Ca 4.68989492032375
+    Mg 0.5204765998529722
+    Na 5.781731542253801
+    Al 0.000736418513246425
+    K 0.923951452796318
     Fe 0.00506086331311566
     Mn 0.00029
-    Si 12.98301
+    Si 12.288698732609875
     Alkalinity 532.75 as CaCO3
     S(6) 0.42366
 
 TITLE NEP22-58 -- Geochemical Solution
-SOLUTION 131 NEP22-58
+SOLUTION 16 NEP22-58
     units ppm
     pH 7.34
     temp 16.8
-    Ca 3.21539
-    Mg 0.31175
-    Na 4.16388
-    K 0.69786
+    Ca 2.590066094333378
+    Mg 0.2584117343674178
+    Na 4.126274642303534
+    Al 0.00249361474054246
+    K 0.5199879823933993
     Fe 0.00339374466104222
-    Mn 0.00022
-    Si 10.1457
+    Mn 0.00022000000000000003
+    Si 10.131617459688785
     Alkalinity 350.77 as CaCO3
     S(6) 0.09154
 
 TITLE NEP22-59 -- Geochemical Solution
-SOLUTION 132 NEP22-59
+SOLUTION 17 NEP22-59
     units ppm
     pH 7.48
     temp 20.3
-    Ca 2.50621
-    Mg 0.34816
-    Na 3.09361
-    K 0.74341
+    Ca 1.444061282677126
+    Mg 0.24294738954268327
+    Na 2.990939410597721
+    Al 0.00202763476099796
+    K 0.43893467585601176
     Fe 0.00196879939609519
     Mn 0.0002
-    Si 7.62627
+    Si 7.553819338356688
     Alkalinity 250.41 as CaCO3
     S(6) 0.12357
 
 TITLE NEP22-60 -- Geochemical Solution
-SOLUTION 134 NEP22-60
+SOLUTION 18 NEP22-60
     units ppm
     pH 7.04
     temp 21.3
-    Ca 3.9896
-    Mg 0.64416
-    Na 3.91315
-    K 1.08304
+    Ca 2.7977992965644893
+    Mg 0.483933628789691
+    Na 3.6862393383407217
+    Al 0.001751501215998
+    K 0.7346978817958648
     Fe 0.00425432702478449
     Mn 0.00039
-    Si 8.06893
+    Si 7.843650057336858
     Alkalinity 239.99 as CaCO3
     S(6) 0.29162
 
 TITLE NEP22-9 -- Geochemical Solution
-SOLUTION 162 NEP22-9
+SOLUTION 19 NEP22-9
     units ppm
     pH 6.32
     temp 12.8
-    Ca 0.5869
-    Mg 0.11546
-    Na 0.40614
-    K 0.22848
+    Ca 0.16914046182763928
+    Mg 0.09761550083421267
+    Na 0.3256317850694765
+    Al 0.00356960309071777
+    K 0.07152884574630569
     Fe 0.00061354310442368
     Mn 0.00194
-    Si 2.84147
+    Si 2.8322820367422654
     Alkalinity 309.4 as CaCO3
     S(6) 0.06822
 
-TITLE Nep23-113 -- Geochemical Solution
-SOLUTION 183 Nep23-113
+TITLE Nep24-010 -- Geochemical Solution
+SOLUTION 20 Nep24-010
     units ppm
-    pH 7.24
-    temp 20.8
-    Ca 2.65632
-    Mg 0.3597
-    Na 2.93704
-    K 0.86468
-    Fe 0.0022390648281323798
-    Mn 0.00035
-    Si 7.00702
-    Alkalinity 262.4420228866632 as CaCO3
-    S(6) 0.08755
+    pH 6.45
+    temp 22.2
+    Ca 1.5530373796500208
+    Mg 0.2133996203205312
+    Na 2.8704182136957197
+    Al 0.00414
+    K 0.48694057457789897
+    Fe 1e-12
+    Mn 0.0002066666666666667
+    Si 6.766736786785647
+    Alkalinity 97.2 as CaCO3
+    S(6) 0.14115
 
-TITLE Nep23-114 -- Geochemical Solution
-SOLUTION 184 Nep23-114
+TITLE Nep24-011 -- Geochemical Solution
+SOLUTION 21 Nep24-011
     units ppm
-    pH 6.31
-    temp 21.8
-    Ca 2.74152
-    Mg 0.35262
-    Na 3.3129
-    K 0.77156
-    Fe 0.0030566291175714
-    Mn 0.00217
-    Si 7.76619
-    Alkalinity 234.66926007545723 as CaCO3
-    S(6) 0.08537
-
-TITLE Nep23-115 -- Geochemical Solution
-SOLUTION 185 Nep23-115
-    units ppm
-    pH 7.2
-    temp 22.3
-    Ca 2.71472
-    Mg 0.36384
-    Na 3.03721
-    K 0.91338
-    Fe 0.00139233713591917
-    Mn 0.0003
-    Si 7.24647
-    Alkalinity 245.71045199601176 as CaCO3
-    S(6) 0.06827
-
-TITLE Nep23-116 -- Geochemical Solution
-SOLUTION 186 Nep23-116
-    units ppm
-    pH 7.45
-    temp 24.0
-    Ca 6.25894
-    Mg 0.76467
-    Na 4.16629
-    K 2.24786
-    Fe 0.00451857068860511
-    Mn 0.00154
-    Si 7.15672
-    Alkalinity 353.53964868689434 as CaCO3
-    S(6) 0.44161
-
-TITLE Nep23-117 -- Geochemical Solution
-SOLUTION 187 Nep23-117
-    units ppm
-    pH 7.26
-    temp 23.8
-    Ca 3.15758
-    Mg 0.44703
-    Na 4.42248
-    K 0.73834
-    Fe 0.00184426895265983
+    pH 7.07
+    temp 23.7
+    Ca 1.578865174110572
+    Mg 0.2643140823604954
+    Na 2.7838640457328236
+    Al 0.00885
+    K 0.6217999574278944
+    Fe 0.00208
     Mn 9e-05
-    Si 9.21913
-    Alkalinity 310.4541322091138 as CaCO3
-    S(6) 0.09064
+    Si 6.673412505852314
+    Alkalinity 177.0 as CaCO3
+    S(6) 0.09355
 
-TITLE Nep23-118 -- Geochemical Solution
-SOLUTION 188 Nep23-118
+TITLE Nep24-014 -- Geochemical Solution
+SOLUTION 22 Nep24-014
     units ppm
-    pH 6.72
-    temp 21.0
-    Ca 4.33345
-    Mg 0.37147
-    Na 4.47039
-    K 0.99074
-    Fe 0.0024316217427458498
-    Mn 0.00015
-    Si 10.78037
-    Alkalinity 351.11750182885305 as CaCO3
-    S(6) 0.02323
+    pH 6.58
+    temp 14.3
+    Ca 0.1030044848027153
+    Mg 0.09266597441787942
+    Na 0.3036191834290685
+    Al 0.00894
+    K 0.07612709693818194
+    Fe 0.06989
+    Mn 0.06345333333333333
+    Si 2.4727334143345563
+    Alkalinity 30.0 as CaCO3
+    S(6) 0.09281
 
-TITLE Nep23-119 -- Geochemical Solution
-SOLUTION 189 Nep23-119
+TITLE Nep24-015 -- Geochemical Solution
+SOLUTION 23 Nep24-015
     units ppm
-    pH 6.32
-    temp 19.1
-    Ca 3.88112
-    Mg 0.33191
-    Na 4.03925
-    K 0.89306
-    Fe 0.0025737246789411202
-    Mn 0.00015
-    Si 9.64935
-    Alkalinity 261.4178738452527 as CaCO3
-    S(6) -0.00102
+    pH 6.1
+    temp 16.6
+    Ca 1e-12
+    Mg 0.13456862075575085
+    Na 1.1452740509995405
+    Al 0.00741
+    K 0.3177565710961208
+    Fe 0.0027
+    Mn 0.002246666666666667
+    Si 4.331592129010504
+    Alkalinity 70.7 as CaCO3
+    S(6) 0.07611
 
-TITLE Nep23-120 -- Geochemical Solution
-SOLUTION 191 Nep23-120
+TITLE Nep24-016 -- Geochemical Solution
+SOLUTION 24 Nep24-016
     units ppm
-    pH 6.65
-    temp 16.3
-    Ca 1.46658
-    Mg 0.23994
-    Na 1.72364
-    K 0.40121
-    Fe 0.0011215520123002102
-    Mn 0.00017
-    Si 5.43042
-    Alkalinity 119.40486626977888 as CaCO3
-    S(6) 0.03927
-
-TITLE Nep23-121 -- Geochemical Solution
-SOLUTION 192 Nep23-121
-    units ppm
-    pH 6.01
-    temp 15.0
-    Ca 1.46933
-    Mg 0.2519
-    Na 1.82611
-    K 0.41416
-    Fe 0.0011417891810916
-    Mn 0.00092
-    Si 5.55301
-    Alkalinity 136.34212213914284 as CaCO3
-    S(6) -0.00169
-
-TITLE Nep23-122 -- Geochemical Solution
-SOLUTION 193 Nep23-122
-    units ppm
-    pH 6.0
-    temp 14.6
-    Ca 0.57089
-    Mg 0.11622
-    Na 0.49997
-    K 0.26008
-    Fe 0.0018204677731309999
-    Mn 0.00165
-    Si 2.93287
-    Alkalinity 93.05246938873613 as CaCO3
-    S(6) 0.06052
-
-TITLE NEP23-15 -- Geochemical Solution
-SOLUTION 213 NEP23-15
-    units ppm
-    pH 7.15
-    temp 20.4
-    Ca 1.52853
-    Mg 0.21962
-    Na 2.88376
-    K 0.596
-    Fe 0.00199
-    Mn -0.00016
-    Si 7.7523
-    Alkalinity 186.0 as CaCO3
-    S(6) 0.11685
-
-TITLE NEP23-16 -- Geochemical Solution
-SOLUTION 214 NEP23-16
-    units ppm
-    pH 6.35
-    temp 19.7
-    Ca 2.60082
-    Mg 0.3831
-    Na 3.80301
-    K 1.84706
-    Fe 0.00369
-    Mn 0.00761
-    Si 7.99097
-    Alkalinity 193.0 as CaCO3
-    S(6) 0.14502
-
-TITLE NEP23-17 -- Geochemical Solution
-SOLUTION 215 NEP23-17
-    units ppm
-    pH 7.51
-    temp 20.9
-    Ca 3.13595
-    Mg 0.46281
-    Na 4.81737
-    K 0.82121
-    Fe 0.00375
-    Mn -3e-05
-    Si 10.47364
-    Alkalinity 302.0 as CaCO3
-    S(6) 0.14283
-
-TITLE NEP23-18 -- Geochemical Solution
-SOLUTION 216 NEP23-18
-    units ppm
-    pH 6.07
-    temp 21.3
-    Ca 2.99145
-    Mg 0.37713
-    Na 4.50998
-    K 0.75902
-    Fe 0.00323
-    Mn 0.0001
-    Si 10.11602
-    Alkalinity 275.0 as CaCO3
-    S(6) 0.12472
-
-TITLE NEP23-20 -- Geochemical Solution
-SOLUTION 218 NEP23-20
-    units ppm
-    pH 7.02
-    temp 15.8
-    Ca 1.46427
-    Mg 0.24321
-    Na 1.56089
-    K 0.70195
-    Fe 0.0014199999999999998
-    Mn -0.00013
-    Si 5.28524
-    Alkalinity 185.0 as CaCO3
-    S(6) 0.0992
-
-TITLE NEP23-22 -- Geochemical Solution
-SOLUTION 220 NEP23-22
-    units ppm
-    pH 6.97
-    temp 13.8
-    Ca 1.44201
-    Mg 0.22312
-    Na 2.37331
-    K 0.21286
-    Fe 0.0028399999999999996
-    Mn 0.00074
-    Si 6.93201
-    Alkalinity 160.0 as CaCO3
-    S(6) 0.016
-
-TITLE NEP23-23 -- Geochemical Solution
-SOLUTION 221 NEP23-23
-    units ppm
-    pH 5.95
-    temp 13.2
-    Ca 0.59694
-    Mg 0.12522
-    Na 0.53342
-    K 0.31733
-    Fe 0.00934
-    Mn 0.01347
-    Si 2.94176
-    Alkalinity 93.0 as CaCO3
-    S(6) 0.09948
-
-TITLE NEP23-24 -- Geochemical Solution
-SOLUTION 222 NEP23-24
-    units ppm
-    pH 5.76
-    temp 15.5
-    Ca 1.22548
-    Mg 0.19883
-    Na 1.69183
-    K 0.34599
-    Fe 0.00102
-    Mn 0.00028
-    Si 5.86078
-    Alkalinity 114.0 as CaCO3
-    S(6) 0.08029
-
-TITLE NEP23-25 -- Geochemical Solution
-SOLUTION 223 NEP23-25
-    units ppm
-    pH 6.97
-    temp 17.9
-    Ca 3.10642
-    Mg 0.49738
-    Na 3.51692
-    K 0.96335
-    Fe 0.00352
-    Mn 0.0
-    Si 8.62946
-    Alkalinity 262.0 as CaCO3
-    S(6) 0.06156
-
-TITLE NEP23-26 -- Geochemical Solution
-SOLUTION 224 NEP23-26
-    units ppm
-    pH 7.04
-    temp 22.5
-    Ca 3.58595
-    Mg 0.31045
-    Na 4.54574
-    K 1.03947
-    Fe 0.00445
+    pH 7.05
+    temp 17.5
+    Ca 1.0778699783967278
+    Mg 0.20409417069781968
+    Na 0.7897075990578566
+    Al 0.01088
+    K 0.41757295546418993
+    Fe 0.0038800000000000006
     Mn 0.00043
-    Si 11.44005
-    Alkalinity 330.0 as CaCO3
-    S(6) 0.08791
+    Si 3.7704414734254885
+    Alkalinity 112.4 as CaCO3
+    S(6) 0.10745
+
+TITLE Nep24-017 -- Geochemical Solution
+SOLUTION 25 Nep24-017
+    units ppm
+    pH 6.52
+    temp 16.3
+    Ca 0.9463061666942357
+    Mg 0.1953791854220331
+    Na 1.8745108638003913
+    Al 0.00579
+    K 0.3430188708447182
+    Fe 0.00073
+    Mn 0.0003699999999999999
+    Si 5.616174471749735
+    Alkalinity 111.9 as CaCO3
+    S(6) 0.06486
+
+TITLE Nep24-034 -- Geochemical Solution
+SOLUTION 26 Nep24-034
+    units ppm
+    pH 5.67
+    temp 14.3
+    Ca 1e-12
+    Mg 0.11014662024961881
+    Na 1.308517147832705
+    Al 0.00484
+    K 0.33921936132305236
+    Fe 0.00324
+    Mn 0.00132
+    Si 4.740431154757944
+    Alkalinity 73.0 as CaCO3
+    S(6) 0.03811
+
+TITLE Nep24-038 -- Geochemical Solution
+SOLUTION 27 Nep24-038
+    units ppm
+    pH 6.28
+    temp 22.8
+    Ca 2.80541693916277
+    Mg 0.21514508721998224
+    Na 3.916257951449729
+    Al 0.00417
+    K 0.729935590114895
+    Fe 0.00323
+    Mn 0.00046999999999999993
+    Si 9.753571667550156
+    Alkalinity 255.0 as CaCO3
+    S(6) 0.07441
+
+TITLE NEP24-040 -- Geochemical Solution
+SOLUTION 28 NEP24-040
+    units ppm
+    pH 6.27
+    temp 19.8
+    Ca 3.67693347246694
+    Mg 0.5597000863765754
+    Na 3.3300149214858528
+    Al 0.00738
+    K 0.4592710964286767
+    Fe 0.00063
+    Mn 0.0003533333333333333
+    Si 10.991221393701855
+    Alkalinity 270.0 as CaCO3
+    S(6) 0.08881
+
+TITLE NEP24-041 -- Geochemical Solution
+SOLUTION 29 NEP24-041
+    units ppm
+    pH 6.95
+    temp 20.6
+    Ca 0.6505301143064693
+    Mg 0.2524321594088043
+    Na 2.3801820767774915
+    Al 0.02456
+    K 0.863506372394715
+    Fe 0.03656
+    Mn 0.00141
+    Si 6.6873498416564745
+    Alkalinity 285.0 as CaCO3
+    S(6) 0.19187
 
 EQUILIBRIUM_PHASES 1
     Calcite 0.0 0.0   # Saturation index for calcite

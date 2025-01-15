@@ -1,0 +1,14 @@
+Element     Plag     Biotite  Calcite  Kaolinite Smectite Chlorite      Taken from probe analyses of biotite, chlorite and calcite in BCT10, 26 & 30: Needs checking
+Si           2.70       2.60   0      2.0          3.55        3.08
+Al           1.30       1.81   0      2.0          1.88        2.51
+Mg           0          0.66   0.017  0.00         0.37        1.53               0.752  0.056
+Ca           0.30        0.00   0.969  0.0          0.10        0.08
+Na           0.70        0.02   0      0.0          0.04        0.0
+K            0.0        0.95   0.0    0.012        0.16        0.0         {Biotite K normal = 0.49, analysed 0.245 Low K 0.1981}   {smectite Drief&Nieto = 0.08, Albert 0.43}
+O(CO3)       8.0        10.0   1.0    5.0          10.0        10.0
+OH           0.0        2.0    0.0    4.0          2.0         8.0           Natural Smectites ~ 20 wt% water ie 3 H2O as well as 2 OH
+Biotite 10(O) 4(OH)           Kaolinite 5(0),4(OH)  smectite: [10(O) 2(OH),3(H2O)] 10(O) 8(OH)
+caution whole molecules ie K2, Na2, Al2 used!
+Smectite data from D:\geochr\Himal\Nepal\SC_06\July_2014\Data\Mineral_analyses\Clay_minerals
+Average Khurkot biotite from Genevieves thesis recalculated in D:\geochr\Himal\Nepal\SC_06\July_2014\Data\Mineral_analyses\AK16_bed_min\Probe_analyses\AK 16 sediment grains qtiDat.xlsx sheet 'calculations'
+Chlorite data Genevieve's High Fe chlorite average calculated in D:\geochr\Himal\Nepal\SC_06\July_2014\Data\Mineral_analyses\AK16_bed_min\Probe_analyses\AK 16 sediment grains qtiDat.xlsx heet 'calculations'
