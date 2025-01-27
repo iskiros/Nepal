@@ -1,6 +1,40 @@
 
 
 \section{Discussion}
+
+
+\subsection{Contributions from Silicate Weathering}
+
+
+
+
+
+\subsection{Weathering Proxies from Strontium Isotopes}
+
+Sr isotopes derived from the most recent rain analyses are of the order of 0.70904 to 0.70925 at the lowest. Seawater is of the order of 0.70917. Within error, therefore, the lowest rain values reflect seawater values, indicating little contamination from dust or particles. These are indeed found at the higher elevations \\
+
+
+Also recreeate the plot from Galy, France Lanord and Derry 1998
+
+
+
+\subsection{One-Dimensional Reactive Transport Model}
+
+
+
+\subsection{Free Energy Calculations}
+
+
+
+\subsection{Stoichiometric Considerations}
+
+
+
+
+
+
+
+
 % Explain how to interpret the data.
 % - Divide the analysis into different geological provinces.
 % - Discuss the characteristics of each province.
@@ -8,110 +42,28 @@
 
 
 
-Andermann et al, 2012
+% Andermann et al, 2012
 
-They also talk about a modelLook at response time, being inveresely proportional to hydraulic diffusivity.
-THey assume length scales of 0.5-5km, and typical values of time to be about 45 days.
+% They also talk about a modelLook at response time, being inveresely proportional to hydraulic diffusivity.
+% THey assume length scales of 0.5-5km, and typical values of time to be about 45 days.
 
-They are looking at very large discharges, order 5000 m3/s
-
-
-
-
-\bsk
-
-Also want the Maher and Chamberlain rate constant explanation compared to normal data
-
-\bsk
-
-Want to input the beginning steps of the derivation from Maher and Chamberlain, 2014's model. Eg the solution to a heterogeneous irreversible advection reaciton equation
+% They are looking at very large discharges, order 5000 m3/s
 
 
 
-\bsk
-\[
-\ttmath{C = \frac{C_0}{1 + D} + C_{eq} \cdot \frac{D}{1 + D}}
-\]
-\[
-\ttmath{D = \frac{\tau \cdot D_w}{q}}
-\]
-\[
-\ttmath{D_w = \frac{L \cdot \phi}{T_{eq}}}
-\]
-\[
-\ttmath{L = q \cdot t}
-\]
-\[
-\ttmath{T_{eq} = \frac{C_{eq}}{R \cdot f}}
-\]
-\[
-\ttmath{R = \rho \cdot k \cdot A \cdot X}
-\]
-\[
-\ttmath{k = 8.7 \cdot 10^{-6}  \; mol/m^2/yr}
-\]
-\[
-\ttmath{k = 8.7 \; \mu mol/m^2/yr}
-\]
-\subsection{Step 1: Rearrange for $D$}
-Multiply through by $(1 + D)$:
-\[
-C \cdot (1 + D) = C_0 + C_{eq} \cdot D
-\]
 
-Distribute $C$:
-\[
-C + C \cdot D = C_0 + C_{eq} \cdot D
-\]
+% \bsk
 
-Group terms involving $D$:
-\[
-C \cdot D - C_{eq} \cdot D = C_0 - C
-\]
+% Also want the Maher and Chamberlain rate constant explanation compared to normal data
 
-Factor $D$:
-\[
-D \cdot (C - C_{eq}) = C_0 - C
-\]
+% \bsk
 
-Solve for $D$:
-\[
-D = \frac{C_0 - C}{C - C_{eq}}
-\]
+% Want to input the beginning steps of the derivation from Maher and Chamberlain, 2014's model. Eg the solution to a heterogeneous irreversible advection reaciton equation
 
-\subsection{Step 2: Solve for $t$ Using $D$}
-Now substitute $D$ into:
-\[
-D = \frac{\tau \cdot t \cdot \phi \cdot R \cdot f}{C_{eq}}
-\]
 
-Rearranging for $t$:
-\[
-t = \frac{D \cdot C_{eq}}{\tau \cdot \phi \cdot R \cdot f}
-\]
 
-Substitute $D$:
-\[
-t = \frac{\left(\frac{C_0 - C}{C - C_{eq}}\right) \cdot C_{eq}}{\tau \cdot \phi \cdot R \cdot f}
-\]
-
-Simplify:
-\[
-t = \frac{(C_0 - C) \cdot C_{eq}}{(C - C_{eq}) \cdot \tau \cdot \phi \cdot R \cdot f}
-\]
-
-\subsection{Conclusion}
-The expression for $t$ is:
-\[
-t = \frac{(C_0 - C) \cdot C_{eq}}{(C - C_{eq}) \cdot \tau \cdot \phi \cdot k \cdot M_{in} \cdot f}
-\]
-Where:
-\begin{itemize}
-    \item $C_0$: Initial concentration.
-    \item $C$: Current concentration.
-    \item $C_{eq}$: Equilibrium concentration.
-    \item $\tau$: Characteristic timescale.
-    \item $\phi$: Porosity.
-    \item $R$: Reaction rate term.
-    \item $f$: Scaling factor.
-\end{itemize}
+% \bsk
+% \[
+% \ttmath{C = \frac{C_0}{1 + D} + C_{eq} \cdot \frac{D}{1 + D}}
+% \]
+% \[
