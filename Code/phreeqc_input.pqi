@@ -1,6 +1,6 @@
 
 TITLE NEP22-10 -- Geochemical Solution
-SOLUTION 1 NEP22-10
+SOLUTION 41 NEP22-10
     units ppm
     pH 6.48
     temp 12.8
@@ -16,7 +16,7 @@ SOLUTION 1 NEP22-10
     S(6) 0.01913
 
 TITLE NEP22-11 -- Geochemical Solution
-SOLUTION 2 NEP22-11
+SOLUTION 42 NEP22-11
     units ppm
     pH 6.59
     temp 13.3
@@ -32,7 +32,7 @@ SOLUTION 2 NEP22-11
     S(6) 0.04954
 
 TITLE NEP22-12 -- Geochemical Solution
-SOLUTION 3 NEP22-12
+SOLUTION 43 NEP22-12
     units ppm
     pH 6.77
     temp 13.4
@@ -48,7 +48,7 @@ SOLUTION 3 NEP22-12
     S(6) 0.07242
 
 TITLE NEP22-13 -- Geochemical Solution
-SOLUTION 4 NEP22-13
+SOLUTION 44 NEP22-13
     units ppm
     pH 6.76
     temp 15.0
@@ -64,7 +64,7 @@ SOLUTION 4 NEP22-13
     S(6) 0.1528
 
 TITLE NEP22-15 -- Geochemical Solution
-SOLUTION 5 NEP22-15
+SOLUTION 45 NEP22-15
     units ppm
     pH 7.29
     temp 14.6
@@ -80,7 +80,7 @@ SOLUTION 5 NEP22-15
     S(6) 0.25737
 
 TITLE NEP22-16 -- Geochemical Solution
-SOLUTION 6 NEP22-16
+SOLUTION 46 NEP22-16
     units ppm
     pH 7.14
     temp 11.7
@@ -96,7 +96,7 @@ SOLUTION 6 NEP22-16
     S(6) 0.11358
 
 TITLE NEP22-19 -- Geochemical Solution
-SOLUTION 7 NEP22-19
+SOLUTION 49 NEP22-19
     units ppm
     pH 6.07
     temp 15.1
@@ -112,7 +112,7 @@ SOLUTION 7 NEP22-19
     S(6) 0.14061
 
 TITLE NEP22-20 -- Geochemical Solution
-SOLUTION 8 NEP22-20
+SOLUTION 50 NEP22-20
     units ppm
     pH 7.14
     temp 11.4
@@ -128,7 +128,7 @@ SOLUTION 8 NEP22-20
     S(6) 0.14612
 
 TITLE NEP22-42 -- Geochemical Solution
-SOLUTION 9 NEP22-42
+SOLUTION 51 NEP22-42
     units ppm
     pH 6.24
     temp 21.9
@@ -144,7 +144,7 @@ SOLUTION 9 NEP22-42
     S(6) 0.18571
 
 TITLE NEP22-45 -- Geochemical Solution
-SOLUTION 10 NEP22-45
+SOLUTION 52 NEP22-45
     units ppm
     pH 7.57
     temp 21.6
@@ -160,7 +160,7 @@ SOLUTION 10 NEP22-45
     S(6) 0.13991
 
 TITLE NEP22-53 -- Geochemical Solution
-SOLUTION 11 NEP22-53
+SOLUTION 53 NEP22-53
     units ppm
     pH 6.33
     temp 16.7
@@ -176,7 +176,7 @@ SOLUTION 11 NEP22-53
     S(6) 0.09561
 
 TITLE NEP22-54 -- Geochemical Solution
-SOLUTION 12 NEP22-54
+SOLUTION 54 NEP22-54
     units ppm
     pH 6.19
     temp 17.0
@@ -192,7 +192,7 @@ SOLUTION 12 NEP22-54
     S(6) 0.08256
 
 TITLE NEP22-55 -- Geochemical Solution
-SOLUTION 13 NEP22-55
+SOLUTION 55 NEP22-55
     units ppm
     pH 6.69
     temp 17.1
@@ -208,7 +208,7 @@ SOLUTION 13 NEP22-55
     S(6) 0.06982
 
 TITLE NEP22-56 -- Geochemical Solution
-SOLUTION 14 NEP22-56
+SOLUTION 56 NEP22-56
     units ppm
     pH 6.86
     temp 19.1
@@ -224,7 +224,7 @@ SOLUTION 14 NEP22-56
     S(6) 0.11309
 
 TITLE NEP22-57 -- Geochemical Solution
-SOLUTION 15 NEP22-57
+SOLUTION 57 NEP22-57
     units ppm
     pH 6.85
     temp 19.3
@@ -240,7 +240,7 @@ SOLUTION 15 NEP22-57
     S(6) 0.42366
 
 TITLE NEP22-58 -- Geochemical Solution
-SOLUTION 16 NEP22-58
+SOLUTION 58 NEP22-58
     units ppm
     pH 7.34
     temp 16.8
@@ -256,7 +256,7 @@ SOLUTION 16 NEP22-58
     S(6) 0.09154
 
 TITLE NEP22-59 -- Geochemical Solution
-SOLUTION 17 NEP22-59
+SOLUTION 59 NEP22-59
     units ppm
     pH 7.48
     temp 20.3
@@ -272,7 +272,7 @@ SOLUTION 17 NEP22-59
     S(6) 0.12357
 
 TITLE NEP22-60 -- Geochemical Solution
-SOLUTION 18 NEP22-60
+SOLUTION 60 NEP22-60
     units ppm
     pH 7.04
     temp 21.3
@@ -288,7 +288,7 @@ SOLUTION 18 NEP22-60
     S(6) 0.29162
 
 TITLE NEP22-9 -- Geochemical Solution
-SOLUTION 19 NEP22-9
+SOLUTION 61 NEP22-9
     units ppm
     pH 6.32
     temp 12.8
@@ -304,7 +304,7 @@ SOLUTION 19 NEP22-9
     S(6) 0.06822
 
 TITLE Nep24-010 -- Geochemical Solution
-SOLUTION 20 Nep24-010
+SOLUTION 62 Nep24-010
     units ppm
     pH 6.45
     temp 22.2
@@ -320,7 +320,7 @@ SOLUTION 20 Nep24-010
     S(6) 0.14115
 
 TITLE Nep24-011 -- Geochemical Solution
-SOLUTION 21 Nep24-011
+SOLUTION 63 Nep24-011
     units ppm
     pH 7.07
     temp 23.7
@@ -336,7 +336,7 @@ SOLUTION 21 Nep24-011
     S(6) 0.09355
 
 TITLE Nep24-014 -- Geochemical Solution
-SOLUTION 22 Nep24-014
+SOLUTION 64 Nep24-014
     units ppm
     pH 6.58
     temp 14.3
@@ -352,7 +352,7 @@ SOLUTION 22 Nep24-014
     S(6) 0.09281
 
 TITLE Nep24-015 -- Geochemical Solution
-SOLUTION 23 Nep24-015
+SOLUTION 65 Nep24-015
     units ppm
     pH 6.1
     temp 16.6
@@ -368,7 +368,7 @@ SOLUTION 23 Nep24-015
     S(6) 0.07611
 
 TITLE Nep24-016 -- Geochemical Solution
-SOLUTION 24 Nep24-016
+SOLUTION 66 Nep24-016
     units ppm
     pH 7.05
     temp 17.5
@@ -384,7 +384,7 @@ SOLUTION 24 Nep24-016
     S(6) 0.10745
 
 TITLE Nep24-017 -- Geochemical Solution
-SOLUTION 25 Nep24-017
+SOLUTION 67 Nep24-017
     units ppm
     pH 6.52
     temp 16.3
@@ -400,7 +400,7 @@ SOLUTION 25 Nep24-017
     S(6) 0.06486
 
 TITLE Nep24-034 -- Geochemical Solution
-SOLUTION 26 Nep24-034
+SOLUTION 68 Nep24-034
     units ppm
     pH 5.67
     temp 14.3
@@ -416,7 +416,7 @@ SOLUTION 26 Nep24-034
     S(6) 0.03811
 
 TITLE Nep24-038 -- Geochemical Solution
-SOLUTION 27 Nep24-038
+SOLUTION 69 Nep24-038
     units ppm
     pH 6.28
     temp 22.8
@@ -432,7 +432,7 @@ SOLUTION 27 Nep24-038
     S(6) 0.07441
 
 TITLE NEP24-040 -- Geochemical Solution
-SOLUTION 28 NEP24-040
+SOLUTION 70 NEP24-040
     units ppm
     pH 6.27
     temp 19.8
@@ -448,7 +448,7 @@ SOLUTION 28 NEP24-040
     S(6) 0.08881
 
 TITLE NEP24-041 -- Geochemical Solution
-SOLUTION 29 NEP24-041
+SOLUTION 71 NEP24-041
     units ppm
     pH 6.95
     temp 20.6
