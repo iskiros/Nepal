@@ -40,11 +40,9 @@ Samples were dried down to provide at least 1 $\mu$g of Sr. Samples were then di
 
 
 
-\subsection{Cyclic and hydrothermal Correction + radiogenic?}
+\section{Cyclic and Hydrothermal Correction}
 
-Rain input is a significant factor in the chemical composition of rivers (Drever, 1997).
-Spring water is corrected for rain input according to the average concentration for the closest 
-rain sample collected in this field season. % can remove if too much text
+Rain input is a significant factor in the chemical composition of groundwater and rivers (Drever, 1997). Spring water is corrected for rain input according to the average concentration for the closest rain sample collected in this field season. Whilst it would be best to perform a temporal correction, a spatial correction where the rain is collected from the same catchment as the analysed spring samples is already a significant improvement over the current literature (Tipper et al, 2006).
 
 \bsk
 
@@ -58,14 +56,10 @@ $[X]_{rain-corrected}$  = $[X]_{river}$ - $(Cl_{river} - Cl^*_{river})\ddfrac{[X
 
 Where $[Cl]^*_{river}$ is is calculated by subtracting the concentration of chloride in the rain from that in the river (Tipper et al, 2006).
 $Cl^{*}$ is taken to be zero if the concentration of chloride in the rain is greater than concentration of river. Evapotranspiration is not considered by this model, because of
-studies like Andermann et al (2012) which show that it plays a minor role, accounting for less than 10\% of the hydrological budget in the Himalayas.
-They agree with Bookhagen and Burbank
+studies which show that it plays a minor role, accounting for less than 10\% of the hydrological budget in the Himalayas (Andermann et al (2012); Bookhagen and Burbank, 2010).
 
 
-%do we keep this??
 
-\bsk
-\bsk
 
 % {\tiny
 % This formula is used because it allows for evapotranspiration to be corrected for in a later revision. 
@@ -85,8 +79,6 @@ They agree with Bookhagen and Burbank
 % Where ETF is an evapotranspiration factor relating the relative amonts of rain to evapotranspiration. 
 % For example,  if half the rain gets evaporated, then the samples will be more concentrated when corrected (and the minimum ET is zero).
 % }
-\bsk
-\bsk
 
 
 In those cases where $Cl^*$ is not zero then, a primary rain correction is simply:
@@ -100,7 +92,9 @@ $[X]_{rain-corrected}$  = $[X]_{river}$ - $[X]_{rain}$}
 
 \bsk
 
-Once the samples have been corrected for rain input, the remaining $[Cl]^{-}$ is assumed to be derived from evaporites encountered in the flow path. 
+Once the samples have been corrected for rain input, the remaining $[Cl]^{-}$ is assumed to be derived from evaporites encountered in the flow path.
+
+\bsk
 
 % Do we do this?
 Hence, the sample with the highest $[Cl]^{-}$ is used to correct the ions in a similar fashion to how the most dilute sample was used above:
@@ -110,11 +104,7 @@ Hence, the sample with the highest $[Cl]^{-}$ is used to correct the ions in a s
 $[X]_{evaporite-corrected}$  = $[X]_{rain-corrected}$ - $\frac{[X]}{[Cl]}_{highest-Cl} * [Cl]_{rain-corrected}$}
 \end{center}
 
-This ensures that all chloride in the corrected sample is removed. 
-The correction uses ionic ratios from the most concentrated water source, 
-which acts as a proxy for the sediment imparting its signature. 
-In this way, the correction does not affect samples which do not have high Cl 
-(and hence do not have a large evaporite contribution), but does decrease the concentration of ions for those that do.
+This ensures that all chloride in the corrected sample is removed. The correction uses ionic ratios from the most concentrated water source, which acts as a proxy for the sediment imparting its signature.  In this way, the correction does not affect samples which do not have high Cl (and hence do not have a large evaporite contribution), but does decrease the concentration of ions for those that do. As is seen in the following section (ref), many samples in Traverse 2 have a high Cl concentration, but this is less of a concern for the other traverses.
 
 \bsk
 
