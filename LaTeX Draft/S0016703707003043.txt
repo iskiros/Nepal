@@ -1,0 +1,10 @@
+Tyler B. Coplen,
+Calibration of the calcite–water oxygen-isotope geothermometer at Devils Hole, Nevada, a natural laboratory,
+Geochimica et Cosmochimica Acta,
+Volume 71, Issue 16,
+2007,
+Pages 3948-3957,
+ISSN 0016-7037,
+https://doi.org/10.1016/j.gca.2007.05.028.
+(https://www.sciencedirect.com/science/article/pii/S0016703707003043)
+Abstract: The δ18O of ground water (−13.54±0.05‰) and inorganically precipitated Holocene vein calcite (+14.56±0.03‰) from Devils Hole cave #2 in southcentral Nevada yield an oxygen isotopic fractionation factor between calcite and water at 33.7°C of 1.02849±0.00013 (1000lnαcalcite–water=28.09±0.13). Using the commonly accepted value of ∂(αcalcite–water)/∂T of −0.00020K−1, this corresponds to a 1000lnαcalcite–water value at 25°C of 29.80, which differs substantially from the current accepted value of 28.3. Use of previously published oxygen isotopic fractionation factors would yield a calcite precipitation temperature in Devils Hole that is 8°C lower than the measured ground water temperature. Alternatively, previously published fractionation factors would yield a δ18O of water, from which the calcite precipitated, that is too negative by 1.5‰ using a temperature of 33.7°C. Several lines of evidence indicate that the geochemical environment of Devils Hole has been remarkably constant for at least 10ka. Accordingly, a re-evaluation of calcite–water oxygen isotopic fractionation factor may be in order. Assuming the Devils Hole oxygen isotopic value of αcalcite–water represents thermodynamic equilibrium, many marine carbonates are precipitated with a δ18O value that is too low, apparently due to a kinetic isotopic fractionation that preferentially enriches 16O in the solid carbonate over 18O, feigning oxygen isotopic equilibrium.

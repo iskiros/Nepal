@@ -23,7 +23,10 @@
 \usepackage{unicode-math}
 \usepackage{amsmath, amssymb}
 
+\usepackage{multicol} % Allows multiple columns
 
+% \usepackage[style=numeric]{biblatex}
+% \addbibresource{export-data.bib}
 
 % For pdflatex:
 % Use cmvtt for text and math
@@ -118,7 +121,14 @@
 \label{sec:abstract}
 \addcontentsline{toc}{section}{\nameref{sec:abstract}}
 
-This is the abstract. Feel free to add anything insightful... or not :). Hello!
+Blurb about stuff at start
+
+\bsk
+
+Residence time calculations determined using rate constants close to equilibrium give ages of order ten years for the model which purports discharge to be the greatest control on weathering. The other model, following the null hypothesis that temperature is the greatest control on weathering, gives residence times of a similar order of magnitude but the assumption of a constant rate of reaction is likely unrealistic. Simple calculations based on yearly rainfall support the residence time obtained by both models. Estimates of free energy suggest that the weathering reactions contributing to the dissolved load in the groundwater are not close to equilibrium. As a result, it is unlikely that the fast rates of reaction used are appropriate for catchments like Melamchi. Furthermore, this suggests that the main assumption of the Maher model is not valid in this catchment. These analyses suggest that a combination of both models' is necessary to accurately model a real catchment like Melamchi.
+
+
+
 
 
 \pagenumbering{roman}
@@ -137,7 +147,9 @@ This is the abstract. Feel free to add anything insightful... or not :). Hello!
 
 \section*{Acknowledgements}
 
-Thanks Babe
+This thesis would not have been possible without the amazing help from my supervisor, Ed Tipper. Mike Bickle and Al Knight have also been instrumental in guiding me through this Master's year. To my friends and peers, thank you for supporting me throughout. A Mamma, Papà, e la Virgi, grazie di tutto come sempre.
+
+%Beth?
 
 \newpage
 
@@ -195,10 +207,10 @@ All the variables
 
 \newpage
 
+\nocite{*}
 
-
-\input{references.tex}
-
+\bibliographystyle{plain}  % or another style of your choice
+\bibliography{export-data} 
 
 \newpage
 

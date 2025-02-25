@@ -20,24 +20,70 @@
 
 
 
-\subsection{Stoichiometric Considerations}
-\begin{itemize}
-    \item Matrix example
-    \item Feldspar is mostly what we dissolve and kaolinite is mostly what we precipitate
-    \item Include the stoichiometry of the reaction from Drever
-    \item Decide that at Alakmanda, eg albite component is near 0.8
+\subsection{Stoichiometric Considerations - \textcolor{red}{Better Title}}
 
-\end{itemize}
+The first step towards quantifying the extent to which chemical weathing reactions have gone to completion is to discern what reaction is taking place. In principle this is as simple as knowing what minerals are dissolving and which are precipitating. Modal decomposition methods consider several minerals that could be dissolving and/or precipitating, and their stoichiometry. An example matrix following Bickle et al. (2015) \textcolor{red}{cite the data} is found below:
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{matrix_eg.png}
-    \caption{Matrix example of what you need to write}
-    \label{fig:discussion5}
-\end{figure}
 
-\FloatBarrier
+\begin{center}
+\[
+  \begin{bordermatrix}
+{ & Biot & Plag & Calc & Smec & Kaol & KSpar \cr
+Si  & a_{11}  & a_{12}  & a_{13}  & a_{14}  & a_{15}  & a_{16}  \cr
+Al  & a_{21}  & a_{22}  & a_{23}  & a_{24}  & a_{25}  & a_{26}  \cr
+Mg  & a_{31}  & a_{32}  & a_{33}  & a_{34}  & a_{35}  & a_{36}  \cr
+Ca  & a_{41}  & a_{42}  & a_{43}  & a_{44}  & a_{45}  & a_{46}  \cr
+Na  & a_{51}  & a_{52}  & a_{53}  & a_{54}  & a_{55}  & a_{56}  \cr
+K   & a_{61}  & a_{62}  & a_{63}  & a_{64}  & a_{65}  & a_{66}  \cr}
+  \end{bordermatrix}
+  \cdot
+  \begin{bordermatrix}
+{ & \mu mol/l \cr
+  & x_{Biot} \cr
+  & x_{Plag} \cr
+  & x_{Calc} \cr
+  & x_{Smec} \cr
+  & x_{Kaol} \cr
+  & x_{KSpar} \cr}
+  \end{bordermatrix}
+  =
+  \begin{bordermatrix}
+{ & Spring \cr
+  & b_1 \cr
+  & b_2 \cr
+  & b_3 \cr
+  & b_4 \cr
+  & b_5 \cr
+  & b_6 \cr}
+  \end{bordermatrix}
+\]
+\end{center}
+\bsk
 
+% \begin{itemize}
+%     \item Matrix example
+%     \item Feldspar is mostly what we dissolve and kaolinite is mostly what we precipitate
+%     \item Include the stoichiometry of the reaction from Drever
+%     \item Decide that at Alakmanda, eg albite component is near 0.8
+
+% \end{itemize}
+
+
+Matrix algebra facilitates the calculations of the mineral proportions in the water. Given:
+
+\begin{equation}
+AX = B
+\end{equation}\\
+
+where \( A \) and \( B \) are known,\\
+
+\begin{equation}
+X = A^{-1}B
+\end{equation}
+
+\newpage
+
+This way, volumetric proportions of the minerals in the water can be calculated. For ease of visualisation, Figure 6 shows the positive, dissolved minerals on the LHS, and the negative, precipitated minerals on the RHS. \textcolor{red}{Bar Chart here}\\
 
 \begin{figure}[h]
     \centering
@@ -48,127 +94,79 @@
 
 \FloatBarrier
 
+Figure 6 is representative of most springs in Traverse 3. Hence, the major phase being dissolved is plagioclase feldspar and the major phase being precipitated is kaolinite. The plagioclase to kaolinite reaction is given by the following equation (written so that aluminium is conserved)\textcolor{red}{Write about Alakmanda and An\_20 and from Al's paper}:
 
+\begin{equation}
+    \begin{matrix}
+Ca_{0.20}Na_{0.80}Al_{1.20}Si_{2.80}O_{8} + 1.2H^{+} + 0.6 H_{2}O \\ \rightarrow\\ 0.6 Al_{2}Si_{2}O_{5}(OH)_{4} + 0.8 Na^{+} + 0.2 Ca^{2+} + 1.6 SiO_{2}(aq)
+    \end{matrix}
+\end{equation}
+\quad Or
+\begin{equation}
+    \begin{matrix}
+An_{20} + 1.2 H^{+} + 0.6 H_{2}O\\ \rightarrow\\ 0.6 Kaolinite + 0.8 Na^{+} + 0.2 Ca^{2+} + 1.6 SiO_{2}(aq)
+\end{matrix}
+\label{eq:10}
+\end{equation}\\
 
-
-
-\subsection{One-Dimensional Reactive Transport Model}
-
-
-Need to talk about what previous papers have said and how our d18O predicts a particular flow path length eg.
-
-\bsk
-
-Also need to make a mini 1D graphic explaining what the 1D model actually means in practice
-
-
-
-
-\begin{itemize}
-    \item Explain the basis behind the model. Maher in that weathering is sensitive to fluid flux moreso than it is to the temperature. Another interpretation is that of Fontorbe where it is sensitive to the temperature.
-    \item From same first order differential equation we get two different models
-    \item The Maher model because of less constraints the opposite can be used to calculate times for a given rate of reaction, and compare to Abra's already determined ages
-    \item Fontorbe we have a series of assumptions that allow us to calculate the rate of reaction which will allow us to determine whether we are close to eqm or not.
-    \item The Maher model can also be used to determine the rate of reaction for a given set of concentrations and times
-    \item Emphaise how the Maher model wants to predict what weathering is sensitive to
-
-\end{itemize}
 
 
 \newpage
 
 
+\subsection{One-Dimensional Reactive Transport Models}
 
-\subsubsection{Fontorbe Model}
+Reactive transport models are widely used in applied fluid dynamics and various fields within Earth Sciences. These models aim to track chemical reactions occurring at each spatial point, accounting for the movement of reactants to and reaction products away from those points (Bethke, 2011). The basic form of a reactive transport model is a partial differential equation that describes the transport of solutes and the reactions that occur between them. For reacting solutes, concentration changes over time are governed by transport rates—derived from the divergence principle—and the rate at which the component is introduced to or removed from the groundwater \textcolor{red}{Dissolution and Precipitation}(Bethke, 2011). The proposed equations can be complex, but in simple cases a species can be modelled to follow a first-order rate law, generally represented by\textcolor{red}{for an element concentration C\_i}:
 
-Put the models in boxes?
+\begin{equation}
+    \frac{\partial C_i}{\partial t} = \mathcal{O}_{T}(C_i) + \mathcal{O}_{R}(C_i)
+    \label{eq:1}
+\end{equation}
+
+
+Where \(\mathcal{O}_{T}\) and \(\mathcal{O}_{R}\) are the transport and reaction operators, respectively (Bethke, 2011). Depending on the hypothesis supported, equation \ref{eq:1} can be modified accordingly. The following sections will discuss two models with their own versions of equation \ref{eq:1}.
+
+
+
+%Also need to make a mini 1D graphic explaining what the 1D model actually means in practice
+
+
+\subsubsection{Model Motivation - \textcolor{red}{Do we add this into the other thing?}}
+
+As discussed in the introduction, there are different hypotheses regarding the major controls on chemical weathering. This section will contrast one model following the traditional, or "null" hypothesis that weathering is largely sensitive to climate and temperature (Fontorbe et al., 2013), and another model that suggests weathering is more sensitive to fluid flux (Maher, 2011; Maher and Chamberlain, 2013). Given the emphasis on deriving fluid residence times from solute concentrations, the benchmark for a model's effectiveness will be how well it can predict these times compared to previous studies on gas tracers and simple box models. Assumptions and constraints will be compared and contrasted, and their results used to inform the calculation of rates of reaction and approach to equilibrium in Melamchi. \textcolor{red}{Why do we use Si?}
+
+
+
+\newpage
+
+
+\subsubsection{Fontorbe et al. (2013) - Null Hypothesis - Model}
+
+This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths (see Appendix for a full derivation). \textcolor{red}{And see table on next part for derivation}
 
 \bsk
 
-Starts with a first order differential equation describing the reactive transport of Si, assuming reaction rates remain constant along the flow path, which is different from Maher.\\
+The first-order differential equation governing transport and reaction is given as:\\
+
+    \begin{equation}
+    \phi \frac{\partial C}{\partial t} = -\omega \phi \frac{\partial C}{\partial z} + R_n(1-f)
+    \end{equation}\\
+
+The equation can be nondimensionalised using the Damköhler number (\(N_D\)), which describes the relative importance of kinetic vs transport-controlled settings (Bethke, 2008) \textcolor{red}{Say what everything }:\\
 
 \begin{equation}
-\phi \frac{\partial C}{\partial t} = -\omega \phi \frac{\partial C}{\partial z} + R_n\cdot\left(1-f\right)
+    N_D = \frac{R_n h}{\phi C_o \omega}
 \end{equation}\\
 
-
-Where C is Si concentration, $\phi$ is porosity, $\omega$ is the fluid velocity, z is the distance along the 1D flow path, $R_n$ is the rate of reaction, and f is the fraction of Si reprecipitated in clay minerals. This value is just a function of much Si in the water is precipitated or dissolved. \\
-
-We can then non-dimensionalise, z = hz' where h is the length of the flow path; t= ht'/w, C=CoC' where Co is the initial Si concentration (but can be something else)\\
+Assuming steady-state (\(\partial C/\partial t = 0\)), the concentration at the end of the flow path can be rearranged to give the residence time \(T_f\) and reaction rate \(R_n\):\\
 
 \begin{equation}
-     C' = \frac{C}{C_o} \quad \text{\&} \quad z' = \frac{z}{h} \quad \text{\&} \quad t' = \frac{t\omega}{h}
-\end{equation}\\
-
-This transforms the equation 1 to: \\
-
-\begin{equation}
-    \frac{\partial C'}{\partial t'} = -\frac{\partial C'}{\partial z'} + N_D\cdot\left(1-f\right)
-\end{equation}\\
-    
-
-Where \\
-
-\begin{equation}
-    N_D = \frac{R_n\cdot h}{\phi\cdot Co \cdot \omega}
-\end{equation}\\
-
-Given a quasi-stationary state assumption (Lichtner, 1988), where $\frac{\partial C'}{\partial t'} = 0$, we can solve for the rate of reaction\\
-
-\begin{equation}
-    C' = 1 + z' \cdot N_D\cdot\left(1-f\right)
-\end{equation} \\
-
-So when z = h, and z' = 1, \\
-
-\begin{equation}
-    N_D = \frac{C'_h - 1}{1-f}
-\end{equation}\\
-
-Where C' is the concentration of Si at the end of the flow path.\\
-
-We also know that the residence time \( T_f \) is\\
-
-\begin{equation}
-T_f = \frac{h}{\omega}
-\end{equation}\\
-
-So at the end of the flow path h for a concentration C'$_h$:\\
-
-\begin{equation}
-    \frac{R_n\cdot h}{\phi\cdot Co \cdot \omega}  = \frac{C'_h - 1}{1-f}
-\end{equation}\\
-
-\begin{equation}
-    \frac{R_n\cdot T_f}{\phi\cdot Co \cdot}  = \frac{C'_h - 1}{1-f}
-\end{equation}\\
-
-\begin{equation}
-    T_f  = \frac{\left(C'_h - 1\right)\cdot\phi\cdot Co}{\left(1-f\right)\cdot R_n}
-\end{equation}\\
-
-This can be rearranged for the rate of reaction, $R_c$. It can also be rearranged for time. We get:\\
+    T_f = \frac{(C - C_o)\phi}{(1-f)R_n}; \quad
+    R_n = \frac{(C - C_o)\phi}{(1-f)T_f}
+\end{equation}
 
 
 
-\begin{equation}
-    C'_h = C_h/C_o
-\end{equation}\\
-
-
-\begin{equation}
-    T_f  = \frac{\left(C_h - Co\right)\cdot\phi}{\left(1-f\right)\cdot R_n}
-\end{equation}\\
-
-Note that this equation leads to times coming out in 10$^{-9}$s, so this needs to be accounted for when converting to years.\\
-
-or
-
-\begin{equation}
-    R_n  = \frac{\left(C_h - Co\right)\cdot\phi}{\left(1-f\right)\cdot T_f}
-\end{equation}\\
-
-\FloatBarrier
 \newpage
 
 \begin{table}[h]
@@ -183,12 +181,12 @@ or
         $\phi$ & Porosity & - & - \\
         $\omega$ & Fluid velocity & m/s & - \\
         $h$ & Length of flow path & m & Variable \\
-        $C_h$ & Concentration \@ end of flow path & $\mu$mol/L & Variable \\
+        $C$ & Concentration \@ end of flow path & $\mu$mol/L & Variable \\
         $C_0$ & Initial concentration & $\mu$mol/L & Rain Conc \\
-        $f$ & Fraction reprecipitated & - & Order 0.5 \\
+        $f$ & Fraction reprecipitated & - & Order 0.5 \textcolor{red}{constant?}\\
         $N_D$ & Non-dimensional number & - & $N_D = \frac{R_n h}{\phi C_0 \omega}$ \\
         $T_f$ & Residence time & $10^{-9}$ s & $T_f = \frac{h}{\omega}$ \\
-        $R_n$ & Reaction rate & mol/m$^3$/s & $k\cdot S \cdot \rho \cdot 10^3 \cdot X \cdot (1-\phi) $ \\
+        $R_n$ & Reaction rate & mol/m$^3$/s & $k\cdot S \cdot \rho \cdot 1000 \cdot X $ \\
         $k$ & Reaction rate constant & mol/m$^2$/s & - \\
         $S$ & Specific surface area & m$^2$/g & - \\
         $\rho$ & Mineral density & kg/m$^3$ &  \\
@@ -215,98 +213,31 @@ or
 
 
 
-\subsubsection{Maher Model}
+\subsubsection{Maher Model - \textcolor{red}{Correct this with respect to mike}}
 
 
-The first order differential equation to solve is:\\ 
+This model is built to simulate hydrological processes controlling silicate weathering. The model is based on the assumption that the reaction rate decreases linearly with approach to equilibrium. The motivation behind the hydrological control is based on sensitivity analyses of real catchment data on one-dimensional reactive transport models that this study will be investigating, which suggest that porosity, mineral surface area, and temperature have no consistent correlation with water composition (Maher, 2011). The model begins with the following representation of the concentration of a solute in a fluid flow path:\\ 
+
 \begin{equation}
-\frac{dc}{dt} = -\frac{q}{\phi} \frac{dc}{dx} + \sum_{i} \mu_i R_{d,i} \left( 1 - \left( \frac{c}{c_{\text{eq}}} \right)^{n_i} \right)^{m_i} - \sum_{i} \mu_i R_{p,i} \left( 1 - \left( \frac{c}{c_{\text{eq}}} \right)^{n_i} \right)^{m_i}
+\frac{dc}{dt} = -\frac{q}{\theta} \frac{dc}{dx} + \sum_{i} \mu_i R_{d,i} \left( 1 - \left( \frac{c}{c_{\text{eq}}} \right)^{n_i} \right)^{m_i} - \sum_{i} \mu_i R_{p,i} \left( 1 - \left( \frac{c}{c_{\text{eq}}} \right)^{n_i} \right)^{m_i}
 \end{equation}\\
 
-Where c is the concentration, q is the fluid flux, phi is the porosity
-
-\bsk
-
-Under the quasi-steady state assumption, we can write: \\
-
-\begin{equation}
-\frac{dc}{dx} =  \frac{q}{\phi}\sum_{i} \mu_i R_{d,i} \left( 1 - \left( \frac{c}{c_{\text{eq}}} \right)^{n_i} \right)^{m_i} - \frac{q}{\phi}\sum_{i} \mu_i R_{p,i} \left( 1 - \left( \frac{c}{c_{\text{eq}}} \right)^{n_i} \right)^{m_i}
-\end{equation} \\
-
-With \\
+Where c is the concentration \textcolor{red}{of the element}, q is the fluid flux, theta is the volumetric water content, x is the position along the flow path, mu is the stoichiomeric coefficient, R is the rate of reaction for dissolution and precipitation respectively, c$_{eq}$ is the concentration at equilibrium, and n and m are non-linear parameters (Maher and Chamberlain, 2013). Maher and Chamberlain describe that the reaction rate decreases linearly with approach to equilibrium. \textcolor{red}{Rn is defined as:} \\
 
 \begin{equation}
 R_n = \sum_{i} \mu_i R_{d,i} - \sum_{i} \mu_i R_{p,i}
-\end{equation} \\
-
-Given the definition of \( R_n \) as \\
-
-\begin{equation}
-R_n = \sum_{i} \mu_i R_{d,i} - \sum_{i} \mu_i R_{p,i}
-\end{equation} \\
-
-Maher and Chamberlain describe that the reaction rate decreases linearly with approach to equilibrium. \\
-
+\end{equation} 
 \begin{equation}
 \frac{dc}{dt} = R_n \left( 1 - \frac{c}{c_{\text{eq}}} \right)
 \end{equation} \\
 
-Equation 15 can be solved for \( c \), to obtain (following Maher and Chamberlain, 2013)
+This can be solved for \( c \), and rearranged for residence time and the rate of reaction to obtain (following Maher and Chamberlain, 2013):\\
+\textcolor{red}{And note the e\^2 term because it simulates to equilibrium eg}
 
 \begin{equation}
-c(x) = c_0 \exp\left(-\frac{R_n \phi x}{q c_{\text{eq}}} \right) + c_{\text{eq}} \left( 1 - \exp\left(-\frac{R_n \phi x}{q c_{\text{eq}}} \right) \right)
-\end{equation} \\
-
-We also know that the residence time \( T_f \) is \\
-
-\begin{equation}
-T_f = \frac{L\phi}{q}
-\end{equation} \\
-
-So \\
-
-\begin{equation}
-c(T_f) = c_0 \exp\left(-\frac{R_n T_f}{c_{\text{eq}}} \right) + c_{\text{eq}} \left( 1 - \exp\left(-\frac{R_n T_f}{c_{\text{eq}}} \right) \right)
-\end{equation} \\
-
-Following Maher and Chamberlain, 2014, this can be solved and rewritten: \\
-
-
-\begin{equation}
-    C =  \frac{C_{\text{0}}}{1 + \tau D_w / q} + C_{\text{eq}} \frac{\tau D_w / q}{1 + \tau D_w / q}
-\end{equation} \\
-    
-Where \\
-
-\begin{equation}
-\tau = e^2; \quad D_w = \frac{L\phi R_n}{C_{\text{eq}}}
-\end{equation} \\
-
-This can therefore be rewritten as: \\
-
-\begin{equation}
-    C = \frac{C_{\text{0}} + C_{\text{eq}} \cdot T_f\left(e^2 \cdot R_n / C_{\text{eq}}\right)}{1 + T_f\left(e^2 \cdot R_n / C_{\text{eq}}\right)}
-\end{equation} \\
-
-The equation can be rearranged for the residence time, \( T_f \), which can be compared to the ages obtained from the Fontorbe model. We get:\\
-
-\begin{equation}
-    T_f = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 R_n \left( C_{\text{eq}} - C \right)}
-\end{equation}\\
-
-Note that this equation leads to times coming out in 10$^{-6}$s, so this needs to be accounted for when converting to years\\
-
-or:\\
-
-\begin{equation}
+    T_f = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 R_n \left( C_{\text{eq}} - C \right)};  \quad
     R_n = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 T_f \left( C_{\text{eq}} - C \right)}
 \end{equation}\\
-
-
-
-
-
-\newpage
 
 
 \begin{table}[h]
@@ -320,6 +251,7 @@ or:\\
         $L$ & Length of flow path & m & Variable \\
         $q$ & Flow rate & m/s & Variable \\
         $\phi$ & Porosity & - & 0.3 (but variable) \\
+        $\theta$ & Volumetric water content & - & Variable \\
         $R_n$ & Net reaction rate & mol/L/s & $\rho_{sf} \cdot k \cdot A \cdot X_r $ \\
         $\rho_{sf}$ & Mass mineral / Fluid Volume ratio & g/L & $1000 \cdot \rho_b / \phi$ \\
         $\rho_b$ & Plagioclase density & g/cm$^3$ & - \\
@@ -336,6 +268,8 @@ or:\\
     \caption{Key parameters and definitions for the Maher model.}
     \label{tab:parameters2}
 \end{table}
+
+\FloatBarrier
 
 
 \newpage
@@ -360,47 +294,49 @@ or:\\
 \end{table}
 
 
-From this table comparison, it is easy to see the differences between why the two models will differ in their estimation of residence time.
-
-\bsk
-
-For residence time, both contain the factor - but the RN IS DEFINED DIFFERENTLY TOO \bsk
-
-\[
-\frac{C - C_o}{R_n}
-\]\\
-
-The difference then comes with the remaining variables in the reaction. For Fontorbe, the porosity divided by the fraction of element reprecipitated makes up the remaining terms. For Maher, the equilibrium concentration divided by the scaling factor and the difference between the equilibrium concentration and the concentration of the element make up the remaining terms.\\
-
-\bsk
-
-Given that both the fraction of element reprecipitated and the scaling factor range between 0-1, the difference in the models will come from the equilibrium concentration in the Maher formula. Indeed, given that the concentration is taken from the highest in the catchment (so as not to follow Maher and Chamberlain (2013)'s rather conservative estiamte following Gaillardet et al. (1999)'s global river data), the fraction \\
+From this table comparison, it is easy to see the differences between why the two models will differ in their estimation of residence time. The difference in the models comes from the equilibrium concentration in the Maher formula. Indeed, given that the concentration is taken from the highest in the catchment (so as not to follow Maher and Chamberlain (2013)'s rather conservative estiamte following Gaillardet et al. (1999)'s global river data)\textcolor{red}{rewrite in a nicer fashion}, the fraction
 
 \[
 \frac{C_{eq}}{C_{eq} - C}
 \]\\
 
-will only get larger as the reaction progresses. As the reaction progresses, the Maher model will predict longer times than the Fontorbe model, in the end with two orders of magnitude difference at the older times.\\ 
+gets larger as the reaction progresses. As the reaction progresses, the Maher model will predict longer times than the Fontorbe model.\textcolor{red}{More about the model differences}\\ 
 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{T_res_Si_uM_EC_comparison.pdf}
-    \caption{Comparison for the residence time between the two models. Evaluated for Specific surface area = 0.1; Mineral concentration in rock = 0.36; density of plagioclase = 2.230; Reaction rate constant = 10-15; Porosity = 0.3; Equilibrium concentration = Max in the catchment = 900 uM; Initial concentration = smallest in the traverse; Fraction reprecipitated = 0.5.}
+    \caption{Comparison for the residence time between the two models. Evaluated for Specific surface area = 0.1; Mineral concentration in rock = 0.2; density of plagioclase = 2700; Reaction rate constant = 10e-15; Porosity = 0.1; Equilibrium concentration = Max in the catchment = 800 uM; Initial concentration = smallest in the traverse; Fraction reprecipitated = 0.5.}
     \label{fig:discussion7}
 \end{figure}
 
 \FloatBarrier
 
 
+As expected, the Fontorbe model predicts older times at short flow paths, and the Maher model predicts older times at longer flow paths. This difference is due to the formulation of the rate of reaction, which is constant in the Fontorbe model but depends on the equilibrium concentration for the Maher model. Indeed, as equilibrium concentration is reached, the reaction rate will decrease, and the residence time will increase. It is unrealistic that reaction rate continue to be constant as the reaction progresses, and so the Maher model is more appropriate to describe catchment-wide settings such as this. This is illustrated in the following graphic: \textcolor{red}{But DO they approach equilibrium?? See next section eg}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{TheoreticalCeq.pdf}
+    \caption{Comparison of how concentration changes with flow path length for the two models, and different equilibrium concentration}
+    \label{fig:discussion8}
+\end{figure}
+
+\FloatBarrier
+
+
+
+\newpage
+
+
 \subsubsection{Constraints on Residence Time}
 
-As per Acharya et al. (2020), parts of the literature suggest that the most amount of precipitation occur in the top quarter of the Himalayan catchments. Studies analysing gas ages %(what are they?)
+As per Acharya et al. (2020), parts of the literature suggest that the most amount of precipitation occur in the top quarter of the Himalayan catchments. \textcolor{red}{see lit review eg}Studies analysing gas ages %(what are they?)
 suggest that the residence time of the water in this catchment is on the order of 10 years, with an average of 25 years (Atwood et al, 2020). 
 
 \bsk
 
-Assuming an average rainfall rate of 3.5 m/yr (cite) over the top quarter of the catchment which is approximately 1km long, a m2/yr rate of 3500 is obtained. When considering a 10m wide channel flow of water, a flow rate of 350 m/yr for the top quarter of the catchment is obtained.
+Assuming an average rainfall rate of 3.5 m/yr (cite) over the top quarter of the catchment which is approximately 1km long, a m2/yr rate of 3500 is obtained. When considering a 10m wide channel flow of water, a flow rate of 350 m/yr for the top quarter of the catchment is obtained. \textcolor{red}{Need more meat on this..}
 
 \bsk
 
@@ -427,84 +363,73 @@ Secondly, using the oxygen isotopic composition of the springs, and comparing to
 % \FloatBarrier
 
 
-In this way it is plausible that ~10 years could be how long the water is spending in the cathcment, consistent with the Maher model.
+In this way it is plausible that ~10 years could be how long the water is spending in the catchment, consistent with the \textcolor{red}{both} models. Such a finding suggests that the delay in river discharge of Andermann et al. (2013) is likely only recording surface or near-surface flow. The shorter flow paths here could plausibly be associated to residence times of a few months. 
 
-THen you need to talk about Andermann et al, 2013 and the 3 month delay: largely surface flows.
-
+\newpage
 
 
 
 \subsection{Free Energy Calculations}
 
-\begin{itemize}
-    \item Delta G can be calulated from the saturation index of the minerals from PhreeQC
-    \item Because of the solid solution of feldspar, we have a lowering of delta G as per Dubacq
-    \item Compare Delta G against the times obtained from the Maher model. Is maher correct?
+A further constraint on the approach to equilibrium of a water packet is the free energy of reaction, which can be calculated using the activity of the ions in solution. Free energy is defined as:\textcolor{red}{cite}
 
-\end{itemize}
+\begin{equation}
+    \Delta G = \Delta G^0 + RT \ln Q
+\end{equation}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{Albite_histogram.pdf}
-    \caption{Histogram of the delta G of albite}
-    \label{fig:discussion8}
-\end{figure}
+The plagioclase to kaolinite reaction is given by equation \ref{eq:10}. The parameters for the standard free energy of reaction are calculated using the pygcc python package (cite). The package gives the standard properties of solid-solution species and reactions, such that $\Delta G^0$ can be calculated:
 
+\begin{equation}
+    \Delta G^0 = \Delta G^0_{products} - \Delta G^0_{reactants} = -RT \ln K
+\end{equation}\\
+K is calculated using the database obtained from pygcc using The Geochemist's Workbench® Rxn program. Q is calculated as the ion activity product of the reaction, assuming an ideal system whereby the activity is equal to the concentration of the ion in the water \textcolor{red}{Assuming the activities of the solid phases plagioclase and kaolinite are 1, the activity of water is 1, and the activity of the ions in solution are equal to their concentration, the free energy of reaction can be calculated. }
+
+\begin{equation}
+    Q = \frac{a_{\mathrm{Kaol}}^{0.6}\,a_{\mathrm{Na}^{+}}^{0.8}\,a_{\mathrm{Ca}^{2+}}^{0.2}\,a_{\mathrm{SiO_{2}(aq)}}^{1.6}}
+           {a_{\mathrm{An_{20}}}\,a_{\mathrm{H}^{+}}^{1.2}}
+\end{equation}\\
+
+It is important to note that the composition of the plagioclase is important. The free energy of reaction is lowered by the presence of a solid solution between albite and anorthite (Dubacq, 2022). \textcolor{red}{In our case...}
+
+\newpage
 
 \subsubsection{Comparison with Residence Time}
 
-
-
-
-\begin{figure}[h]
+\textcolor{red}{Need to write }
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{deltag_Albite_kJmol_vs_T_res_Maher_Si_uM_EC.pdf}
-    \caption{Comparison of the delta G of albite against the residence time from the Maher model.}
+    \includegraphics[width=0.9\textwidth]{delta_G_R_Si_comparison.pdf}
+    \includegraphics[width=0.9\textwidth]{delta_G_R_Si_time.pdf}
+    \caption{Comparison of the delta G obtained against elevation. Comparison of delta G with residence time for both models}
     \label{fig:discussion8}
 \end{figure}
 
 \FloatBarrier
 
 
+\newpage
+
 \subsubsection{Constraints on Reaction Rate}
 
-
-If a residence time of 10 years is appropriate, the models can be used to determine the reaction rate. This can then be used to determine whether weathering is sensitive to the fluid flux moreso than it is to the temperature, and that the water particles are close to equilibrium when comparing to the distance from equilibrium.
+Figure \ref{fig:discussion8} shows a convincing trend of decrease in $\Delta G$ as elevation decreases, consistent with the water samples getting closer to equilibrium as they flow for more time, and so the reaction occurs more. However, the free energy is only on the order of -60 kJ/mol at the longest flow path. This is not close to the -10kJ/mol that Kampman et al. (2014) suggest is the "near equilibrium plateau". There might be an argument, therefore, to suggest that the reaction rate is not as high as the models suggest. Indeed, at those values, laboratory rates might be more appropriate \textcolor{red}{Have the Kampman table? Lab rates of reaction are much faster for this }. One sure test is to compare the free energy obtained for the samples in Traverse 3 to those in Traverse 1. Given that the equilibrium concentration for the residence time is taken from this latter traverse (see Figure in results, ref), according to the formulation of the Maher model this should be closest to equilibrium.
 
 \bsk
 
-With a residence time of 10 years, it is possible to see what the reaction rate is using the following relationship: \\
-
-\begin{equation}
-    R_n = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 T_f \left( C_{\text{eq}} - C \right)}
-\end{equation}\\
-
-\begin{equation}
-    \rho_{sf} \cdot k \cdot A \cdot X_r = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 T_f \left( C_{\text{eq}} - C \right)}
-\end{equation}\\
+Figure \ref{fig:discussion9} does indeed show that the free energy of reaction is lower for the samples in Traverse 1 than in Traverse 3. However, the maximum value reached is still far away from equilibrium. Hence, it is likely that a larger reaction rate is needed to characterise these groundwaters. This has implications for the residence times calculated using these models, as the former and latter are inversely proportional.
 
 
-\begin{equation}
-     k = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 T_f \left( C_{\text{eq}} - C \right) \cdot \rho_{sf} \cdot A \cdot X_r}
-\end{equation}\\
-
-Taking the range of samples that correspond to MKS-5 to MKS-9, the places where Atwood et al, 2020 took their lowest elevation sample and found a time of 13 years, we can calculate the reaction rate constant, and compare it to the delta g assuming a simple increase in time with the samples. Note that the time Atwood found for their samples did not ascribe to this simple linear decrease, nor do we expect the time to do so. But for a proof of concept it should demonstrate how the rates of reaction plot:\\
+\textcolor{red}{Bit about Maher assuming equilibrium reached -> Maher not correct to implement here. Also mike permeability sketch???}
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{example_rate_deltaG.pdf}
-    \caption{Proving the point that the reaction rate is 10-15.}
-    \label{fig:discussion7}
+    \includegraphics[width=\textwidth]{delta_G_R_Si_comparison_Trav1.pdf}
+    \includegraphics[width=\textwidth]{delta_G_R_Si_time_trav1.pdf}
+    \caption{Comparison of the delta G obtained against elevation for Traverse 1 and Traverse 3. And residence time comparison, Note how Maher predicts really high residence times when Ceq is approached}
+    \label{fig:discussion9}
 \end{figure}
 
 \FloatBarrier
-
-It is clear from this plot that the obtained reaction rate is of the order of 10$^{-15}$ mol/m2/s. However unlike it does not show a decrease that we would expect if the system was truly approaching equilibrium. Indeed the delta G is still in Kampman's "near equilibrium plateau". And there is still a ways to go before the system is truly close to equilibrium. Insert sentence about obviously Kampman is a different system but the point is that the system is not close to equilibrium.\\
-
-\bsk
-
-So Maher's model for this natural system is not apt in showcasing that 
 
 
 
