@@ -1,5 +1,37 @@
+\section{Appendix 1: Strontium Isotopes and their Applications}
+Need to include a blurb about how they originate and what they mean.
 
-\section{Appendix 1: Derivation of reactive transport Models}
+\bsk
+
+Following Faure (2001 - Origin of Igneous Rocks), the Sr concentrations of a two-component mixture can be expressed as:\\
+
+\begin{equation}
+    [Sr]_M = [Sr]_A f_A + [Sr]_B(1-f_A)
+\end{equation}\\
+
+These are related to the isotopic composition with:\\
+
+\begin{equation}
+    \left(\frac{^{87}Sr}{^{86}Sr}\right)_M = \left(\frac{^{87}Sr}{^{86}Sr}\right)_A f_A \frac{[Sr]_A}{[Sr]_M} + \left(\frac{^{87}Sr}{^{86}Sr}\right)_B(1-f_A)\frac{[Sr]_B}{[Sr]_M} 
+\end{equation}\\
+
+These equations can be combined, yielding:\\
+
+\begin{equation}
+    \left(\frac{^{87}Sr}{^{86}Sr}\right)_M = \frac{a}{[Sr]_M} + b; \quad \text{with:}
+\end{equation}\\
+\begin{equation}
+    a = \frac{[Sr]_A [Sr]_B \left[ \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_B - \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_A \right]}{[Sr]_A - [Sr]_B}
+\end{equation}\\
+\begin{equation}
+    b = \frac{[Sr]_A \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_A - [Sr]_B \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_B}{[Sr]_A - [Sr]_B}
+\end{equation}\\
+
+Plots of $\ddfrac{^{87}Sr}{^{86}Sr}$ against $\ddfrac{1}{Sr}$ that yield straight lines are therefore indicative of mixing trends. 
+
+
+
+\section{Appendix 2: Derivation of reactive transport Models}
 
 
 \begin{tcolorbox}[
@@ -366,226 +398,4 @@ Note: Convert \( T_f \) from \( 10^{-3} \)s to years for practical use.\\
 }
 
 \end{tcolorbox}
-
-
-
-% \section{Appendix 2: Dimensional Analysis of \(T_f\) CHANGE THIS!!}
-
-% \subsection*{Fontorbe Model}
-
-% The residence time \(T_f\) is given by:
-
-% \begin{equation}
-%     T_f  = \frac{\left(C_h - C_0\right)\cdot\phi}{\left(1-f\right)\cdot R_n}
-% \end{equation}
-
-% where the parameters have the following units:
-
-% \begin{itemize}
-%     \item \( C_h, C_0 \) (Concentration): \( \mu\text{mol}/\text{L} \)
-%     \[
-%     1~\mu\text{mol}/\text{L} = \frac{10^{-6}~\text{mol}}{10^{-3}~\text{m}^3} = 10^{-3}~\frac{\text{mol}}{\text{m}^3}
-%     \]
-%     \item \( \phi \) (Porosity) is dimensionless.
-%     \item \( f \) (Fraction reprecipitated) is dimensionless.
-%     \item \( R_n \) (Reaction rate) is given by:
-%     \begin{equation}
-%         R_n = k \cdot S \cdot \rho \cdot 10^3 \cdot X \cdot (1-\phi)
-%     \end{equation}
-%     where:
-%     \begin{itemize}
-%         \item \( k \) (Reaction rate constant): \( \left[\frac{\text{mol}}{\text{m}^2 \cdot \text{s}}\right] \)
-%         \item \( S \) (Specific surface area): \( \left[\frac{\text{m}^2}{\text{g}}\right] \)
-%         \item \( \rho \) (Mineral density): \( \left[\frac{\text{kg}}{\text{m}^3}\right] \) \\
-%         Since \( 1~\text{kg} = 10^3~\text{g} \), we write:
-%         \[
-%         \rho = \frac{10^3~\text{g}}{\text{m}^3}
-%         \]
-%         \item \( X \) (Volume fraction of mineral in rock) is dimensionless.
-%         \item \( (1 - \phi) \) is dimensionless.
-%     \end{itemize}
-% \end{itemize}
-
-% \subsubsection*{Step-by-Step Dimensional Analysis of \(R_n\)}
-
-% First, multiplying \( k \) and \( S \):
-
-% \[
-% k \cdot S = \left(\frac{\text{mol}}{\text{m}^2 \cdot \text{s}}\right) \times \left(\frac{\text{m}^2}{\text{g}}\right) = \frac{\text{mol}}{\text{g} \cdot \text{s}}
-% \]
-
-% Next, multiplying by \( \rho \):
-
-% \[
-% \left(\frac{\text{mol}}{\text{g} \cdot \text{s}}\right) \times \left(\frac{10^3 \text{g}}{\text{m}^3}\right) = \frac{10^3 \text{mol}}{\text{m}^3 \cdot \text{s}}
-% \]
-
-% Since \( X \) and \( (1 - \phi) \) are dimensionless, they do not affect the units.
-
-% Thus, the final unit of \( R_n \) is:
-
-% \[
-% R_n = \frac{10^3 \text{mol}}{\text{m}^3 \cdot \text{s}}
-% \]
-
-% \subsubsection*{Final Dimensional Analysis of \(T_f\)}
-
-% Substituting the units:
-
-% \[
-% T_f = \frac{(C_h - C_0) \cdot \phi}{(1 - f) \cdot R_n}
-% \]
-
-% Since \( C_h - C_0 \) has units of:
-
-% \[
-% 10^{-3} \frac{\text{mol}}{\text{m}^3}
-% \]
-
-% and \( R_n \) has units of:
-
-% \[
-% \frac{10^3 \text{mol}}{\text{m}^3 \cdot \text{s}},
-% \]
-
-% we get:
-
-% \[
-% T_f = \frac{10^{-3} \frac{\text{mol}}{\text{m}^3}}{10^3 \frac{\text{mol}}{\text{m}^3 \cdot \text{s}}}
-% \]
-
-% Canceling \( \frac{\text{mol}}{\text{m}^3} \):
-
-% \[
-% T_f = \frac{10^{-3}}{10^3} \cdot s = 10^{-6} s
-% \]
-
-% \subsubsection*{Conclusion}
-
-% The predicted unit of \( T_f \) is:
-
-% \[
-% T_f \sim 10^{-6} \text{ s}
-% \]
-
-% \newpage
-
-
-% \subsection*{Maher Model}
-
-% \subsubsection*{Given Equation for \( T_f \)}
-
-% The residence time \( T_f \) is given by:
-
-
-% \begin{equation}
-%     T_f = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 R_n \left( C_{\text{eq}} - C \right)}
-% \end{equation}\\
-
-
-% where the parameters have the following units:
-
-% \begin{itemize}
-%     \item \( C_0, C, C_{\text{eq}} \) (Concentrations) in \( \mu \)mol/L:
-%     \[
-%     1~\mu\text{mol}/\text{L} = 10^{-6}~\frac{\text{mol}}{\text{L}}
-%     \]
-%     Thus,
-%     \[
-%     C_0, C, C_{\text{eq}} \sim 10^{-6} \frac{\text{mol}}{\text{L}}
-%     \]
-%     \item \( R_n \) (Net reaction rate) is defined as:
-%     \[
-%     R_n = \rho_{sf} \cdot k \cdot A \cdot X_r
-%     \]
-%     where:
-%     \begin{itemize}
-%         \item \( \rho_{sf} \) (Mass mineral/Fluid Volume ratio) has units:
-%         \[
-%         \rho_{sf} \sim \frac{\text{g}}{\text{L}}
-%         \]
-%         \item \( k \) (Reaction rate constant):
-%         \[
-%         k \sim \frac{\text{mol}}{\text{m}^2 \cdot \text{s}}
-%         \]
-%         \item \( A \) (Specific surface area):
-%         \[
-%         A \sim \frac{\text{m}^2}{\text{g}}
-%         \]
-%         \item \( X_r \) (Mineral concentration in fresh rock) is dimensionless.
-%     \end{itemize}
-% \end{itemize}
-
-% \subsubsection*{Step-by-Step Dimensional Analysis of \( R_n \)}
-
-% Expanding \( R_n \):
-
-% \[
-% R_n = \left(\frac{\text{g}}{\text{L}}\right) \times \left(\frac{\text{mol}}{\text{m}^2 \cdot \text{s}}\right) \times \left(\frac{\text{m}^2}{\text{g}}\right)
-% \]
-
-% Canceling \( \text{g} \) and \( \text{m}^2 \):
-
-% \[
-% R_n = \frac{\text{mol}}{\text{L} \cdot \text{s}}
-% \]
-
-% Thus, the reaction rate \( R_n \) has the units:
-
-% \[
-% R_n \sim \frac{\text{mol}}{\text{L} \cdot \text{s}}
-% \]
-
-% \subsubsection*{Dimensional Analysis of \( T_f \)}
-
-% Substituting the units into:
-
-
-% \begin{equation}
-%     T_f = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 R_n \left( C_{\text{eq}} - C \right)}
-% \end{equation}\\
-
-
-% - **Numerator:**  
-%   \[
-%    C_{eq} \cdot \left(C - C_0\right) \sim 10^{-12} \frac{\text{mol}^2}{\text{L}^2}
-%   \]
-
-% - **Denominator:**  
-%   \[
-%   e^2 R_n \left( C_{\text{eq}} - C \right) 
-%   \]
-
-%   Since \( e^2 \) is **dimensionless**, we are left with:
-
-%   \[
-%   e^2 R_n \sim 10^{-6} \frac{\text{mol}^2}{\text{L}^2 \cdot \text{s}}
-%   \]
-
-% Now, dividing:
-
-% \[
-% T_f = \frac{10^{-12} \frac{\text{mol}^2}{\text{L}^2}}{\frac{10^{-6}\text{mol}^2}{\text{L}^2 \cdot \text{s}}}
-% \]
-
-% Canceling \( \frac{\text{mol}}{\text{L}} \):
-
-% \[
-% T_f = 10^{-6} s
-% \]
-
-% \subsubsection*{Conclusion}
-
-% The predicted unit of \( T_f \) is:
-
-% \[
-% T_f \sim 10^{-6} \text{ s}
-% \]
-
-% which corresponds to:
-
-% \[
-% T_f = 1~\mu\text{s} \quad (\text{microseconds}).
-% \]
-
 

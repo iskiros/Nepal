@@ -1,0 +1,42 @@
+\contentsline {section}{\nameref {sec:abstract}}{i}{section*.1}%
+\contentsline {section}{\numberline {1}Introduction - \textcolor {red}{Need to take out the subsection titles and shift the literature review into the introduction}}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Aims and Motivation}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Study Dataset and Modeling}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Weathering Fingerprints}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Literature Review}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Defining Weathering}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Geological Controls on Weathering}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Reaction Rates in Natural and Laboratory Settings}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Response to Monsoonal Precipitation}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Effects of a Changing Climate}{7}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Study Area}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Geology and Geomorphic Setting}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Climate}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Data collection and analysis}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Field Sampling}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Major and Trace Element Analysis}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Isotope Analysis}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Estimates of Uncertainty}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Cyclic and Hydrothermal Correction}{11}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Seasonal and Spatial Variation}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Monsoonal Influence on Spring Chemistry}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Spatial Concentration Changes between the Springs}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Strontium isotopes and their Implications}{17}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Consistent Flow Paths Mid-Catchment}{20}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Discussion}{23}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Modal Decomposition Identifies Weathering Reaction}{23}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}One-Dimensional Reactive Transport Models}{25}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Model Motivation - \textcolor {red}{Do we add this into the other thing?}}{25}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Fontorbe et al. (2013) - Null Hypothesis - Model}{26}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Maher Model - \textcolor {red}{Correct this with respect to mike}}{28}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Comparison of the Models}{31}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Constraints on Residence Time}{33}{subsubsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.3}Free Energy Calculations}{35}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Comparison with Residence Time}{36}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Constraints on Reaction Rate}{37}{subsubsection.6.3.2}%
+\contentsline {section}{References}{39}{section*.23}%
+\contentsline {section}{\numberline {7}Appendix 1: Strontium Isotopes and their Applications}{47}{section.7}%
+\contentsline {section}{\numberline {8}Appendix 2: Derivation of reactive transport Models}{48}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Fontorbe et al. (2013) - Null Hypothesis - Model Derivation}{48}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Maher Model Derivation}{50}{subsection.8.2}%
+\contentsfinish 

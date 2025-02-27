@@ -6,7 +6,7 @@
 
 
 \subsection{Field Sampling}
-Both springs and rain were sampled in the field. Springs were sampled according to locations visited in past expeditions. Rain was collected in a rain gauge along several transects. Both water bodies were measured in the field for temperature, pH and TDS on a Hanna Instruments HI-991300 and and EXTECH DO700. Samples were also titrated using a Hach digital titrator with 0.0625M HCl to calculate the alkalinity of the water following the Gran Method (Gran, 1952). The field measurements were done 24 hours within having been collected.  Six aliquots were collected for each spring for anion, cation, titration, DIC, isotope and archive purposes respectively.  Rain samples had a smaller yield and so only three aliquots were collected, for ion, isotope and archive purposes. Both water body types were filtered through a 0.2µm PES membrane in a filtration unit prior to bottling. Cation and archive samples were acidified with concentrated HNO$_3$ to give a pH of $\sim$2, keeping the cations in solution. 
+Both springs and rain were sampled in the field. Springs were sampled according to locations visited in past expeditions. Rain was collected in a rain gauge along several transects. Both water bodies were measured in the field for temperature, pH and TDS on a Hanna Instruments HI-991300 and and EXTECH DO700. Samples were also titrated using a Hach digital titrator with 0.0625M HCl to calculate the alkalinity of the water following the Gran Method (Gran, 1952). The field measurements were done 24 hours within having been collected.  Six aliquots were collected for each spring for anion, cation, titration, DIC, isotope and archive purposes respectively.  Rain samples had a smaller yield and so only three aliquots were collected, for ion, isotope and archive purposes. Both water body types were filtered through a 0.2$\micro$m PES membrane in a filtration unit prior to bottling. Cation and archive samples were acidified with concentrated HNO$_3$ to give a pH of $\sim$2, keeping the cations in solution. 
 
 
 
@@ -17,14 +17,13 @@ Both springs and rain were sampled in the field. Springs were sampled according 
 \subsection{Major and Trace Element Analysis}
 
 Cation concentrations were determined using a Agilent Technologies 5100 Inductively-Coupled Plasma Optical Emission Spectrometer (ICP-OES) using a calibration line made from a Nepalese spring stock solution.
-Anion concentrations were determined using a Dionex ICS-5000 Ion Chromatograph against the Battle-02 standard calibration line. Associated 
-uncertainties range between 5-10\% for cations and 10-15\% for anions.
+Anion concentrations were determined using a Dionex Ion Chromatography System (ICS) 5000 series against the Battle-02 standard calibration line. Associated uncertainties range between 5-10\% for cations and 10-15\% for anions.
 
 %fact check the anion uncertainty
 
 \subsection{Isotope Analysis}
 
-Samples for radiogenic strontium analysis were dried down to provide at least 10 $\mu$g of Sr. Samples were then dissolved in aqua regia (3:1 HNO$_3$:HCl) to remove any additional organic matter. Once dried down again, they were added to 3 ml teflon columns with Eichrom SrSpec$^{\textcopyright}$ resin pipetted in. Once washing the column three times with Milli-Q$^{\textregistered}$ water, it was primed with 3M HNO$_3$. The sample was centrifuged then loaded onto the column avoiding any solids. The column was then washed a total of three times with 3M HNO$_3$ to remove cations. Lastly the column was eluted to a beaker with Milli-Q$^{\textregistered}$ water to collect the Sr. Once dried, the samples were dissolved in 3N HNO$_3$, centrifuged and then diluted for analysis on a Thermo Scientific Neptune Plus MC-ICP-MS. \textcolor{red}{Write about uncertainties from machine}
+Samples for radiogenic strontium analysis were dried down to provide at least 10 $\mu$g of Sr. Samples were then dissolved in aqua regia (3:1 HNO$_3$:HCl) to remove any additional organic matter. Once dried down again, they were added to 3 ml teflon columns with Eichrom SrSpec$^{\textcopyright}$ resin pipetted in. Once washed three times with Milli-Q$^{\textregistered}$ water, the column was primed with 3M HNO$_3$. The sample was centrifuged then loaded onto the column avoiding any solids. The column was then washed a total of three times with 3M HNO$_3$ to remove other cations. Lastly, the column was eluted to a beaker with Milli-Q$^{\textregistered}$ water to collect the Sr. Once dried, the samples were dissolved in 3M HNO$_3$, centrifuged and then diluted for analysis on a Thermo Scientific Neptune Plus MC-ICP-MS. Errors on Sr isotope measurement are taken from two standard deviations of the measured values given by the MC-ICP-MS.
 
 \bsk
 
@@ -33,84 +32,39 @@ Samples were also analysed for stable oxygen and deuterium isotopes on a Picarro
 
 \subsection{Estimates of Uncertainty}
 
-Uncertainties were propagated using a Monte Carlo method. This leverages randomness to calculate uncertainties. Randomly adding noise to measured data within an estimated uncertainty range, the simulation shows how adding that noise propagates through the calculations. \textcolor{red}{Better definition here. Uncertainty table needed}
-
-\newpage
+Uncertainties were propagated using a Monte Carlo method. This leverages randomness to calculate uncertainties. Both observed and estimated parameters have uncertainties associated with them. Each Monte Carlo simulation randomly varies the input parameters within their estimated uncertainty ranges. Once many simulations have been run, the distribution of results reflects the possible range of values obtained for a given relationship. The uncertainty is then calculated as two standard deviations of the mean of the distribution.
 
 
-\section{Cyclic and Hydrothermal Correction}
+\subsection{Cyclic and Hydrothermal Correction}
 
-Rain input is a significant factor in the chemical composition of groundwater and rivers (Drever, 1997).\textcolor{red}{Most of the chloride is thought to come from the rain...} Spring water is corrected for rain input according to the average concentration for the closest rain sample collected in this field season. Whilst it would be best to perform a temporal correction, a spatial correction where the rain is collected from the same catchment as the analysed spring samples is already a significant improvement over the current literature (Bickle, 2015 AJS).
+Rain input is a significant factor in the chemical composition of groundwater and rivers. Most chloride found in these water bodies is thought to be due to rainwater input (Drever, 1997). It is standard practice to correct for this cyclic input. Spring water is corrected for rain input according to the average concentration for the closest rain sample collected in this field season. To remove the contribution of the rain the following formula is used for any element X:
 
-\bsk
-
-To remove the contribution of the rain the following formula is used for any element X:
-
-\begin{center}
-{\Large
-$[X]_{rain-corrected}$  = $[X]_{river}$ - $(Cl_{river} - Cl^*_{river})\ddfrac{[X]_{rain}}{[Cl]_{rain}}$}
-
-\end{center}
-
-Where $[Cl]^*_{river}$ is is calculated by subtracting the concentration of chloride in the rain from that in the river (Tipper et al, 2006).
-$Cl^{*}$ is taken to be zero if the concentration of chloride in the rain is greater than concentration of river. Evapotranspiration is not considered by this model, and
-studies which show that it plays a minor role, accounting for less than 10\% of the hydrological budget in the Himalayas (Andermann et al (2012); Bookhagen and Burbank, 2010).
+%Whilst it would be best to perform a temporal correction, a spatial correction where the rain is collected from the same catchment as the analysed spring samples is already a significant improvement over the current literature (Bickle, 2015 AJS).
 
 
+\begin{equation}
+    [X]_{rain-corrected}  = [X]_{river} - (Cl_{river} - Cl^*_{river})\frac{[X]_{rain}}{[Cl]_{rain}}
+\end{equation}
+\begin{equation}
+    Cl^*_{river} = Cl_{river} - Cl_{rain}; \quad \text{if} \quad Cl_{river} > Cl_{rain}
+\end{equation}\\
+    
 
+Where $[Cl]^*_{river}$ is is calculated by subtracting the concentration of chloride in the rain from that in the river (Tipper et al, 2006). $Cl^{*}$ is taken to be zero if the concentration of chloride in the rain is greater than concentration of river. Evapotranspiration is not considered by this model, and studies which show that it plays a minor role, accounting for less than 10\% of the hydrological budget in the Himalayas (Andermann et al (2012); Bookhagen and Burbank, 2010). In those cases where $Cl^*$ is not zero then, a primary rain correction is simply:
 
-% {\tiny
-% This formula is used because it allows for evapotranspiration to be corrected for in a later revision. 
+\begin{equation}
+[X]_{rain-corrected}  = [X]_{river} - [X]_{rain}
+\end{equation}\\
 
-% Evapotranspiration (ET henceforth) is a term that describes the sum of evaporation and plant transpiration 
-% from the earth's land surface to atmosphere, including soil and vegetation.[Cite]. 
-% ET is crop dependent and intuitively varies as rainfall with time. ET is calculated 
-% using the Penman-Monteith method, and there exists literature which compile global 
-% annual databases of ET. These can be compared for the Cañete to rainfall, and the above equation can be modified like so:
+Once the samples have been corrected for rain input, the remaining $[Cl]^{-}$ is assumed to be derived from hydrothermal springs encountered in the flow path. This is likely to be the case in one of the southern traverses (Traverse 2) in Melamchi which display high chloride concentrations even after the cyclic correction. Hence, the sample with the highest $[Cl]^{-}$ is used to correct:
 
-% \begin{center}
-% {\Large
-% $[X]_{rain-corrected}$ = $[X]_{river}$ - $\frac{[X]_{rain}}{[Cl]_{rain}} *[Cl]_{lowest-river}  * ETF   $}
+\begin{equation}
+[X]_{hydrothermal-corrected}  = [X]_{rain-corrected} - \frac{[X]}{[Cl]}_{highest-Cl} * [Cl]_{rain-corrected}
+\end{equation}\\
 
-% \end{center}
-
-% Where ETF is an evapotranspiration factor relating the relative amonts of rain to evapotranspiration. 
-% For example,  if half the rain gets evaporated, then the samples will be more concentrated when corrected (and the minimum ET is zero).
-% }
-
-
-In those cases where $Cl^*$ is not zero then, a primary rain correction is simply:
-
-
-\begin{center}
-{\Large
-$[X]_{rain-corrected}$  = $[X]_{river}$ - $[X]_{rain}$}
-
-\end{center}
-
-\bsk
-
-Once the samples have been corrected for rain input, the remaining $[Cl]^{-}$ is assumed to be derived from evaporites encountered in the flow path.
-
-\bsk
-
-% Do we do this?
-Hence, the sample with the highest $[Cl]^{-}$ is used to correct the ions in a similar fashion to how the most dilute sample was used above:
-
-\begin{center}
-{\Large
-$[X]_{evaporite-corrected}$  = $[X]_{rain-corrected}$ - $\frac{[X]}{[Cl]}_{highest-Cl} * [Cl]_{rain-corrected}$}
-\end{center}
-
-This ensures that all chloride in the corrected sample is removed. The correction uses ionic ratios from the most concentrated water source, which acts as a proxy for the sediment imparting its signature.  In this way, the correction does not affect samples which do not have high Cl (and hence do not have a large evaporite contribution), but does decrease the concentration of ions for those that do.
-
-\bsk
-
-In the following sections, samples are plotted with the evaporite correction applied where possible. Only in those cases where no chloride was measured is the evaporite correction not applied.
+This ensures that all chloride in the corrected sample is removed. The correction uses ionic ratios from the most concentrated water source, which acts as a proxy for the sediment imparting its signature.  In this way, the correction does not affect samples which do not have high Cl (and hence do not have a large hydrothermal contribution), but does decrease the concentration of ions for those that do. In the following sections, samples are plotted with the evaporite correction applied where possible. Only in those cases where no chloride was measured is the evaporite correction not applied.
 
 % As is seen in the following section (ref), many samples in Traverse 2 have a high Cl concentration, but this is less of a concern for the other traverses.
-
-\bsk
 
 % As a further detail when modeling a groundwater flow, 
 % it is unlikely that the composition of Sample$_{highest-Cl}$ is just a product of evaporites. 

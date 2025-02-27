@@ -2,27 +2,9 @@
 
 \section{Discussion}
 
+\subsection{Modal Decomposition Identifies Weathering Reaction}
 
-% ION PAPERS:
-
-% \item{Galy, France-Lanord, Derry: Has the carbonate and silicate rock ratios you can use, including the d13C and d18O}
-
-% \item{Bickle et al, 2015: Rain correction; mass balance calculations to see silicate and carbonate proportions; Modal decomposition for mineral proportions in water.}
-
-
-
-
-% MODELLING:
-
-% \item{Benettin et al, 2015: Develop a transport model for a watershed in the US. Assumptions in modeling approach is that their modelling approach assumes the properties of different compartments are reproduced by the outflow - this suggests that mixing processes and macrodispersion are more important than advective transport}
-
-% \item{Bethke, 2008: The Damkohler number describes the relative importance of reaction and transport, or kinetic vs transport controlled in West's terms}
-
-
-
-\subsection{Stoichiometric Considerations - \textcolor{red}{Better Title}}
-
-The first step towards quantifying the extent to which chemical weathing reactions have gone to completion is to discern what reaction is taking place. In principle this is as simple as knowing what minerals are dissolving and which are precipitating. Modal decomposition methods consider several minerals that could be dissolving and/or precipitating, and their stoichiometry. An example matrix following Bickle et al. (2015) \textcolor{red}{cite the data} is found below:
+The first step towards quantifying the extent to which chemical weathing reactions have gone to completion is to discern what reaction is taking place. In principle this is as simple as knowing what minerals are dissolving and which are precipitating. Modal decomposition methods consider several minerals that could be dissolving and/or precipitating, and their stoichiometry (Garrels and Mackenzie, 1967; Drever, 1997).
 
 
 \begin{center}
@@ -38,7 +20,7 @@ K   & a_{61}  & a_{62}  & a_{63}  & a_{64}  & a_{65}  & a_{66}  \cr}
   \end{bordermatrix}
   \cdot
   \begin{bordermatrix}
-{ & \mu mol/l \cr
+{ &  \cr
   & x_{Biot} \cr
   & x_{Plag} \cr
   & x_{Calc} \cr
@@ -48,7 +30,7 @@ K   & a_{61}  & a_{62}  & a_{63}  & a_{64}  & a_{65}  & a_{66}  \cr}
   \end{bordermatrix}
   =
   \begin{bordermatrix}
-{ & Spring \cr
+{ & Spring (\mu mol/l) \cr
   & b_1 \cr
   & b_2 \cr
   & b_3 \cr
@@ -60,30 +42,16 @@ K   & a_{61}  & a_{62}  & a_{63}  & a_{64}  & a_{65}  & a_{66}  \cr}
 \end{center}
 \bsk
 
-% \begin{itemize}
-%     \item Matrix example
-%     \item Feldspar is mostly what we dissolve and kaolinite is mostly what we precipitate
-%     \item Include the stoichiometry of the reaction from Drever
-%     \item Decide that at Alakmanda, eg albite component is near 0.8
-
-% \end{itemize}
-
-
-Matrix algebra facilitates the calculations of the mineral proportions in the water. Given:
+Matrix algebra facilitates the calculations of the mineral proportions in the water. Given known matrices \( A \) and \( B \):
 
 \begin{equation}
 AX = B
-\end{equation}\\
-
-where \( A \) and \( B \) are known,\\
-
+\end{equation}
 \begin{equation}
 X = A^{-1}B
-\end{equation}
+\end{equation}\\
 
-\newpage
-
-This way, volumetric proportions of the minerals in the water can be calculated. For ease of visualisation, Figure 6 shows the positive, dissolved minerals on the LHS, and the negative, precipitated minerals on the RHS. \textcolor{red}{Bar Chart here}\\
+This way, volumetric proportions of the minerals in the water can be calculated. Modal decompostion for spring waters was performed according to stoichiometric proportions from Bickle et al. (2015). For ease of visualisation, Figure 6 shows the positive, dissolved minerals on the LHS, and the negative, precipitated minerals on the RHS. \textcolor{red}{Bar Chart here}\\
 
 \begin{figure}[h]
     \centering
@@ -94,7 +62,7 @@ This way, volumetric proportions of the minerals in the water can be calculated.
 
 \FloatBarrier
 
-Figure 6 is representative of most springs in Traverse 3. Hence, the major phase being dissolved is plagioclase feldspar and the major phase being precipitated is kaolinite. The plagioclase to kaolinite reaction is given by the following equation (written so that aluminium is conserved)\textcolor{red}{Write about Alakmanda and An\_20 and from Al's paper}:
+Figure 6 is representative of most springs in Traverse 3. Hence, the major phase being dissolved is plagioclase feldspar and the major phase being precipitated is kaolinite. The primary composition of plagioclase in the area corresponds to $\approx$ An-20 (Bickle et al., 2015; Knight et al., 2024).  The plagioclase to kaolinite reaction is given by the following equation (written so that aluminium is conserved):
 
 \begin{equation}
     \begin{matrix}
