@@ -1,4 +1,6 @@
 
+\newpage
+
 \section{Data Collection and Measurement}
 % Discuss the analytical methods used in the study.
 % - Refer to relevant data tables.
@@ -8,59 +10,28 @@
 \subsection{Field Sampling}
 Both springs and rain were sampled in the field. Springs were sampled according to locations visited in past expeditions. Rain was collected in a rain gauge along several transects. Both water bodies were measured in the field for temperature, pH and TDS on a Hanna Instruments HI-991300 and and EXTECH DO700. Samples were also titrated using a Hach digital titrator with 0.0625M HCl to calculate the alkalinity of the water following the Gran Method (Gran, 1952). The field measurements were done 24 hours within having been collected.  Six aliquots were collected for each spring for anion, cation, titration, DIC, isotope and archive purposes respectively.  Rain samples had a smaller yield and so only three aliquots were collected, for ion, isotope and archive purposes. Both water body types were filtered through a 0.2$\micro$m PES membrane in a filtration unit prior to bottling. Cation and archive samples were acidified with concentrated HNO$_3$ to give a pH of $\sim$2, keeping the cations in solution. 
 
-%Titration uncertainty!! Use the mean square error of the titration to calculate the uncertainty of the alkalinity.
-
-
 
 \subsection{Major and Trace Element Analysis}
 
-Cation concentrations were determined using a Agilent Technologies 5100 Inductively-Coupled Plasma Optical Emission Spectrometer (ICP-OES) using a calibration line made from a Nepalese spring stock solution.
-Anion concentrations were determined using a Dionex Ion Chromatography System (ICS) 5000 series against the Battle-02 standard calibration line. Associated uncertainties range between 5-10\% for cations and 10-15\% for anions.
+Cation concentrations were determined using a Agilent Technologies 5100 Inductively-Coupled Plasma Optical Emission Spectrometer (ICP-OES) using a calibration line made from a Nepalese spring stock solution. Anion concentrations were determined using a Dionex Ion Chromatography System (ICS) 5000 series against the Battle-02 standard calibration line. Associated uncertainties range between 5-10\% for cations and anions.
 
 %fact check the anion uncertainty
 
 \subsection{Isotope Analysis}
 
-Samples for radiogenic strontium analysis were dried down to provide at least 10 $\mu$g of Sr. Samples were then dissolved in aqua regia (3:1 HNO$_3$:HCl) to remove any additional organic matter. Once dried down again, they were added to 3 ml teflon columns with Eichrom SrSpec$^{\textcopyright}$ resin pipetted in. Once washed three times with Milli-Q$^{\textregistered}$ water, the column was primed with 3M HNO$_3$. The sample was centrifuged then loaded onto the column avoiding any solids. The column was then washed a total of three times with 3M HNO$_3$ to remove other cations. Lastly, the column was eluted to a beaker with Milli-Q$^{\textregistered}$ water to collect the Sr. Once dried, the samples were dissolved in 3M HNO$_3$, centrifuged and then diluted for analysis on a Thermo Scientific Neptune Plus MC-ICP-MS. Errors on Sr isotope measurement are taken from two standard deviations of the measured values given by the MC-ICP-MS.
+Samples for radiogenic strontium analysis were dried down to provide at least 100 ng of Sr. Samples were then dissolved in aqua regia (3:1 HNO$_\text{3}$:HCl) to remove any additional organic matter. Once dried down again, they were added to 3 ml teflon columns with Eichrom SrSpec$^{\textcopyright}$ resin pipetted in. Once washed three times with Milli-Q$^{\textregistered}$ water, the column was primed with 3M HNO$_\text{3}$. The sample was centrifuged then loaded onto the column avoiding any solids. The column was then washed a total of three times with 3M HNO$_3$ to remove other cations. Lastly, the column was eluted to a beaker with Milli-Q$^{\textregistered}$ water to collect the Sr. Once dried, the samples were dissolved in 3M HNO$_\text{3}$, centrifuged and then diluted for analysis on a Thermo Scientific Neptune Plus MC-ICP-MS. Errors on Sr isotope measurement are taken from two standard deviations of the measured values given by the MC-ICP-MS.
 
-\bsk
+% \bsk
 
-Samples were also analysed for stable oxygen and deuterium isotopes on a Picarro L2140-i portable analyser, using cavity ring-down spectroscopy, with an average precision of 0.05, 0.09 and 0.57 \textperthousand\ for $\delta^{17}O$, $\delta^{18}O$ and $\delta D$ respectively. 
+% Samples were also analysed for stable oxygen and deuterium isotopes on a Picarro L2140-i portable analyser, using cavity ring-down spectroscopy, with an average precision of 0.05, 0.09 and 0.57 \textperthousand\ for $\delta^{17}O$, $\delta^{18}O$ and $\delta D$ respectively. 
 
 
 \section{Methods and Models for Analysis}
 
 
-\subsection{Cyclic and Hydrothermal Correction}
+\subsection{Rain and Hydrothermal Correction}
 
-Rain input is a significant factor in the chemical composition of groundwater and rivers. Most chloride found in these water bodies is thought to be due to rainwater input (Drever, 1997). It is standard practice to correct for this cyclic input. Spring water is corrected for rain input according to the average concentration for the closest rain sample collected in this field season. To remove the contribution of the rain the following formula is used for any element X:
-
-%Whilst it would be best to perform a temporal correction, a spatial correction where the rain is collected from the same catchment as the analysed spring samples is already a significant improvement over the current literature (Bickle, 2015 AJS).
-
-
-\begin{equation}
-    [X]_{rain-corrected}  = [X]_{river} - (Cl_{river} - Cl^*_{river})\frac{[X]_{rain}}{[Cl]_{rain}}
-\end{equation}
-\begin{equation}
-    Cl^*_{river} = Cl_{river} - Cl_{rain}; \quad \text{if} \quad Cl_{river} > Cl_{rain}
-\end{equation}\\
-    
-
-Where $[Cl]^*_{river}$ is is calculated by subtracting the concentration of chloride in the rain from that in the river (Tipper et al, 2006). $Cl^{*}$ is taken to be zero if the concentration of chloride in the rain is greater than concentration of river. Evapotranspiration is not considered by this model, and studies which show that it plays a minor role, accounting for less than 10\% of the hydrological budget in the Himalayas (Andermann et al (2012); Bookhagen and Burbank, 2010). In those cases where $Cl^*$ is not zero then, a primary rain correction is simply:
-
-\begin{equation}
-[X]_{rain-corrected}  = [X]_{river} - [X]_{rain}
-\end{equation}\\
-
-Once the samples have been corrected for rain input, the remaining $[Cl]^{-}$ is assumed to be derived from hydrothermal springs encountered in the flow path. This is likely to be the case in one of the southern traverses (Traverse 2) in Melamchi which display high chloride concentrations even after the cyclic correction. Hence, the sample with the highest $[Cl]^{-}$ is used to correct:
-
-\begin{equation}
-[X]_{hydrothermal-corrected}  = [X]_{rain-corrected} - \frac{[X]}{[Cl]}_{highest-Cl} * [Cl]_{rain-corrected}
-\end{equation}\\
-
-This ensures that all chloride in the corrected sample is removed. The correction uses ionic ratios from the most concentrated water source, which acts as a proxy for the sediment imparting its signature.  In this way, the correction does not affect samples which do not have high Cl (and hence do not have a large hydrothermal contribution), but does decrease the concentration of ions for those that do. In the following sections, samples are plotted with the evaporite correction applied where possible. Only in those cases where no chloride was measured is the evaporite correction not applied.
-
-\newpage
+Rain input is a significant factor in the chemical composition of groundwater and rivers. Most chloride found in these water bodies is thought to be due to rainwater input (Drever, 1997). It is standard practice to correct for this rain input. Once the samples have been corrected for rain input, the remaining chloride is assumed to be derived from hydrothermal signatures encountered in the flow path. Spring waters are also therefore corrected for hydrothermal input, so that the concentrations used for modelling are strictly derived from weathering reactions.
 
 \subsection{Modal Decomposition Identifies Weathering Reaction}
 
@@ -155,13 +126,11 @@ Where \(\mathcal{O}_{T}\) and \(\mathcal{O}_{R}\) are the transport and reaction
 %Also need to make a mini 1D graphic explaining what the 1D model actually means in practice
 
 
-\subsubsection{Model Motivation}
+\subsubsection*{Model Motivation}
 
 As discussed in the Introduction (ref), there are different hypotheses regarding the major controls on chemical weathering. This section will contrast one model following the null hypothesis that weathering is largely sensitive to climate and temperature (Fontorbe et al., 2013), and another model that suggests weathering is more sensitive to fluid flux (Maher, 2011; Maher and Chamberlain, 2013). Given the emphasis on deriving fluid residence times from solute concentrations, the benchmark for a model's effectiveness will be how well it can predict these times compared to previous studies on gas tracers and simple box models. Assumptions and constraints will be compared and contrasted, and their results used to inform the calculation of rates of reaction and approach to equilibrium in Melamchi. For both models, the element used to benchmark is dissolved silicon. This is because silicon is present in both dissolution and precipitation reactions, so it is applicable to the Maher model which considers both reactions. Furthermore, silicon is what both models were used for in their respective original studies.
 
-\newpage
-
-\subsubsection{Fontorbe et al. (2013) - Model}
+\subsubsection*{Fontorbe et al. (2013) - Model}
 
 This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths (see Appendix for a full derivation, and Table ref for a list of parameters used). The first-order differential equation governing transport and reaction is given as:\\
 
@@ -181,9 +150,6 @@ Assuming steady-state (\(\partial C/\partial t = 0\)), the concentration at the 
     T_f = \frac{(C - C_0)\phi}{(1-f)R_n}
 \end{equation}
 
-
-
-\newpage
 
 \begin{table}[H]
     \centering
@@ -229,7 +195,7 @@ Assuming steady-state (\(\partial C/\partial t = 0\)), the concentration at the 
 
 
 
-\subsubsection{Maher and Chamberlain (2014) Model}
+\subsubsection*{Maher and Chamberlain (2014) Model}
 
 
 This model is built in accordance with the principle that the main control on silicate weathering is the residence time of the water. The model is based on the assumption that the reaction rate decreases linearly with approach to equilibrium, and that all weathering paths approach equilibrium. The motivation behind the hydrological control is based on sensitivity analyses of real catchment data on one-dimensional reactive transport models which suggest that porosity, mineral surface area, and temperature have no consistent correlation with water composition (Maher, 2011). See Appendix and Table ref for a full derivation and the model parameters respectively. The model begins with the following representation of the concentration of a solute in a fluid flow path:\\ 
@@ -262,7 +228,8 @@ Note the $e^2$ term is used because the Maher model considers all paths as if th
         \hline  % DOUBLE BOLD LINE
         \multicolumn{4}{|c|}{\textbf{Maher}} \\  
         \hline
-        \textbf{Parameter} & \textbf{Definition} & \textbf{Units} & \textbf{Formula (Value)} \\  
+        \textbf{Parameter} & \textbf{Definition} & \textbf{Units} & \textbf{Formula (Value)} \\
+        \hline
         $\phi$ & Porosity & - & 0.1$^*$ \\
         $h$ & Length of flow path & m & Variable \\
         $q$ & Flow rate & m/s & Variable \\
@@ -287,4 +254,37 @@ Note the $e^2$ term is used because the Maher model considers all paths as if th
 
 \subsection{Estimates of Uncertainty}
 
-Uncertainties were propagated using a Monte Carlo method. This leverages randomness to calculate uncertainties. Both observed and estimated parameters have uncertainties associated with them. Each Monte Carlo simulation randomly varies the input parameters within their estimated uncertainty ranges. Once many simulations have been run, the distribution of results reflects the possible range of values obtained for a given relationship. The uncertainty is then calculated as two standard deviations of the mean of the distribution.
+Uncertainties were propagated using a Monte Carlo method using an assumed normal distribution. Both the observed parameters and estimated parameters have uncertainties associated to them.
+
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Adjust row height
+    {\small
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \multicolumn{5}{|c|}{\textbf{Parameter Definitions and Propagated Uncertainties}} \\  
+        \hline
+        \textbf{Parameter} & \textbf{Definition} & \textbf{Units} & \textbf{Value} & \textbf{Uncertainty} \\  
+        \hline
+        $\phi$ & Porosity & - & 0.1 & $\pm$ 10\% \\  
+        $C_{eq}$ & Equilibrium DSi concentration & $\mu$mol/L & 869 $\mu$mol/L & $\pm$ 10\% \\  
+        $C_0$ & Initial DSi concentration & $\mu$mol/L & 95 $\mu$mol/L & $\pm$ 10\% \\  
+        $\rho$ & Plagioclase density & g/cm$^3$ & 2.7 & $\pm$ 10\% \\  
+        $k$ & Reaction rate constant & mol/m$^2$/s & 10$^{-15}$ & $\pm$ 10\% \\  
+        $S$ & Specific surface area & m$^2$/g & 0.1 & $\pm$ 10\% \\  
+        $X$ & Volume fraction of mineral in rock & $\text{g}_{\text{min}}/\text{g}_{\text{rock}}$ & 0.2 & $\pm$ 10\% \\   
+        $f$ & Fraction reprecipitated & - & 0.5 & $\pm$ 10\% \\
+        $\Delta G^0$ & Standard Gibbs Free Energy & kJ/mol & $\text{-RTlnK}^*$ & $\pm$ 10\% \\
+        \hline
+    \end{tabular}}
+    \caption{Key parameters, definitions, and propagated uncertainties. $^*$ Uncertainty associated with temperature and K calculated from pgcc using The Geochemist's Workbench® Rxn program(ref)}
+    \label{tab:parameters_with_uncertainty}
+\end{table}
+
+\FloatBarrier
+
+
+
+
+% This leverages randomness to calculate uncertainties. Both observed and estimated parameters have uncertainties associated with them. Each Monte Carlo simulation randomly varies the input parameters within their estimated uncertainty ranges. Once many simulations have been run, the distribution of results reflects the possible range of values obtained for a given relationship. The uncertainty is then calculated as two standard deviations of the mean of the distribution.

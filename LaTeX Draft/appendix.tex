@@ -1,7 +1,9 @@
-\section{Appendix 1: Strontium Isotopes and their Applications}
-Need to include a blurb about how they originate and what they mean.
 
-\bsk
+
+
+
+\section*{Appendix 1: Strontium Isotopes Mass Balance Mixing Model}
+\addcontentsline{toc}{section}{Appendix 1: Strontium Isotopes Mass Balance Mixing Model}
 
 Following Faure (2001 - Origin of Igneous Rocks), the Sr concentrations of a two-component mixture can be expressed as:\\
 
@@ -31,7 +33,40 @@ Plots of $\ddfrac{^{87}Sr}{^{86}Sr}$ against $\ddfrac{1}{Sr}$ that yield straigh
 
 \newpage
 
-\section{Appendix 2: Derivation of reactive transport Models}
+
+\section*{Appendix 2: Rain and Hydrothermal Correction Equations}
+\addcontentsline{toc}{section}{Appendix 2: Rain and Hydrothermal Correction Equations}
+
+
+Spring water is corrected for rain input according to the average concentration for the closest rain sample collected in this field season. To remove the contribution of the rain the following formula is used for any element X:
+
+\begin{equation}
+    [X]_{rain-corrected}  = [X]_{river} - (Cl_{river} - Cl^*_{river})\frac{[X]_{rain}}{[Cl]_{rain}}
+\end{equation}
+\begin{equation}
+    Cl^*_{river} = Cl_{river} - Cl_{rain}; \quad \text{if} \quad Cl_{river} > Cl_{rain}
+\end{equation}\\
+    
+
+Where $[Cl]^*_{river}$ is is calculated by subtracting the concentration of chloride in the rain from that in the river (Tipper et al, 2006). $Cl^{*}$ is taken to be zero if the concentration of chloride in the rain is greater than concentration of river. Evapotranspiration is not considered by this model, and studies which show that it plays a minor role, accounting for less than 10\% of the hydrological budget in the Himalayas (Andermann et al (2012); Bookhagen and Burbank, 2010). In those cases where $Cl^*$ is not zero then, a primary rain correction is simply:
+
+\begin{equation}
+[X]_{rain-corrected}  = [X]_{river} - [X]_{rain}
+\end{equation}\\
+
+Once the samples have been corrected for rain input, the remaining $[Cl]^{-}$ is assumed to be derived from hydrothermal springs encountered in the flow path. This is likely to be the case in one of the southern traverses (Traverse 2) in Melamchi which display high chloride concentrations even after the cyclic correction. Hence, the sample with the highest $[Cl]^{-}$ is used to correct:
+
+\begin{equation}
+[X]_{hydrothermal-corrected}  = [X]_{rain-corrected} - \frac{[X]}{[Cl]}_{highest-Cl} * [Cl]_{rain-corrected}
+\end{equation}\\
+
+This ensures that all chloride in the corrected sample is removed. The correction uses ionic ratios from the most concentrated water source, which acts as a proxy for the sediment imparting its signature.  In this way, the correction does not affect samples which do not have high Cl (and hence do not have a large hydrothermal contribution), but does decrease the concentration of ions for those that do. In the following sections, samples are plotted with the evaporite correction applied where possible. Only in those cases where no chloride was measured is the evaporite correction not applied.
+
+\newpage
+
+
+\section*{Appendix 3: Derivation of Reactive Transport Models}
+\addcontentsline{toc}{section}{Appendix 3: Derivation of Reactive Transport Models}
 
 
 \begin{tcolorbox}[
@@ -46,7 +81,9 @@ Plots of $\ddfrac{^{87}Sr}{^{86}Sr}$ against $\ddfrac{1}{Sr}$ that yield straigh
 ]
 
 
-\subsection{Fontorbe et al. (2013) - Null Hypothesis - Model Derivation}
+
+
+\subsection*{Fontorbe et al. (2013) - Null Hypothesis - Model Derivation}
 \vspace{-5mm}
 {\footnotesize
 
@@ -241,7 +278,7 @@ $C$ is the concentration at the end of the flow path, which is taken to be equal
 ]
 
 
-\subsection{Maher Model Derivation}
+\subsection*{Maher Model Derivation}
 \vspace{-5mm}
 {\footnotesize
 

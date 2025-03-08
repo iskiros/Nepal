@@ -92,20 +92,36 @@
 \setcounter{tocdepth}{4}
 
 % Document content
+% \title{
+%   \vspace{-2cm}
+%   {\huge
+%   \renewcommand{\arraystretch}{1} % Adjust line spacing
+%     \textbf{Ground Truthing Earth's}\\ 
+%     \textbf{Silicate Weathering Thermostat:} \\
+%     \textbf{Interpreting the Geochemistry}\\ 
+%     \textbf{of Himalayan Groundwaters}
+% }
+%   \vspace{0.5cm}
+% }
 \title{
-  \vspace{-2cm}
-  {\huge
-  \renewcommand{\arraystretch}{1} % Adjust line spacing
-    \textbf{Ground Truthing Earth's}\\ 
-    \textbf{Silicate Weathering Thermostat:} \\
-    \textbf{Interpreting the Geochemistry}\\ 
-    \textbf{of Himalayan Groundwaters}
-}
+  \vspace{-1cm}
+  {\fontsize{16pt}{18pt}\selectfont
+    \textbf{
+      \strut Ground Truthing Earth's Silicate Weathering Thermostat:\\[0.4em] % Slightly bigger break before middle line
+      \strut Using the Geochemistry of Himalayan Groundwaters to \\[-0.2em]
+      \strut Calculate Residence Times
+    }
+  }
   \vspace{0.5cm}
 }
 
-\author{Giovanni Bernardi}
+
+\author{Giovanni Bernardi\\ 
+Part III Project}
 \date{2024-2025}
+
+
+
 
 
 
@@ -115,8 +131,13 @@
 
 \maketitle
 
-
-
+\begingroup
+\renewcommand{\thefigure}{} % Disable numbering locally
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=\textwidth]{front1.pdf}
+\end{figure}
+\endgroup
 
 
 \thispagestyle{empty}
@@ -127,61 +148,58 @@
 \label{sec:abstract}
 \addcontentsline{toc}{section}{\nameref{sec:abstract}}
 
-Blurb about stuff at start
+IMO, the abstract should be a supercondensed version of the paper.
+
+Grab the readers attention -> why we care about the topic
+
+What's the unknown? Are fluids actually following the Maher model?
+
+How did you do this? Collected samples, tested models.
+
+What did you find? The Maher model isn't appropriate etc
+
+Loop back into the original part about why we care and the unknown. Has it been answered? What are the implications?
 
 \bsk
 
 Residence time calculations determined using rate constants close to equilibrium give ages of order ten years for the model which purports discharge to be the greatest control on weathering. The other model, following the null hypothesis that temperature is the greatest control on weathering, gives residence times of a similar order of magnitude but the assumption of a constant rate of reaction is likely unrealistic. Simple calculations based on yearly rainfall support the residence time obtained by both models. Estimates of free energy suggest that the weathering reactions contributing to the dissolved load in the groundwater are not close to equilibrium. As a result, it is unlikely that the fast rates of reaction used are appropriate for catchments like Melamchi. Furthermore, this suggests that the main assumption of the Maher model is not valid in this catchment. These analyses suggest that a combination of both models' is necessary to accurately model a real catchment like Melamchi.
 
 
-
-
-
 \pagenumbering{roman}
 
 \newpage
-
-
-\thispagestyle{empty}
 %need to change this to the main report font
+
 
 \tableofcontents
 
+
 \newpage
 
-\thispagestyle{empty}
 
 \section*{Acknowledgements}
 
-This thesis would not have been possible without the amazing help from my supervisor, Ed Tipper. Mike Bickle and Al Knight have also been instrumental in guiding me through this Master's year. To my friends and peers, thank you for supporting me throughout. A Mamma, Papà, e la Virgi, grazie di tutto come sempre.
+This thesis would not have been possible without the amazing help from my supervisor, Ed Tipper. Mike Bickle and Al Knight and Morag Hunter have also been instrumental in guiding me through this Master's year. To Zara, I couldn't ask for a better field partner. To my friends and peers, thank you for supporting me throughout. A Mamma, Papà, e la Virgi, grazie di tutto come sempre. Finally, to Beth, I couldn't have done this without you.
 
-%Beth?
 
 \newpage
 
-\thispagestyle{empty}
 
 \section*{List of Tables}
 
 \newpage
 
-\thispagestyle{empty}
+
 
 \section*{Nomenclature}
 
-Add geology eg HHCS
-Silicate Weathering 
-
-All the variables
-%\thispagestyle{empty}
 
 \newpage
 
-\pagenumbering{arabic}
-
-
 
 \FloatBarrier
+
+
 \pagenumbering{arabic}
 
 
@@ -215,7 +233,7 @@ All the variables
 
 \nocite{*}
 
-\bibliographystyle{plain}  % or another style of your choice
+\bibliographystyle{plain} 
 \bibliography{export-data} 
 
 \newpage
