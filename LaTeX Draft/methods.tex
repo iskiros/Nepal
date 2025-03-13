@@ -6,7 +6,6 @@
 % - Refer to relevant data tables.
 
 
-
 \subsection{Field Sampling}
 Both springs and rain were sampled in the field. Springs were sampled according to locations visited in past expeditions. Rain was collected in a rain gauge along several transects. Both water bodies were measured in the field for temperature, pH and TDS on a Hanna Instruments HI-991300 and and EXTECH DO700. Samples were also titrated using a Hach digital titrator with 0.0625M HCl to calculate the alkalinity of the water following the Gran Method (Gran, 1952). The field measurements were done 24 hours within having been collected.  Six aliquots were collected for each spring for anion, cation, titration, DIC, isotope and archive purposes respectively.  Rain samples had a smaller yield and so only three aliquots were collected, for ion, isotope and archive purposes. Both water body types were filtered through a 0.2$\micro$m PES membrane in a filtration unit prior to bottling. Cation and archive samples were acidified with concentrated HNO$_3$ to give a pH of $\sim$2, keeping the cations in solution. 
 
@@ -17,11 +16,11 @@ Cation concentrations were determined using a Agilent Technologies 5100 Inductiv
 
 %fact check the anion uncertainty
 
-\subsection{Isotope Analysis}
+% \subsection{Isotope Analysis}
 
-Samples for radiogenic strontium analysis were dried down to provide at least 100 ng of Sr. Samples were then dissolved in aqua regia (3:1 HNO$_\text{3}$:HCl) to remove any additional organic matter. Once dried down again, they were added to 3 ml teflon columns with Eichrom SrSpec$^{\textcopyright}$ resin pipetted in. Once washed three times with Milli-Q$^{\textregistered}$ water, the column was primed with 3M HNO$_\text{3}$. The sample was centrifuged then loaded onto the column avoiding any solids. The column was then washed a total of three times with 3M HNO$_3$ to remove other cations. Lastly, the column was eluted to a beaker with Milli-Q$^{\textregistered}$ water to collect the Sr. Once dried, the samples were dissolved in 3M HNO$_\text{3}$, centrifuged and then diluted for analysis on a Thermo Scientific Neptune Plus MC-ICP-MS. Errors on Sr isotope measurement are taken from two standard deviations of the measured values given by the MC-ICP-MS.
+% Samples for radiogenic strontium analysis were dried down to provide at least 100 ng of Sr. Samples were then dissolved in aqua regia (3:1 HNO$_\text{3}$:HCl) to remove any additional organic matter. Once dried down again, they were added to 3 ml teflon columns with Eichrom SrSpec$^{\textcopyright}$ resin pipetted in. Once washed three times with Milli-Q$^{\textregistered}$ water, the column was primed with 3M HNO$_\text{3}$. The sample was centrifuged then loaded onto the column avoiding any solids. The column was then washed a total of three times with 3M HNO$_3$ to remove other cations. Lastly, the column was eluted to a beaker with Milli-Q$^{\textregistered}$ water to collect the Sr. Once dried, the samples were dissolved in 3M HNO$_\text{3}$, centrifuged and then diluted for analysis on a Thermo Scientific Neptune Plus MC-ICP-MS. Errors on Sr isotope measurement are taken from two standard deviations of the measured values given by the MC-ICP-MS.
 
-% \bsk
+% % \bsk
 
 % Samples were also analysed for stable oxygen and deuterium isotopes on a Picarro L2140-i portable analyser, using cavity ring-down spectroscopy, with an average precision of 0.05, 0.09 and 0.57 \textperthousand\ for $\delta^{17}O$, $\delta^{18}O$ and $\delta D$ respectively. 
 
@@ -33,7 +32,7 @@ Samples for radiogenic strontium analysis were dried down to provide at least 10
 
 Rain input is a significant factor in the chemical composition of groundwater and rivers. Most chloride found in these water bodies is thought to be due to rainwater input (Drever, 1997). It is standard practice to correct for this rain input. Once the samples have been corrected for rain input, the remaining chloride is assumed to be derived from hydrothermal signatures encountered in the flow path. Spring waters are also therefore corrected for hydrothermal input, so that the concentrations used for modelling are strictly derived from weathering reactions.
 
-\subsection{Modal Decomposition Identifies Weathering Reaction}
+\subsection{Identifying the Weathering Reaction}
 
 The first step towards quantifying the extent to which chemical weathing reactions have gone to completion is to discern what reaction is taking place. In principle this is as simple as knowing what minerals are dissolving and which are precipitating. Modal decomposition methods consider several minerals that could be dissolving and/or precipitating, and their stoichiometry (Garrels and Mackenzie, 1967; Drever, 1997). Note that this calculation can only be done if the number of components is the same as or greater than the number of minerals.
 
@@ -86,8 +85,8 @@ The matrix X, corresponding to volumetric proportions of the minerals in the wat
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{Stoich.pdf}
-    \caption{Average of the modal decomposition for the springs in Traverse 3.}
+    \includegraphics[width=\textwidth]{Normalized_Average_Mineral_Volume_Changes.pdf}
+    \caption{Average of the modal decomposition for all springs.}
     \label{fig:discussion6}
 \end{figure}
 
@@ -111,7 +110,7 @@ An_{20} + 1.2 H^{+} + 0.6 H_{2}O\\ \rightarrow\\ 0.6 Kaolinite + 0.8 Na^{+} + 0.
 
 \subsection{One-Dimensional Reactive Transport Models}
 
-Reactive transport models are widely used in applied fluid dynamics and various fields within Earth Sciences. These models aim to track chemical reactions occurring at each spatial point, accounting for the movement of reactants to and reaction products away from those points (Bethke, 2011). The basic form of a reactive transport model is a partial differential equation that describes the transport of solutes and the reactions that occur between them. For reacting solutes, concentration changes over time are governed by transport rates — derived from the divergence principle — and the relative rates of dissolution and precipitation (Bethke, 2011). The proposed equations can be complex, but in simple cases a species of concentration $C_i$ can be modelled to follow a first-order rate law, generally represented by:
+Reactive transport models are widely used in applied fluid dynamics and various fields within Earth Sciences. These models aim to track chemical reactions occurring at each spatial point, accounting for the movement of reactants to and reaction products away from those points (Bethke, 2011). The basic form of a reactive transport model is a partial differential equation that describes the transport of solutes and the reactions that occur between them. For reacting solutes, concentration changes over time are governed by transport rates — derived from the divergence principle — and the relative rates of dissolution and precipitation (Bethke, 2011). These models simplify a real world three-dimensional catchment into one-dimensional flow paths. Additionally, as described in the Introduction ref, porosity is chosen to be a representative average over the whole subsurface; this allows for the results to feasibly represent residence times that come from channelised or slow porous flow. The proposed equations can be complex, but in simple cases a species of concentration $C_i$ can be modelled to follow a first-order rate law, generally represented by:
 
 \begin{equation}
     \frac{\partial C_i}{\partial t} = \mathcal{O}_{T}(C_i) + \mathcal{O}_{R}(C_i)
@@ -121,18 +120,22 @@ Reactive transport models are widely used in applied fluid dynamics and various 
 
 Where \(\mathcal{O}_{T}\) and \(\mathcal{O}_{R}\) are the transport and reaction operators, respectively (Bethke, 2011). Depending on the hypothesis supported, equation \ref{eq:1} can be modified accordingly. The following sections will discuss two models with their own versions of equation \ref{eq:1}.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{sketch.pdf}
+    \caption{Sketch}
+    \label{fig:discussion611}
+\end{figure}
 
-
-%Also need to make a mini 1D graphic explaining what the 1D model actually means in practice
-
+\FloatBarrier
 
 \subsubsection*{Model Motivation}
 
-As discussed in the Introduction (ref), there are different hypotheses regarding the major controls on chemical weathering. This section will contrast one model following the null hypothesis that weathering is largely sensitive to climate and temperature (Fontorbe et al., 2013), and another model that suggests weathering is more sensitive to fluid flux (Maher, 2011; Maher and Chamberlain, 2013). Given the emphasis on deriving fluid residence times from solute concentrations, the benchmark for a model's effectiveness will be how well it can predict these times compared to previous studies on gas tracers and simple box models. Assumptions and constraints will be compared and contrasted, and their results used to inform the calculation of rates of reaction and approach to equilibrium in Melamchi. For both models, the element used to benchmark is dissolved silicon. This is because silicon is present in both dissolution and precipitation reactions, so it is applicable to the Maher model which considers both reactions. Furthermore, silicon is what both models were used for in their respective original studies.
+As discussed in the Introduction (ref), there are different hypotheses regarding the major controls on chemical weathering. This section will contrast one model following the hypothesis that weathering is most sensitive to temperature (Fontorbe et al., 2013), and another model that suggests weathering is more sensitive to the hydrological cycle (Maher, 2011; Maher and Chamberlain, 2014). The benchmark for a model's effectiveness will be how well it can predict residence times compared to previous studies on gas tracers. Assumptions and constraints will be compared and contrasted, and their results used to inform the calculation of rates of reaction and approach to equilibrium in Melamchi. For both models, the element used to benchmark is dissolved silicon. This is because silicon is present in both dissolution and precipitation reactions, so it is applicable to the Maher model which considers both reactions. Furthermore, silicon is what both models were used for in their respective original studies.
 
 \subsubsection*{Fontorbe et al. (2013) - Model}
 
-This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths (see Appendix for a full derivation, and Table ref for a list of parameters used). The first-order differential equation governing transport and reaction is given as:\\
+This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths (see Appendix for a full derivation, and Table ref for a list of parameters used). This model was initially constructed to reproduce DSi concentration and $\delta^{30}$Si in the Ganges, but is being repurposed in a novel fashion for this study. The first-order differential equation governing transport and reaction is given as:\\
 
     \begin{equation}
     \phi \frac{\partial C}{\partial t} = -\omega \phi \frac{\partial C}{\partial z} + R_n(1-f)
@@ -197,8 +200,7 @@ Assuming steady-state (\(\partial C/\partial t = 0\)), the concentration at the 
 
 \subsubsection*{Maher and Chamberlain (2014) Model}
 
-
-This model is built in accordance with the principle that the main control on silicate weathering is the residence time of the water. The model is based on the assumption that the reaction rate decreases linearly with approach to equilibrium, and that all weathering paths approach equilibrium. The motivation behind the hydrological control is based on sensitivity analyses of real catchment data on one-dimensional reactive transport models which suggest that porosity, mineral surface area, and temperature have no consistent correlation with water composition (Maher, 2011). See Appendix and Table ref for a full derivation and the model parameters respectively. The model begins with the following representation of the concentration of a solute in a fluid flow path:\\ 
+This model is built in accordance with the principle that the main control on silicate weathering is hydrological cycle, namely how much water passes flows a particular path. The model is based on the assumption that the reaction rate decreases linearly with approach to equilibrium, and that all weathering paths approach equilibrium. The motivation behind the hydrological control is based on sensitivity analyses of real catchment data on one-dimensional reactive transport models which suggest that porosity, mineral surface area, and temperature have no consistent correlation with water composition (Maher, 2011). See Appendix and Table ref for a full derivation and the model parameters respectively. The model begins with the following representation of the concentration of a solute in a fluid flow path:\\ 
 
 \begin{equation}
     \frac{dC}{dt} = -\frac{q}{\theta} \frac{dC}{dz} + \sum_i \mu_i R_{d,i} \left( 1 - \left( \frac{C}{C_{eq}} \right)^{n_i} \right)^{m_i} - \sum_i \mu_i R_{p,i} \left( 1 - \left( \frac{C}{C_{eq}} \right)^{n_i} \right)^{m_i}

@@ -2,40 +2,40 @@
 
 
 
-\section*{Appendix 1: Strontium Isotopes Mass Balance Mixing Model}
-\addcontentsline{toc}{section}{Appendix 1: Strontium Isotopes Mass Balance Mixing Model}
+% \section*{Appendix 1: Strontium Isotopes Mass Balance Mixing Model}
+% \addcontentsline{toc}{section}{Appendix 1: Strontium Isotopes Mass Balance Mixing Model}
 
-Following Faure (2001 - Origin of Igneous Rocks), the Sr concentrations of a two-component mixture can be expressed as:\\
+% Following Faure (2001 - Origin of Igneous Rocks), the Sr concentrations of a two-component mixture can be expressed as:\\
 
-\begin{equation}
-    [Sr]_M = [Sr]_A f_A + [Sr]_B(1-f_A)
-\end{equation}\\
+% \begin{equation}
+%     [Sr]_M = [Sr]_A f_A + [Sr]_B(1-f_A)
+% \end{equation}\\
 
-These are related to the isotopic composition with:\\
+% These are related to the isotopic composition with:\\
 
-\begin{equation}
-    \left(\frac{^{87}Sr}{^{86}Sr}\right)_M = \left(\frac{^{87}Sr}{^{86}Sr}\right)_A f_A \frac{[Sr]_A}{[Sr]_M} + \left(\frac{^{87}Sr}{^{86}Sr}\right)_B(1-f_A)\frac{[Sr]_B}{[Sr]_M} 
-\end{equation}\\
+% \begin{equation}
+%     \left(\frac{^{87}Sr}{^{86}Sr}\right)_M = \left(\frac{^{87}Sr}{^{86}Sr}\right)_A f_A \frac{[Sr]_A}{[Sr]_M} + \left(\frac{^{87}Sr}{^{86}Sr}\right)_B(1-f_A)\frac{[Sr]_B}{[Sr]_M} 
+% \end{equation}\\
 
-These equations can be combined, yielding:\\
+% These equations can be combined, yielding:\\
 
-\begin{equation}
-    \left(\frac{^{87}Sr}{^{86}Sr}\right)_M = \frac{a}{[Sr]_M} + b; \quad \text{with:}
-\end{equation}\\
-\begin{equation}
-    a = \frac{[Sr]_A [Sr]_B \left[ \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_B - \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_A \right]}{[Sr]_A - [Sr]_B}
-\end{equation}\\
-\begin{equation}
-    b = \frac{[Sr]_A \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_A - [Sr]_B \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_B}{[Sr]_A - [Sr]_B}
-\end{equation}\\
+% \begin{equation}
+%     \left(\frac{^{87}Sr}{^{86}Sr}\right)_M = \frac{a}{[Sr]_M} + b; \quad \text{with:}
+% \end{equation}\\
+% \begin{equation}
+%     a = \frac{[Sr]_A [Sr]_B \left[ \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_B - \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_A \right]}{[Sr]_A - [Sr]_B}
+% \end{equation}\\
+% \begin{equation}
+%     b = \frac{[Sr]_A \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_A - [Sr]_B \left( \ddfrac{^{87}Sr}{^{86}Sr} \right)_B}{[Sr]_A - [Sr]_B}
+% \end{equation}\\
 
-Plots of $\ddfrac{^{87}Sr}{^{86}Sr}$ against $\ddfrac{1}{Sr}$ that yield straight lines are therefore indicative of mixing trends. 
+% Plots of $\ddfrac{^{87}Sr}{^{86}Sr}$ against $\ddfrac{1}{Sr}$ that yield straight lines are therefore indicative of mixing trends. 
 
-\newpage
+% \newpage
 
 
-\section*{Appendix 2: Rain and Hydrothermal Correction Equations}
-\addcontentsline{toc}{section}{Appendix 2: Rain and Hydrothermal Correction Equations}
+\section*{Appendix 1: Rain and Hydrothermal Correction Equations}
+\addcontentsline{toc}{section}{Appendix 1: Rain and Hydrothermal Correction Equations}
 
 
 Spring water is corrected for rain input according to the average concentration for the closest rain sample collected in this field season. To remove the contribution of the rain the following formula is used for any element X:
@@ -65,8 +65,8 @@ This ensures that all chloride in the corrected sample is removed. The correctio
 \newpage
 
 
-\section*{Appendix 3: Derivation of Reactive Transport Models}
-\addcontentsline{toc}{section}{Appendix 3: Derivation of Reactive Transport Models}
+\section*{Appendix 2: Derivation of Reactive Transport Models}
+\addcontentsline{toc}{section}{Appendix 2: Derivation of Reactive Transport Models}
 
 
 \begin{tcolorbox}[
@@ -83,13 +83,13 @@ This ensures that all chloride in the corrected sample is removed. The correctio
 
 
 
-\subsection*{Fontorbe et al. (2013) - Null Hypothesis - Model Derivation}
+\subsection*{Fontorbe et al. (2013) Model Derivation}
 \vspace{-5mm}
 {\footnotesize
 
 \noindent\rule{\textwidth}{0.5pt}
 
-This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths.
+This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths. The model is initially built to predict Si concentrations, but in this study it is adapted to calculate residence times.
 
 \begin{multicols}{2}
 
@@ -129,6 +129,7 @@ To simplify, we introduce non-dimensional variables:
 \columnbreak % --- break3 --- Move to the next column for transformation equations
 \begin{equation}
     C' = \frac{C}{C_o},\quad z' = \frac{z}{h},\quad t' = \frac{t\omega}{h}
+    \label{eq:transform}
 \end{equation}
     
 \end{multicols}
@@ -137,7 +138,7 @@ To simplify, we introduce non-dimensional variables:
 
 \begin{multicols}{2}% --- break4 --- Back to left for explaining transformation
     
-    Rewriting Equation (1) using these new variables:
+    Rewriting Equation \ref{eq:transform} using these new variables:
     \vspace{10mm}
     \columnbreak % --- break5 --- Equation for transformed form
     \begin{equation}
@@ -278,19 +279,19 @@ $C$ is the concentration at the end of the flow path, which is taken to be equal
 ]
 
 
-\subsection*{Maher Model Derivation}
+\subsection*{Maher (2011) Model Derivation}
 \vspace{-5mm}
 {\footnotesize
 
 \noindent\rule{\textwidth}{0.5pt}
 
-This model describes a reaction-based approach to solute transport, following Maher and Chamberlain (2011, 2014). Maher (2011) suggests a dissolution rate law which decreases linearly to zero at equilibrium. The first-order differential equation governing transport and reaction is:
+This model describes a reaction-based approach to solute transport, following Maher and Chamberlain (2014). Maher (2011) suggests a dissolution rate law which decreases linearly to zero at equilibrium. The first-order differential equation governing transport and reaction is:
 
 \begin{equation}
     \frac{dC}{dt} = -\frac{q}{\theta} \frac{dC}{dz} + \sum_i \mu_i R_{d,i} \left( 1 - \left( \frac{C}{C_{eq}} \right)^{n_i} \right)^{m_i} - \sum_i \mu_i R_{p,i} \left( 1 - \left( \frac{C}{C_{eq}} \right)^{n_i} \right)^{m_i}
-\end{equation}
+\end{equation}\\
 
-Where \( C \) is the concentration, \( q \) is the fluid flux, \( \theta \) is the volumetric water content, \( z \) is the position along the flow path, \( \mu \) is the stoichiometric coefficient, \( R \) is the rate of reaction for dissolution and precipitation respectively, \( C_{eq} \) is the equilibrium concentration, and \( n \) and \( m \) are non-linear parameters (Maher and Chamberlain, 2013). Defining the net reaction rate for a set of packets $i$:
+Where \( C \) is the concentration, \( q \) is the fluid flux, \( \theta \) is the volumetric water content, \( z \) is the position along the flow path, \( \mu \) is the stoichiometric coefficient, \( R \) is the rate of reaction for dissolution and precipitation respectively, \( C_{eq} \) is the equilibrium concentration, and \( n \) and \( m \) are non-linear parameters (Maher and Chamberlain, 2014). Defining the net reaction rate for a set of packets $i$:
 
 \begin{equation}
     R_n = \sum_i \mu_i R_{d,i} - \sum_i \mu_i R_{p,i}
@@ -302,7 +303,7 @@ Maher and Chamberlain describe that the reaction rate decreases linearly with ap
     \frac{dc}{dt} = R_n \left( 1 - \frac{C}{C_{eq}} \right)
 \end{equation}
 
-Solving for \( C \), following Maher and Chamberlain (2013):
+Solving for \( C \), following Maher and Chamberlain (2014):
 
 \begin{equation}
     C = C_0 \exp \left( -\frac{R_n \theta h}{q C_{eq}} \right) + C_{eq} \left( 1 - \exp \left( -\frac{R_n \theta h}{q C_{eq}} \right) \right)
