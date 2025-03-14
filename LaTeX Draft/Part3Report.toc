@@ -6,18 +6,18 @@
 \contentsline {section}{\numberline {3}Data Collection and Measurement}{10}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Field Sampling}{10}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Major and Trace Element Analysis}{10}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Methods and Models for Analysis}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Rain and Hydrothermal Correction}{10}{subsection.4.1}%
+\contentsline {section}{\numberline {4}Methods and Models for Analysis}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Rain and Hydrothermal Correction}{11}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Identifying the Weathering Reaction}{11}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}One-Dimensional Reactive Transport Models}{13}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Estimates of Uncertainty}{21}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Results: Spring Chemistry and Residence Time}{22}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Traverse 1}{22}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Traverse 2}{23}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Traverse 3}{24}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Traverse 4}{25}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Traverse 5}{26}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Time Series Trends}{27}{subsection.5.6}%
+\contentsline {subsection}{\numberline {4.3}One-Dimensional Reactive Transport Models}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Estimates of Uncertainty}{20}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Results: Spring Chemistry and Residence Time}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Traverse 1}{21}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Traverse 2}{22}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Traverse 3}{23}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Traverse 4}{24}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Traverse 5}{25}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Time Series Trends}{26}{subsection.5.6}%
 \contentsline {section}{\numberline {6}Discussion}{28}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Explaining Traversal Variations in Chemistry}{28}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Residence Time Agreement with Gas Ages}{29}{subsection.6.2}%
@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {6.4}Model Pitfalls}{32}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Significance of Free Energy for Reaction Rate}{35}{subsection.6.5}%
 \contentsline {section}{\numberline {7}Conclusions and Future Work}{37}{section.7}%
-\contentsline {section}{References}{38}{section*.28}%
-\contentsline {section}{Appendix 1: Rain and Hydrothermal Correction Equations}{46}{section*.29}%
-\contentsline {section}{Appendix 2: Derivation of Reactive Transport Models}{48}{section*.30}%
+\contentsline {section}{References}{39}{section*.28}%
+\contentsline {section}{Appendix 1: Rain and Hydrothermal Correction Equations}{47}{section*.29}%
+\contentsline {section}{Appendix 2: Derivation of Reactive Transport Models}{49}{section*.30}%
 \contentsfinish 

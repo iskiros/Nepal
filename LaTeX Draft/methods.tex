@@ -25,6 +25,8 @@ Cation concentrations were determined using a Agilent Technologies 5100 Inductiv
 % Samples were also analysed for stable oxygen and deuterium isotopes on a Picarro L2140-i portable analyser, using cavity ring-down spectroscopy, with an average precision of 0.05, 0.09 and 0.57 \textperthousand\ for $\delta^{17}O$, $\delta^{18}O$ and $\delta D$ respectively. 
 
 
+\newpage
+
 \section{Methods and Models for Analysis}
 
 
@@ -86,8 +88,8 @@ The matrix X, corresponding to volumetric proportions of the minerals in the wat
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{Normalized_Average_Mineral_Volume_Changes.pdf}
-    \caption{Average of the modal decomposition for all springs.}
-    \label{fig:discussion6}
+    \caption{Modal Decomposition results averaged over all springs. y-axis corresponds to volumetric proportion of mineral contributing to the dissolved (measured) load. Negative y-space indicates the mineral is involved in the backward reaction.}
+    \label{fig:modal}
 \end{figure}
 
 \FloatBarrier
@@ -107,6 +109,8 @@ An_{20} + 1.2 H^{+} + 0.6 H_{2}O\\ \rightarrow\\ 0.6 Kaolinite + 0.8 Na^{+} + 0.
 \label{eq:10}
 \end{equation}\\
 
+\newpage
+
 
 \subsection{One-Dimensional Reactive Transport Models}
 
@@ -120,18 +124,21 @@ Reactive transport models are widely used in applied fluid dynamics and various 
 
 Where \(\mathcal{O}_{T}\) and \(\mathcal{O}_{R}\) are the transport and reaction operators, respectively (Bethke, 2011). Depending on the hypothesis supported, equation \ref{eq:1} can be modified accordingly. The following sections will discuss two models with their own versions of equation \ref{eq:1}.
 
+\subsubsection*{Model Motivation}
+
+As discussed in the Introduction (ref), there are different hypotheses regarding the major controls on chemical weathering. This section will contrast one model following the hypothesis that weathering is most sensitive to temperature (Fontorbe et al., 2013), and another model that suggests weathering is more sensitive to the hydrological cycle (Maher, 2011; Maher and Chamberlain, 2014). The benchmark for a model's effectiveness will be how well it can predict residence times compared to previous studies on gas tracers. Assumptions and constraints will be compared and contrasted, and their results used to inform the calculation of rates of reaction and approach to equilibrium in Melamchi. For both models, the element used to benchmark is dissolved silicon. This is because silicon is present in both dissolution and precipitation reactions, so it is applicable to the Maher model which considers both reactions. Furthermore, silicon is what both models were used for in their respective original studies.
+
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{sketch.pdf}
-    \caption{Sketch}
-    \label{fig:discussion611}
+    \caption{(a) Illustration showing workflow performed in reactive transport models. Sketch shows different parameters used, such as the rain input at the top of the catchment used for the initial "$C_0$" concentration, the plagioclase percentage in the rock as well as the porosity. (b) Mineral ball and spoke models showing the dissolution of plagioclase and precipitation of kaolinite. Ball and Spoke models from CSD (ref)}
+    \label{fig:reactsketch}
 \end{figure}
 
 \FloatBarrier
 
-\subsubsection*{Model Motivation}
-
-As discussed in the Introduction (ref), there are different hypotheses regarding the major controls on chemical weathering. This section will contrast one model following the hypothesis that weathering is most sensitive to temperature (Fontorbe et al., 2013), and another model that suggests weathering is more sensitive to the hydrological cycle (Maher, 2011; Maher and Chamberlain, 2014). The benchmark for a model's effectiveness will be how well it can predict residence times compared to previous studies on gas tracers. Assumptions and constraints will be compared and contrasted, and their results used to inform the calculation of rates of reaction and approach to equilibrium in Melamchi. For both models, the element used to benchmark is dissolved silicon. This is because silicon is present in both dissolution and precipitation reactions, so it is applicable to the Maher model which considers both reactions. Furthermore, silicon is what both models were used for in their respective original studies.
+\newpage
 
 \subsubsection*{Fontorbe et al. (2013) - Model}
 
@@ -172,14 +179,14 @@ Assuming steady-state (\(\partial C/\partial t = 0\)), the concentration at the 
         $N_D$ & Damkohler Number & - & $N_D = \frac{R_n h}{\phi C_0 \omega}$ \\
         $T_f$ & Residence time & s & $T_f = \frac{h}{\omega\phi}$ \\
         $R_n$ & Reaction rate & mol/m$^3$/s & $\rho \cdot 10^6 \cdot k \cdot S \cdot X $ \\
-        $k$ & Reaction rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
+        $k$ & Dissolution rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
         $S$ & Specific surface area & m$^2$/g & 0.1$^*$ \\
         $\rho$ & Plagioclase density & g/cm$^3$ & 2.7$^*$ \\
         $X$ & Volume fraction of mineral in rock & $g_{min}/g_{rock}$ & 0.2$^*$ \\
         \hline
     \end{tabular}
     \caption{Key parameters and definitions for the Fontorbe model. Starred terms are values used for calculation.}
-    \label{tab:parameters1}
+    \label{tab:fontorbe1}
 \end{table}
 
 
@@ -239,7 +246,7 @@ Note the $e^2$ term is used because the Maher model considers all paths as if th
         $C_0$ & Initial concentration & $\mu$mol/L & Rain Input \\
         $R_n$ & Net reaction rate & mol/L/s & $\rho \cdot 10^6 \cdot k \cdot S \cdot X $ \\
         $\rho$ & Plagioclase density & g/cm$^3$ & 2.7$^*$ \\
-        $k$ & Reaction rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
+        $k$ & Dissolution rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
         $S$ & Specific surface area & m$^2$/g & 0.1$^*$ \\
         $X$ & Volume fraction of mineral in rock & $g_{min}/g_{rock}$& 0.2$^*$ \\
         $\tau$ & Scaling factor & - & $\tau = e^2$ \\
@@ -248,7 +255,7 @@ Note the $e^2$ term is used because the Maher model considers all paths as if th
         \hline
     \end{tabular}
     \caption{Key parameters and definitions for the Maher model. Starred terms are values used for calculation.}
-    \label{tab:parameters2}
+    \label{tab:maher1}
 \end{table}
 
 \FloatBarrier
@@ -256,7 +263,7 @@ Note the $e^2$ term is used because the Maher model considers all paths as if th
 
 \subsection{Estimates of Uncertainty}
 
-Uncertainties were propagated using a Monte Carlo method using an assumed normal distribution. Both the observed parameters and estimated parameters have uncertainties associated to them.
+Uncertainties were propagated using a Monte Carlo method using an assumed normal distribution and 1000 simulations. Both the observed parameters and estimated parameters have uncertainties associated to them.
 
 
 \begin{table}[H]
@@ -273,15 +280,15 @@ Uncertainties were propagated using a Monte Carlo method using an assumed normal
         $C_{eq}$ & Equilibrium DSi concentration & $\mu$mol/L & 869 $\mu$mol/L & $\pm$ 10\% \\  
         $C_0$ & Initial DSi concentration & $\mu$mol/L & 95 $\mu$mol/L & $\pm$ 10\% \\  
         $\rho$ & Plagioclase density & g/cm$^3$ & 2.7 & $\pm$ 10\% \\  
-        $k$ & Reaction rate constant & mol/m$^2$/s & 10$^{-15}$ & $\pm$ 10\% \\  
+        $k$ & Dissolution rate constant & mol/m$^2$/s & 10$^{-15}$ & $\pm$ 10\% \\  
         $S$ & Specific surface area & m$^2$/g & 0.1 & $\pm$ 10\% \\  
         $X$ & Volume fraction of mineral in rock & $\text{g}_{\text{min}}/\text{g}_{\text{rock}}$ & 0.2 & $\pm$ 10\% \\   
         $f$ & Fraction reprecipitated & - & 0.5 & $\pm$ 10\% \\
         $\Delta G^0$ & Standard Gibbs Free Energy & kJ/mol & $\text{-RTlnK}^*$ & $\pm$ 10\% \\
         \hline
     \end{tabular}}
-    \caption{Key parameters, definitions, and propagated uncertainties. $^*$ Uncertainty associated with temperature and K calculated from pgcc using The Geochemist's Workbench® Rxn program(ref)}
-    \label{tab:parameters_with_uncertainty}
+    \caption{Key parameters, definitions, and propagated uncertainties. $^*$: Uncertainty associated with temperature and K calculated from pgcc using The Geochemist's Workbench® Rxn program(ref)}
+    \label{tab:montecarlo}
 \end{table}
 
 \FloatBarrier

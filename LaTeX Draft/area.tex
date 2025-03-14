@@ -15,12 +15,24 @@ The Melamchi-Indrawati catchment (85.441 - 85.601 E, 27.822 - 28.157 N) study ar
 
 The geology of Melamchi is characterised by the characteristic banded gneiss, feldspathic schist and laminated quartzite of the Higher Himalayan Crystalline Sequence (HHCS). To the south of the confluence of the Melamchi River to its parent Indrawati river lies the Main Central Thrust (MCT) which separates the HHCS from the Lower Himalayan Sequence (LHS) (Dhital et al, Graf et al). The overall geology is therefore largely comprised of silicate metamorphic rock.
 
-\begin{figure}[h]
+
+\begin{table}[h!]
     \centering
-    \includegraphics[width=\textwidth]{map.pdf}
-    \caption{Map of the Melamchi Catchment. a,b,c,d}
-    \label{fig:map}
-\end{figure}
+    \begin{small}
+    \begin{tabular}{p{3cm} p{1cm} p{1cm} p{1.8cm} p{1.9cm} p{1.5cm} p{3cm}}
+           \hline
+           \textbf{Catchment} & \textbf{Area} & \textbf{Mean Slope} & \textbf{Mean Elevation} & \textbf{Elevation Range} & \textbf{Geology} & \textbf{Location Range (DD)} \\[4pt]
+                              & (km$^2$)    & (\%)                & (m)                     & (m)                      &                &  \\[4pt]
+           \hline
+           Melamchi Khola     & 325         & 20                  & 2400                    & 786--5697                & HHCS           & 85.441--85.601 E  27.822--28.157 N \\[4pt]
+           \hline
+    \end{tabular}
+    \end{small}
+    \caption{Melamchi catchment characteristics. Area, Slope, Elevation data from NASA ASTER (ref). Geology from Dhital et al. (cite).}
+    \label{tab:catchment_characteristics}
+    \end{table}
+    
+
 
 \subsection{Climate}
 
@@ -28,19 +40,25 @@ Annual mean temperatures in the Melamchi Khola Catchment range from ~24$^{\circ}
 
 \bsk
 
-Recorded temperatures at the end of the spring flow paths vary with the season, being coldest in November. All seasons show a temperature decrease with increasing elevation, consistent with the free-air moist adiabatic lapse rate, which is = 6.5 $^{\circ}$C/km (Barry and Chorley, 2009). This differs from the annual mean lapse rate in the southern Himalayas of = 5.2 $^{\circ}$C/km (Kattel et al., 2013). This disparity could be due to the fact that temperatures may be warmer than air temperatures because of radiative heating. The difference may also be due to systematic errors in temperature measurements; between collection and sampling, warming of the water is plausible.
-
-
+Recorded temperatures at the end of the spring flow paths vary with the season, being coldest in November. All seasons show a temperature decrease with increasing elevation, consistent with the free-air moist adiabatic lapse rate, which is = 6.5 $^{\circ}$C/km (Barry and Chorley, 2009).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{Temperature_Elevation_Season.pdf}
-    \caption{Temperature cahnges}
-    \label{fig:seasonal_change2}
+    \includegraphics[width=0.7\textwidth]{Temperature_Elevation_Season.pdf}
+    \caption{Temperature against elevation for each sampled season, with grey band representing two standard deviations from the mean. Lapse rate is consistent with the free air adiabatic lapse rate within error.}
+    \label{fig:temperature}
 \end{figure}
 
 \FloatBarrier
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{map.pdf}
+    \caption{Maps representing the Melamchi Catchment. (a) The location of the Melamchi Catchment in Nepal. Geological setting is shown, adapted from Dhital et al... and ... Melamchi sits in the HHCS. (b) The Melamchi Catchment with the Melamchi River highlighted in blue. DEM data is from NASA ASTER (cite). (c) Topographic profiles along and across the ridge in Melamchi, corresponding to the lines in (b). (d) Spatial extent of samples in each traverse.}
+    \label{fig:map}
+\end{figure}
+
+\FloatBarrier
 
 
 % \begin{itemize}
@@ -89,21 +107,6 @@ Recorded temperatures at the end of the spring flow paths vary with the season, 
 
 % \item{Make sure to insert a description of the catchment: catchment, Area, mean slope, mean elevation, elevation range, land cover type, geology, Lat Long range}
 
-\begin{table}[h!]
-\centering
-\begin{small}
-\begin{tabular}{p{3cm} p{1cm} p{1cm} p{1.8cm} p{1.9cm} p{1.5cm} p{3cm}}
-       \hline
-       \textbf{Catchment} & \textbf{Area} & \textbf{Mean Slope} & \textbf{Mean Elevation} & \textbf{Elevation Range} & \textbf{Geology} & \textbf{Location Range (DD)} \\[4pt]
-                          & (km$^2$)    & (\%)                & (m)                     & (m)                      &                &  \\[4pt]
-       \hline
-       Melamchi Khola     & 325         & 20                  & 2400                    & 786--5697                & HHCS           & 85.441--85.601 E  27.822--28.157 N \\[4pt]
-       \hline
-\end{tabular}
-\end{small}
-\caption{Catchment characteristics of the study area.}
-\label{tab:catchment_characteristics}
-\end{table}
 
 
 % elevation range from DEM

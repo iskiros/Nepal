@@ -68,6 +68,7 @@ This ensures that all chloride in the corrected sample is removed. The correctio
 \section*{Appendix 2: Derivation of Reactive Transport Models}
 \addcontentsline{toc}{section}{Appendix 2: Derivation of Reactive Transport Models}
 
+\renewcommand{\thetable}{A\arabic{table}}  % Change table numbering format
 
 \begin{tcolorbox}[
     colback=white,
@@ -249,7 +250,7 @@ $C$ is the concentration at the end of the flow path, which is taken to be equal
         $N_D$ & Damkohler Number & - & $N_D = \frac{R_n h}{\phi C_0 \omega}$ \\
         $T_f$ & Residence time & s & $T_f = \frac{h}{\omega\phi}$ \\
         $R_n$ & Reaction rate & mol/m$^3$/s & $\rho \cdot 10^6 \cdot k \cdot S \cdot X $ \\
-        $k$ & Reaction rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
+        $k$ & Dissolution rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
         $S$ & Specific surface area & m$^2$/g & 0.1$^*$ \\
         $\rho$ & Plagioclase density & g/cm$^3$ & 2.7$^*$ \\
         $X$ & Volume fraction of mineral in rock & $g_{min}/g_{rock}$ & 0.2$^*$ \\
@@ -384,7 +385,7 @@ Note that given these units, the calculation gives time in \( 10^{-3} \)s. This 
         $C_0$ & Initial concentration & $\mu$mol/L & Rain Input \\
         $R_n$ & Net reaction rate & mol/L/s & $\rho \cdot 10^6 \cdot k \cdot S \cdot X $ \\
         $\rho$ & Plagioclase density & g/cm$^3$ & 2.7$^*$ \\
-        $k$ & Reaction rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
+        $k$ & Dissolution rate constant & mol/m$^2$/s & 10$^{-15*}$ \\
         $S$ & Specific surface area & m$^2$/g & 0.1$^*$ \\
         $X$ & Volume fraction of mineral in rock & $g_{min}/g_{rock}$& 0.2$^*$ \\
         $\tau$ & Scaling factor & - & $\tau = e^2$ \\

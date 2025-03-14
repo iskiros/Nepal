@@ -27,6 +27,7 @@
 \usepackage{geometry}   % To control page dimensions
 \usepackage{longtable}  % For multipage tables
 \usepackage{multicol} 
+\usepackage{enumitem}  % Add this in the preamble
 
 
 \usepackage{multicol} % Allows multiple columns
@@ -154,21 +155,10 @@ Part III Project}
 \label{sec:abstract}
 \addcontentsline{toc}{section}{\nameref{sec:abstract}}
 
-IMO, the abstract should be a supercondensed version of the paper.
 
-Grab the readers attention -> why we care about the topic
+Silicate weathering removes carbon from the atmosphere and is proposed as the central control on climate over multi-million year timescales, keeping Earth habitable. The Himalayas are a key region for silicate weathering, and have been suggested to be a major cause of cooling over the last 50 million years. The controls on silicate weathering in real world catchments are not well understood. Temperature has been historically been considered the main control on weathering, but recent studies have suggested that discharge may be more important. This study uses spring and rain water samples from the Melamchi catchment in Nepal to test these opposing hypotheses by calculating residence times of groundwaters using two models which ascribe to the proposed hypotheses. Residence times are important as they can inform recharge from rainwater and the extent of reaction. Previous studies have estimated residence times in Melamchi to be of the order of 10 years. This study presents a novel approach, using major element concentrations and reactive transport models to calculate residence times. Results from both model hypotheses agree with the gas ages within error, which supports the validity of the model parameters. There is deviation at high concentrations, however, and another proxy is needed to determine the main control on weathering. Free energy of reaction calculations suggest that the weathering reactions are far from equilibrium, which is inconsistent with the hydrological control model assumptions. This study therefore suggests that weathering in Melamchi is therefore most strongly controlled by temperature, which has implications for a warming climate.
 
-What's the unknown? Are fluids actually following the Maher model?
 
-How did you do this? Collected samples, tested models.
-
-What did you find? The Maher model isn't appropriate etc
-
-Loop back into the original part about why we care and the unknown. Has it been answered? What are the implications?
-
-\bsk
-
-Residence time calculations determined using rate constants close to equilibrium give ages of order ten years for the model which purports discharge to be the greatest control on weathering. The other model, following the null hypothesis that temperature is the greatest control on weathering, gives residence times of a similar order of magnitude but the assumption of a constant rate of reaction is likely unrealistic. Simple calculations based on yearly rainfall support the residence time obtained by both models. Estimates of free energy suggest that the weathering reactions contributing to the dissolved load in the groundwater are not close to equilibrium. As a result, it is unlikely that the fast rates of reaction used are appropriate for catchments like Melamchi. Furthermore, this suggests that the main assumption of the Maher model is not valid in this catchment. These analyses suggest that a combination of both models' is necessary to accurately model a real catchment like Melamchi.
 
 
 \pagenumbering{roman}
@@ -185,78 +175,84 @@ Residence time calculations determined using rate constants close to equilibrium
 
 \section*{Acknowledgements}
 
-This thesis would not have been possible without the amazing help from my supervisor, Ed Tipper. Mike Bickle and Al Knight and Morag Hunter have also been instrumental in guiding me through this Master's year. To Zara, I couldn't ask for a better field partner. To my friends and peers, thank you for supporting me throughout. A Mamma, Papà, e la Virgi, grazie di tutto come sempre. And finally, Beth, 
+This thesis would not have been possible without the amazing help from my supervisor, Ed Tipper. Mike Bickle, Al Knight, and Morag Hunter have also been instrumental in guiding me through this Master's year. Thank you also to Alex Piotrowski for guidance in labwork, and to Zara Crapper for being a great field partners. To my friends and peers, thank you for supporting me as always. A Mamma, Papà, e la Virgi, grazie di tutto come sempre. 
+% Beth
 
 
 \newpage
-
-\section*{List of Figures}
-
-\begin{itemize}
-
-  \item Figure 1:
-  \item Figure 2: 
-  \item Figure 3:
-  \item Figure 4:
-  \item Figure 5: 
-  \item Figure 6: 
-  \item Figure 7:
-  \item Figure 8:
-  \item Figure 9:
-  \item Figure 10:
-  \item Figure 11:
-
-\end{itemize}
-
-\section*{List of Tables}
-
-\begin{itemize}
-
-  \item Table 1:
-  \item Table 2: 
-  \item Table 3:
-  \item Table 4:
-  \item Table 5: 
-  \item Table 6: 
-  \item Table 7:
-
-\end{itemize}
-
-
-
-
-
-
-\newpage
-
-
-
 
 \section*{Nomenclature}
 
-\begin{itemize}
+{\normalsize
 
-  \item Kinetically limited
-  \item Chemical Equilibrium
-  \item Reactive Transport Model
-  \item Runoff
-  \item Discharge
-  \item Fontorbe Model
-  \item Maher model
-  \item Residence time
-  \item Flow Path Length
-  \item Porosity
-  \item HHCS
-  \item LHS
-  \item MCT
-  \item ISM
-  \item Lapse Rate
-  \item Modal Decomposition
-  \item Free Energy
-  \item DSi
+
+\begin{itemize}[wide]
+  \setlength{\itemindent}{-0mm}  % Shift items left
+
+  \item[] \textbf{Kinetically limited}: When there is an abundant mineral supply, and weathering is limited by the kinetics of reactions.
+  \item[] \textbf{Chemical Equilibrium}: The state at which the forward and backward rates of a reaction are equal.
+  \item[] \textbf{Reactive Transport Model}: Models that simulate chemical reactions in time and space.
+  \item[] \textbf{Runoff}: Amount of water draining from a catchment.
+  \item[] \textbf{Discharge}: Amount of water per unit time flowing through a water body.
+  \item[] \textbf{Fontorbe Model}: Reactive Transport Model that assumes weathering is controlled by temperature.
+  \item[] \textbf{Maher Model}: Reactive Transport Model that assumes weathering is controlled by discharge.
+  \item[] \textbf{Residence Time}: Amount of time a given water packet spends in the subsurface before emerging at a spring.
+  \item[] \textbf{Flow Path Length}: Distance water travels through the subsurface.
+  \item[] \textbf{Porosity}: Void space available in a rock for fluid to flow through.
+  \item[] \textbf{HHCS}: Higher Himalayan Crystalline Sequence.
+  \item[] \textbf{LHS}: Lesser Himalayan Sequence.
+  \item[] \textbf{MCT}: Main Central Thrust, Himalayan fault zone separating the HHCS from the LHS.
+  \item[] \textbf{ISM}: Indian Summer Monsoon.
+  \item[] \textbf{Lapse Rate}: The rate at which atmospheric temperature decreases with elevation.
+  \item[] \textbf{Modal Decomposition}: Mathematical method used for dimensionality reduction. Used to estimate volumetric proportions of minerals contributing to the dissolved load.
+  \item[] \textbf{Free Energy}: Energy available to do work in a system.
+  \item[] \textbf{DSi}: Dissolved silicon in water. Commonly in the form of monosilicic acid (Si(OH)$_4$).
+
+
 
 \end{itemize}
 
+}
+\section*{List of Figures}
+
+{\normalsize
+
+\begin{itemize}[wide]
+  \setlength{\itemindent}{-0mm}  % Shift items left
+
+  \item[] \textbf{Figure \ref{fig:temperature}}: Temperature against elevation for measured springs; comparison to free air adiabatic lapse rate.
+  \item[] \textbf{Figure \ref{fig:map}}: Map of the Melamchi catchment including geology and topographical gradients.
+  \item[] \textbf{Figure \ref{fig:modal}}: Results of modal decomposition; contribution to dissolved load for different minerals.
+  \item[] \textbf{Figure \ref{fig:reactsketch}}: Illustration of reactive transport model workflow.
+  \item[] \textbf{Figure \ref{fig:trav1}}: Plots displaying spatial and temporal variations in measured chemistry and estimated residence times for Traverse 1.
+  \item[] \textbf{Figure \ref{fig:trav2}}: Plots displaying spatial and temporal variations in measured chemistry and estimated residence times for Traverse 2.
+  \item[] \textbf{Figure \ref{fig:trav3}}: Plots displaying spatial and temporal variations in measured chemistry and estimated residence times for Traverse 3.
+  \item[] \textbf{Figure \ref{fig:trav4}}: Plots displaying spatial and temporal variations in measured chemistry and estimated residence times for Traverse 4.
+  \item[] \textbf{Figure \ref{fig:trav5}}: Plots displaying spatial and temporal variations in measured chemistry and estimated residence times for Traverse 5.
+  \item[] \textbf{Figure \ref{fig:time_series_changes}}: Plots displaying temporal variations in measured DSi for individual springs during and after the monsoon season.
+  \item[] \textbf{Figure \ref{fig:deltag}}: Estimated residence time against calculated free energy for the Fontorbe and Maher models.
+  \item[] \textbf{Figure \ref{fig:comparisonceq}}: Illustration explaining differences in estimated residence times between Fontorbe and Maher models depending on equilibrium concentration.
+
+\end{itemize}
+
+}
+
+\section*{List of Tables}
+
+{\normalsize
+
+\begin{itemize}[wide]
+  \setlength{\itemindent}{-0mm}  % Shift items left
+
+  \item[] \textbf{Table \ref{tab:catchment_characteristics}}: Melamchi catchment characteristics.
+  \item[] \textbf{Table \ref{tab:fontorbe1}}: Key parameters and definitions for the Fontorbe model.
+  \item[] \textbf{Table \ref{tab:maher1}}: Key parameters and definitions for the Maher model.
+  \item[] \textbf{Table \ref{tab:montecarlo}}: Propagated uncertainties for model parameters.
+  \item[] \textbf{Table \ref{tab:equations}}: Residence time equation comparison for the Fontorbe and Maher models.
+
+\end{itemize}
+
+}
 
 
 \newpage

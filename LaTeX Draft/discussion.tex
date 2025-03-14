@@ -51,16 +51,15 @@ K is calculated using the database obtained from pygcc using The Geochemist's Wo
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{delta_G_R_Si_time_Maher_vs_Fontorbe_Overlaid.pdf}
-    \caption{Comparison of the delta G obtained against elevation. Comparison of delta G with residence time for both models}
-    \label{fig:discussion11}
+    \includegraphics[width=0.9\textwidth]{DGMF.pdf}
+    \caption{Estimated residence time against calculated free energy of reaction. Error bars represent monte carlo propagated uncertainty. Red points plot the Fontorbe model, while black points plot the Maher model.}
+    \label{fig:deltag}
 \end{figure}
 
 \FloatBarrier
 
-Calculated free energy shown in Figure \ref{fig:discussion11} shows that all springs in the catchment have a free energy that is more negative than -40 kJ/mol. These samples are therefore classified as far from equilibrium. Figure \ref{fig:discussion11} does show that free energy gets closer to zero as residence time increases. This is consistent with the notion that groundwaters approach equilibrium the more they stay in the subsurface and react. However, the extent of reaction is not great enough to be considered close to equilibrium. This suggests that, for Melamchi, using the Maher model to estimate residence times is not appropriate, and so the greatest control on weathering is temperature. This is more apparent when considering the residence times predicted at the sourthernmost Traverse 1.
+Calculated free energy shown in Figure \ref{fig:deltag} shows that all springs in the catchment have a free energy that is more negative than -40 kJ/mol. These samples are therefore classified as far from equilibrium. Figure \ref{fig:deltag} does show that free energy gets closer to zero as residence time increases. This is consistent with the notion that groundwaters approach equilibrium the more they stay in the subsurface and react. However, the extent of reaction is not great enough to be considered close to equilibrium. This suggests that, for Melamchi, using the Maher model to estimate residence times is not appropriate, and so the greatest control on weathering is temperature. This is more apparent when considering the residence times predicted at the sourthernmost Traverse 1.
 
-\newpage
 
 \subsection{Model Pitfalls}
 
@@ -77,7 +76,7 @@ Residence times in Traverse 1 are explainably the longest in the catchment. The 
         $\displaystyle T_f = \frac{C_{eq} \cdot \left(C - C_0\right)}{e^2 R_n \left( C_{\text{eq}} - C \right)}$ \\ [10pt]
         \bottomrule
     \end{tabular}
-    \caption{Comparison of equations from Fontorbe and Maher}
+    \caption{Comparison of residence time equations from Fontorbe and Maher.}
     \label{tab:equations}
 \end{table}
 
@@ -85,14 +84,14 @@ The difference in the models comes from the underlying assumptions of reaction r
 
 \bsk
 
-For this study's calculations, the equilibrium concentration is taken to be the highest in the catchment, 869 $\mu$M DSi. This concentration corresponds the highest spring concentration found in Traverse 1. Note that in the Maher and Chamberlain (2014) model setup, an equilibrium concentration of 375$\mu$M DSi is chosen from the global river data of Gaillardet et al. (1999). This is sound for a theoretical model but is not appropriate for this catchment. It is unclear, however, whether choosing the highest DSi concentration in the catchment is appropriate. Clearly as this concentration is approached, the Maher model will predict unrealistic residence times, as shown in Figure \ref{fig:discussion11}. The free energy of the system suggests the spring system is far away from equilibrium, so choosing a larger $C_{eq}$ would produce better agreement with the Fontorbe model at higher DSi concentrations and allow for the calculated free energy. Additionally, Maher (2011) details several ways in which $C_{eq}$ could change depending on the conditions. For example, increasing PCO$_2$ would increase the concentration of DSi at equilibrium. However, if the Maher model assumes that all flow paths reach equilibrium, it is logical to use a concentration measured within the catchment; otherwise, applying the model would be of little relevance to the overall discussion on weathering controls.
+For this study's calculations, the equilibrium concentration is taken to be the highest in the catchment, 869 $\mu$M DSi. This concentration corresponds the highest spring concentration found in Traverse 1. Note that in the Maher and Chamberlain (2014) model setup, an equilibrium concentration of 375$\mu$M DSi is chosen from the global river data of Gaillardet et al. (1999). This is sound for a theoretical model but is not appropriate for this catchment. It is unclear, however, whether choosing the highest DSi concentration in the catchment is appropriate. Clearly as this concentration is approached, the Maher model will predict unrealistic residence times, as shown in Figure \ref{fig:deltag}. The free energy of the system suggests the spring system is far away from equilibrium, so choosing a larger $C_{eq}$ would produce better agreement with the Fontorbe model at higher DSi concentrations and allow for the calculated free energy. Additionally, Maher (2011) details several ways in which $C_{eq}$ could change depending on the conditions. For example, increasing PCO$_2$ would increase the concentration of DSi at equilibrium. However, if the Maher model assumes that all flow paths reach equilibrium, it is appropriate to use a concentration measured within the catchment; otherwise, applying the model would be of little relevance to the overall discussion on weathering controls.
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{TheoreticalCeq.pdf}
-    \caption{Comparison of how concentration changes with flow path length for the two models, and different equilibrium concentration}
-    \label{fig:discussion8}
+    \includegraphics[width=0.8\textwidth]{Linear_vs_Exponential_Comparison.pdf}
+    \caption{Illustrative sketch of how dissolved silica concentration changes with flow path length for the two models, and different equilibrium concentration for the Maher model.}
+    \label{fig:comparisonceq}
 \end{figure}
 
 \FloatBarrier
@@ -106,7 +105,7 @@ There is another pitfall related to the dependence of residence time on the conc
 
 \subsection{Significance of Free Energy for Reaction Rate}
 
-Figure \ref{fig:discussion11} suggests that the system is far away from equilibrium, but the reaction rate constant used in both models for all calculations is one that is only considered feasible when close to equilibrium (Kampman et al., 2014). Both the Maher and Fontorbe model predict residence times consistent with the gas ages obtained by Atwood et al. (2021); it is just the free energy of reaction that allows for the conclusion that the greatest control on weathering in the catchment is temperature and not hydrology. In systems far from equilibrium, the reaction rate constant has been suggested to be much larger than those used in the models (Kampman et al., 2014). However, if the reaction rate is increased, the residence times predicted by the models will decrease. This is because the rate of reaction is inversely proportional to the residence time, as seen in the equations in Table \ref{tab:equations}. Reaction rate constants that are suggested to be far from equilibrium in Kampman et al. (2014) are laboratory-derived rates, and four orders of magnitude higher than those used in this study. Using these rates for the models predicts residence times in the range of 1-10 days. Under the assumption that the rates displayed Kampman et al. (2014) are accurate for systems far away from equilibrium, the results no longer agree with Atwood et al. (2021). Under these circumstances, then, the Maher and Fontorbe models are less likely to be appropriate for use in discussing weathering controls. 
+Figure \ref{fig:deltag} suggests that the system is far away from equilibrium, but the reaction rate constant used in both models for all calculations is one that is only considered feasible when close to equilibrium (Kampman et al., 2014). Both the Maher and Fontorbe model predict residence times consistent with the gas ages obtained by Atwood et al. (2021); it is just the free energy of reaction that allows for the conclusion that the greatest control on weathering in the catchment is temperature and not hydrology. In systems far from equilibrium, the reaction rate constant has been suggested to be much larger than those used in the models (Kampman et al., 2014). However, if the reaction rate is increased, the residence times predicted by the models will decrease. This is because the rate of reaction is inversely proportional to the residence time, as seen in the equations in Table \ref{tab:equations}. Reaction rate constants that are suggested to be far from equilibrium in Kampman et al. (2014) are laboratory-derived rates, and four orders of magnitude higher than those used in this study. Using these rates for the models predicts residence times in the range of 1-10 days. Under the assumption that the rates displayed Kampman et al. (2014) are accurate for systems far away from equilibrium, the results no longer agree with Atwood et al. (2021). Under these circumstances, then, the Maher and Fontorbe models are less likely to be appropriate for use in discussing weathering controls. 
 
 \bsk
 
@@ -119,7 +118,24 @@ There are, however, counterarguments to this. Firstly, Kampman et al. (2014) inv
 
 \section{Conclusions and Future Work}
 
-Talk about using element ratios, and also isotope tracers eg Jotis, and also different reaction rates for forward and backward
+Chemical concentrations and ratios for different springs in the kinetically-limited Melamchi catchment are reproducible over different field seasons, with notable dilution in the monsoon season. This suggests that the flow paths coming out of each spring are consistently sampled. Because of this consistency, reactive transport models can be used to estimate residence times in the catchment. Estimated times of order 10-100 years by the Fontorbe and Maher models are consistent with previously obtained gas ages in Melamchi. This study therefore presents a novel approach to predict residence times using the chemistry of spring waters alone. This has implications for predicting weathering controls and resilience to drought in Himalayan catchments. Because both models predict similar times at low concentration, however, a different proxy must be used to determine the main control on weathering. Free energy calculations suggest that the catchment is far from equilibrium, which is inconsistent with the Maher model assumption that all flow paths reach equilibrium. This study therefore suggests that the greatest control on weathering in Melamchi is temperature.
+
+\bsk
+
+There are caveats to these conclusions. Firstly, depending on the equilibrium concentration chosen for the Maher model, the measured concentrations used and predicted times could be consistent with a far from equilibrium system. The choice of this equilibrium concentration is however linked to the natural system it is found in, so choosing the highest measured concentration in the catchment is considered the most appropriate option. Secondly, just using elemental concentrations has the potential to underestimate residence times, as a result of secondary precipitation reactions. Lastly, if the system is far from equilibrium, a corresponding rate constant should be used for the model calculations. These rate constants are orders of magnitude larger than those considered close to equilibrium, and so would lead to predicted residence times on the order of days. Nonetheless it is unclear whether these rate constants are appropriate for natural catchments given they were not estimated in a natural setting.
+
+\bsk
+
+There is significant scope for future work in this area. Elemental ratios are more readily indicative of back-reactions than concentrations alone, and so can be implemented into the models to estimate residence times more accurately. Given model dependence on reaction rate constants, it would be beneficial to quantify a backward reaction rate to add to the forward dissolution rate used in the models. This would allow for secondary precipitation to be accounted for instead of it being a potential source of error. Finally, isotope tracers like $\delta^2$H, $\delta^{18}$O, $\delta^{30}$Si, $^{87}$Sr/$^{86}$Sr, and $\delta^7$Li are often proposed for use together in natural catchments to distinguish old and new water because of their ability to identify different aspects of reaction and mixing (Druhan and Benettin, 2023). 
+
+
+
+
+
+
+
+
+% Talk about using element ratios, and also isotope tracers eg Jotis, and also different reaction rates for forward and backward
 
 
 
