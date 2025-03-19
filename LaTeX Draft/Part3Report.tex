@@ -10,7 +10,9 @@
 \usepackage[most]{tcolorbox} % For coloured information boxes
 % Define your custom color
 \definecolor{customcolor}{HTML}{F1EEE2}
-
+\usepackage{paracol}    % Allows multi-column layout for spreads
+\usepackage{tabularx}
+\usepackage{tikz}
 \usepackage[titles,subfigure]{tocloft} % Customize ToC style
 \usepackage{titletoc, sectsty, soul} % Formatting for ToC and sections
 \usepackage[super]{nth}
@@ -18,6 +20,10 @@
 \PassOptionsToPackage{hyphens}{url}
 \usepackage{geometry} % Ensure the geometry package is loaded 
 \geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm}
+
+
+\newcolumntype{M}[1]{>{\raggedright\arraybackslash}p{\dimexpr#1-1.33333\fboxrule\relax}}
+
 
 \usepackage{fontspec} % Required for custom fonts
 \usepackage{unicode-math}
@@ -32,8 +38,39 @@
 
 \usepackage{multicol} % Allows multiple columns
 
-% \usepackage[style=numeric]{biblatex}
-% \addbibresource{export-data.bib}
+
+\usepackage[backend=biber,style=authoryear,maxnames=2,minnames=1,giveninits=true]{biblatex}
+
+\addbibresource{bib_try5.bib} % Use your .bib file
+
+% Ensure in-text citations use "and" for two authors and "et al." for three or more
+\renewcommand*{\finalnamedelim}{\addspace\&\space} % Ensures "Tipper & Bickle, 2006" for two authors
+
+% Ensure all authors appear fully in the bibliography (no "et al.")
+\AtBeginBibliography{\renewcommand*{\finalnamedelim}{\addcomma\space}}
+\AtBeginBibliography{\renewcommand{\bibnamedash}{}} % Prevents name replacement with dashes
+\renewcommand{\nameyeardelim}{\addcomma\space} % Adds a comma and space between author and year
+
+% Ensure ALL authors appear in the bibliography while keeping "et al." in-text
+\AtBeginBibliography{\defcounter{maxnames}{99}}
+
+% Format author names in the bibliography as "Last, F. M."
+\DeclareNameFormat{author}{%
+  \usebibmacro{name:family-given}
+    {\namepartfamily}
+    {\namepartgiveni} % Ensures initials for given names
+    {\namepartprefix}
+    {\namepartsuffix}%
+  \ifthenelse{\value{listcount}<\value{liststop}}
+    {\addcomma\space}
+    {\adddot}%
+}
+
+
+
+
+
+
 
 % For pdflatex:
 % Use cmvtt for text and math
@@ -50,14 +87,12 @@
 
 
 % For xelatex:
-\setmainfont{Harding Text Web} % Main document font
-\setmathfont{Harding Text Web}
-
-% Define a math font face for Marcellus
-\setmathfontface\mathmarcellus{Harding Text Web}
-
-% Define the \ttmath command for math mode using Marcellus
-\newcommand{\ttmath}[1]{{\mathmarcellus{#1}}}
+\defaultfontfeatures{Scale=MatchUppercase}
+\setmainfont{Harding Text Web}[Scale=1.0]
+\setsansfont{Roboto} 
+\setmonofont{Hack}
+\setmathfont{STIX Two Math}
+\setmathfont{STIX Two Math}[range={scr,bfscr}, StylisticSet=1] % Set up \mathscr and \mathcal
 
 
 
@@ -156,8 +191,7 @@ Part III Project}
 \addcontentsline{toc}{section}{\nameref{sec:abstract}}
 
 
-Silicate weathering removes carbon from the atmosphere and is proposed as the central control on climate over multi-million year timescales, keeping Earth habitable. The Himalayas are a key region for silicate weathering, and have been suggested to be a major cause of cooling over the last 50 million years. The controls on silicate weathering in real world catchments are not well understood. Temperature has been historically been considered the main control on weathering, but recent studies have suggested that discharge may be more important. This study uses spring and rain water samples from the Melamchi catchment in Nepal to test these opposing hypotheses by calculating residence times of groundwaters using two models which ascribe to the proposed hypotheses. Residence times are important as they can inform recharge from rainwater and the extent of reaction. Previous studies have estimated residence times in Melamchi to be of the order of 10 years. This study presents a novel approach, using major element concentrations and reactive transport models to calculate residence times. Results from both model hypotheses agree with the gas ages within error, which supports the validity of the model parameters. There is deviation at high concentrations, however, and another proxy is needed to determine the main control on weathering. Free energy of reaction calculations suggest that the weathering reactions are far from equilibrium, which is inconsistent with the hydrological control model assumptions. This study therefore suggests that weathering in Melamchi is therefore most strongly controlled by temperature, which has implications for a warming climate.
-
+Silicate weathering removes carbon from the atmosphere and is proposed as the central control on climate over multi-million year timescales, keeping Earth habitable. The Himalayas are a key region for silicate weathering, and have been suggested to be a major cause of cooling over the last 40 million years. However, the controls on silicate weathering in real world catchments are not well understood. Temperature has been historically been considered the main control on weathering, but recent studies have suggested that discharge may be more important. Residence times are important as they can inform recharge from rainwater and the extent of reaction. Previous studies have estimated residence times in Melamchi to be of the order of 10 years. This study presents a novel approach, using spring and rain water major element concentrations from the Melamchi catchment in Nepal to test these opposing hypotheses by calculating residence times of groundwaters using reactive transport models. Results from both model hypotheses agree with the gas ages within error, which given their different assumptions about rate of reaction suggests the sampled springs are far from equilibrium. Free energy of reaction calculations agree. This is inconsistent with the assumptions made by the model that is built on a hydrological control on weathering, which should not be used for rapidly eroding terrains like Melamchi. Whether this suggests that the greatest control on weathering is temperature is less clear.
 
 
 
@@ -175,7 +209,7 @@ Silicate weathering removes carbon from the atmosphere and is proposed as the ce
 
 \section*{Acknowledgements}
 
-This thesis would not have been possible without the amazing help from my supervisor, Ed Tipper. Mike Bickle, Al Knight, and Morag Hunter have also been instrumental in guiding me through this Master's year. Thank you also to Alex Piotrowski for guidance in labwork, and to Zara Crapper for being a great field partners. To my friends and peers, thank you for supporting me as always. A Mamma, Papà, e la Virgi, grazie di tutto come sempre. 
+This thesis would not have been possible without the amazing help from my supervisor, Ed Tipper. Mike Bickle, Al Knight, and Morag Hunter have also been instrumental in guiding me through this Master's year. Thank you also to Alex Piotrowski for guidance in labwork, and to Zara Crapper for being a great field partners. To my friends and peers, thank you for supporting me as always. A Mamma, Papà, e alla Virgi, grazie di tutto come sempre. To Beth, thank you for being you, and being there for me.
 % Beth
 
 
@@ -191,11 +225,11 @@ This thesis would not have been possible without the amazing help from my superv
 
   \item[] \textbf{Kinetically limited}: When there is an abundant mineral supply, and weathering is limited by the kinetics of reactions.
   \item[] \textbf{Chemical Equilibrium}: The state at which the forward and backward rates of a reaction are equal.
-  \item[] \textbf{Reactive Transport Model}: Models that simulate chemical reactions in time and space.
+  \item[] \textbf{Reactive Transport Models}: Models that simulate chemical reactions in time and space.
   \item[] \textbf{Runoff}: Amount of water draining from a catchment.
   \item[] \textbf{Discharge}: Amount of water per unit time flowing through a water body.
-  \item[] \textbf{Fontorbe Model}: Reactive Transport Model that assumes weathering is controlled by temperature.
-  \item[] \textbf{Maher Model}: Reactive Transport Model that assumes weathering is controlled by discharge.
+  \item[] \textbf{Fontorbe Model}: Reactive Transport Model that assumes a constant rate of reaction.
+  \item[] \textbf{Maher Model}: Reactive Transport Model that assumes reaction rate depends on the concentration as it approaches equilibrium.
   \item[] \textbf{Residence Time}: Amount of time a given water packet spends in the subsurface before emerging at a spring.
   \item[] \textbf{Flow Path Length}: Distance water travels through the subsurface.
   \item[] \textbf{Porosity}: Void space available in a rock for fluid to flow through.
@@ -204,9 +238,9 @@ This thesis would not have been possible without the amazing help from my superv
   \item[] \textbf{MCT}: Main Central Thrust, Himalayan fault zone separating the HHCS from the LHS.
   \item[] \textbf{ISM}: Indian Summer Monsoon.
   \item[] \textbf{Lapse Rate}: The rate at which atmospheric temperature decreases with elevation.
-  \item[] \textbf{Modal Decomposition}: Mathematical method used for dimensionality reduction. Used to estimate volumetric proportions of minerals contributing to the dissolved load.
+  \item[] \textbf{Modal Decomposition}: Mathematical method used for dimensionality reduction. Used to estimate molar proportions of minerals contributing to the dissolved load.
   \item[] \textbf{Free Energy}: Energy available to do work in a system.
-  \item[] \textbf{DSi}: Dissolved silicon in water. Commonly in the form of monosilicic acid (Si(OH)$_4$).
+  \item[] \textbf{DSi}: Dissolved silicon in water. Commonly in the form of H$_4$SiO$_4$.
 
 
 
@@ -248,6 +282,8 @@ This thesis would not have been possible without the amazing help from my superv
   \item[] \textbf{Table \ref{tab:fontorbe1}}: Key parameters and definitions for the Fontorbe model.
   \item[] \textbf{Table \ref{tab:maher1}}: Key parameters and definitions for the Maher model.
   \item[] \textbf{Table \ref{tab:montecarlo}}: Propagated uncertainties for model parameters.
+  \item[] \textbf{Table \ref{tab:results_table}}: Summary of results for all traverses.
+  \item[] \textbf{Table \ref{tab:delta_G}}: Free energy of reaction calculations for all traverses.
   \item[] \textbf{Table \ref{tab:equations}}: Residence time equation comparison for the Fontorbe and Maher models.
 
 \end{itemize}
@@ -292,10 +328,10 @@ This thesis would not have been possible without the amazing help from my superv
 
 \newpage
 
-\nocite{*}
 
-\bibliographystyle{plain} 
-\bibliography{export-data} 
+
+
+\printbibliography
 
 \newpage
 

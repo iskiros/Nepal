@@ -1,330 +1,1454 @@
-\begin{thebibliography}{10}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{adhikariEvaluationPostExtreme2023}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=dc2c11a015f9c93a74e9be7ef1e94773}{%
+           family={Adhikari},
+           familyi={A\bibinitperiod},
+           given={Tirtha\bibnamedelima Raj},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28a1e810329834f3118e5831007aa2aa}{%
+           family={Baniya},
+           familyi={B\bibinitperiod},
+           given={Binod},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe388dabb75872612fec0fea3f128bc}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Qiuhong},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=008ad19d3131a2401f74ab1cfdc020aa}{%
+           family={Talchabhadel},
+           familyi={T\bibinitperiod},
+           given={Rocky},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a20c765d331148c5fad628b07381b595}{%
+           family={Gouli},
+           familyi={G\bibinitperiod},
+           given={Manish\bibnamedelima Raj},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f2cc37a3ca9b079f1730c6838000ffd}{%
+           family={Budhathoki},
+           familyi={B\bibinitperiod},
+           given={Bhumi\bibnamedelima Raj},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f57a033f3e5e9e723d1a80affa641d0}{%
+           family={Awasthi},
+           familyi={A\bibinitperiod},
+           given={Ram\bibnamedelima Prasad},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c4f59c4dc6e8eee84e4ccf0945f39c35}
+      \strng{fullhash}{07cc89ebf0cb028066d930803bdd6bf0}
+      \strng{bibnamehash}{c4f59c4dc6e8eee84e4ccf0945f39c35}
+      \strng{authorbibnamehash}{c4f59c4dc6e8eee84e4ccf0945f39c35}
+      \strng{authornamehash}{c4f59c4dc6e8eee84e4ccf0945f39c35}
+      \strng{authorfullhash}{07cc89ebf0cb028066d930803bdd6bf0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Natural Hazards Research}
+      \field{langid}{english}
+      \field{number}{3}
+      \field{shorttitle}{Evaluation of Post Extreme Floods in High Mountain Region}
+      \field{title}{Evaluation of Post Extreme Floods in High Mountain Region: {{A}} Case Study of the {{Melamchi}} Flood 2021 \hspace{0pt}at the {{Koshi River Basin}} in {{Nepal}}}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{pages}{437\bibrangedash 446}
+      \range{pages}{10}
+    \endentry
+    \entry{andermannImpactTransientGroundwater2012}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=7572f8d15f16d46e5b218b533460f650}{%
+           family={Andermann},
+           familyi={A\bibinitperiod},
+           given={Christoff},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a5eb70aa1e8a70aece72b64e9af3865}{%
+           family={Longuevergne},
+           familyi={L\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b74d55cbbd15676741c133431f4ac2a}{%
+           family={Bonnet},
+           familyi={B\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f51c65d377d0f635a84ff8667f2af25}{%
+           family={Crave},
+           familyi={C\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e6c3313506a190368318ad0b69a1f0e1}{%
+           family={Davy},
+           familyi={D\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a67aa87627bd7c6bdb5f12c081b9f45e}{%
+           family={Gloaguen},
+           familyi={G\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{021bdc2b0ab3696e2bdb2a51bd062edf}
+      \strng{fullhash}{15ea7a80e0f561067f48878e0adf0e05}
+      \strng{bibnamehash}{021bdc2b0ab3696e2bdb2a51bd062edf}
+      \strng{authorbibnamehash}{021bdc2b0ab3696e2bdb2a51bd062edf}
+      \strng{authornamehash}{021bdc2b0ab3696e2bdb2a51bd062edf}
+      \strng{authorfullhash}{15ea7a80e0f561067f48878e0adf0e05}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Geoscience}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{title}{Impact of Transient Groundwater Storage on the Discharge of {{Himalayan}} Rivers}
+      \field{volume}{5}
+      \field{year}{2012}
+      \field{pages}{127\bibrangedash 132}
+      \range{pages}{6}
+    \endentry
+    \entry{atwoodCriticalZoneResponse2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5614b7ce2cd2b249a06d62aadd274fa}{%
+           family={Atwood},
+           familyi={A\bibinitperiod},
+           given={Abra\bibnamedelima Catherine},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Southern California}%
+      }
+      \strng{namehash}{c5614b7ce2cd2b249a06d62aadd274fa}
+      \strng{fullhash}{c5614b7ce2cd2b249a06d62aadd274fa}
+      \strng{bibnamehash}{c5614b7ce2cd2b249a06d62aadd274fa}
+      \strng{authorbibnamehash}{c5614b7ce2cd2b249a06d62aadd274fa}
+      \strng{authornamehash}{c5614b7ce2cd2b249a06d62aadd274fa}
+      \strng{authorfullhash}{c5614b7ce2cd2b249a06d62aadd274fa}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Critical Zone Response to Perturbation: From Mountain Building to Wildfire}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+    \endentry
+    \entry{baniyaClimateChangeInduced2024}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=28a1e810329834f3118e5831007aa2aa}{%
+           family={Baniya},
+           familyi={B\bibinitperiod},
+           given={Binod},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe388dabb75872612fec0fea3f128bc}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Qiuhong},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc2c11a015f9c93a74e9be7ef1e94773}{%
+           family={Adhikari},
+           familyi={A\bibinitperiod},
+           given={Tirtha\bibnamedelima Raj},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85db932bba6383355f0280a553e2f7c2}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2e927a545965ff58815fc0014290f1b}{%
+           family={Haile},
+           familyi={H\bibinitperiod},
+           given={Gebremedhin\bibnamedelima Gebremeskel},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d3aa8d55a247b9b847586b53474682c}{%
+           family={Sigdel},
+           familyi={S\bibinitperiod},
+           given={Madan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e4393c76866843ee57a93d2010a7ade}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4b463bc8e69ad712020ade366c31d0fd}
+      \strng{fullhash}{c7441b0c5d7d265473ba78d78c2a2847}
+      \strng{bibnamehash}{4b463bc8e69ad712020ade366c31d0fd}
+      \strng{authorbibnamehash}{4b463bc8e69ad712020ade366c31d0fd}
+      \strng{authornamehash}{4b463bc8e69ad712020ade366c31d0fd}
+      \strng{authorfullhash}{c7441b0c5d7d265473ba78d78c2a2847}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Hazards}
+      \field{langid}{english}
+      \field{number}{12}
+      \field{title}{Climate Change Induced {{Melamchi}} Extreme Flood and Environment Implication in Central {{Himalaya}} of {{Nepal}}}
+      \field{volume}{120}
+      \field{year}{2024}
+      \field{pages}{11009\bibrangedash 11029}
+      \range{pages}{21}
+    \endentry
+    \entry{barryAtmosphereWeatherClimate2009}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8583cbf683d98596cc68cfe8afee5c6f}{%
+           family={Barry},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30e646447be31a9d3908c9b89f8e8d9a}{%
+           family={Chorley},
+           familyi={C\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{de7eb5f1536da019668d2cf44592d9dc}
+      \strng{fullhash}{de7eb5f1536da019668d2cf44592d9dc}
+      \strng{bibnamehash}{de7eb5f1536da019668d2cf44592d9dc}
+      \strng{authorbibnamehash}{de7eb5f1536da019668d2cf44592d9dc}
+      \strng{authornamehash}{de7eb5f1536da019668d2cf44592d9dc}
+      \strng{authorfullhash}{de7eb5f1536da019668d2cf44592d9dc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st}
+      \field{title}{Atmosphere, Weather and Climate}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://doi.org/10.4324/9780203871027
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4324/9780203871027
+      \endverb
+    \endentry
+    \entry{bernerRateControlMineral1978}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b735e41f42f2be392fc03471062debd}{%
+           family={Berner},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b735e41f42f2be392fc03471062debd}
+      \strng{fullhash}{8b735e41f42f2be392fc03471062debd}
+      \strng{bibnamehash}{8b735e41f42f2be392fc03471062debd}
+      \strng{authorbibnamehash}{8b735e41f42f2be392fc03471062debd}
+      \strng{authornamehash}{8b735e41f42f2be392fc03471062debd}
+      \strng{authorfullhash}{8b735e41f42f2be392fc03471062debd}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Science}
+      \field{number}{9}
+      \field{title}{Rate Control of Mineral Dissolution under Earth Surface Conditions}
+      \field{volume}{278}
+      \field{year}{1978}
+      \field{pages}{1235\bibrangedash 1252}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.2475/ajs.278.9.1235
+      \endverb
+    \endentry
+    \entry{bethkeGEOCHEMICALBIOGEOCHEMICALREACTION}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e4369c6651750c74329e0d70662c2dcb}{%
+           family={Bethke},
+           familyi={B\bibinitperiod},
+           given={Craig\bibnamedelima M},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e4369c6651750c74329e0d70662c2dcb}
+      \strng{fullhash}{e4369c6651750c74329e0d70662c2dcb}
+      \strng{bibnamehash}{e4369c6651750c74329e0d70662c2dcb}
+      \strng{authorbibnamehash}{e4369c6651750c74329e0d70662c2dcb}
+      \strng{authornamehash}{e4369c6651750c74329e0d70662c2dcb}
+      \strng{authorfullhash}{e4369c6651750c74329e0d70662c2dcb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cambridge University Press}
+      \field{title}{{{Geochemical and Biogeochemical reaction}}, {{Second Edition}}}
+      \field{year}{2011}
+    \endentry
+    \entry{bookhagenCompleteHimalayanHydrological2010}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=203f3ffd5621b3ca21124c82ca523e7b}{%
+           family={Bookhagen},
+           familyi={B\bibinitperiod},
+           given={Bodo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bcdb270c3e360447a444c11e5d5aec33}{%
+           family={Burbank},
+           familyi={B\bibinitperiod},
+           given={Douglas\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5ffa31fc065ec5391b790a0d619ff6b6}
+      \strng{fullhash}{5ffa31fc065ec5391b790a0d619ff6b6}
+      \strng{bibnamehash}{5ffa31fc065ec5391b790a0d619ff6b6}
+      \strng{authorbibnamehash}{5ffa31fc065ec5391b790a0d619ff6b6}
+      \strng{authornamehash}{5ffa31fc065ec5391b790a0d619ff6b6}
+      \strng{authorfullhash}{5ffa31fc065ec5391b790a0d619ff6b6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Journal of Geophysical Research: Earth Surface}
+      \field{langid}{english}
+      \field{number}{F3}
+      \field{shorttitle}{Toward a Complete {{Himalayan}} Hydrological Budget}
+      \field{title}{Toward a Complete {{Himalayan}} Hydrological Budget: {{Spatiotemporal}} Distribution of Snowmelt and Rainfall and Their Impact on River Discharge}
+      \field{volume}{115}
+      \field{year}{2010}
+      \field{pages}{2009JF001426}
+      \range{pages}{-1}
+    \endentry
+    \entry{bufeCovariationSilicateCarbonate2021}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=48ff4a1727e78c78f24183b5dbf96e47}{%
+           family={Bufe},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fc7ccfe1ad3ecf41d27cf4d989e0aae}{%
+           family={Hovius},
+           familyi={H\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81e039a4c64931011c84bb2df89cd1cf}{%
+           family={Emberson},
+           familyi={E\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36f7bb2058b78ec625ffb249e5276802}{%
+           family={Rugenstein},
+           familyi={R\bibinitperiod},
+           given={Jeremy\bibnamedelimb K.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb70b228fcaba07822d7a9aef290d146}{%
+           family={Galy},
+           familyi={G\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7b4ac29ae7353d77c7cd08f6420215b}{%
+           family={{Hassenruck-Gudipati}},
+           familyi={H\bibinitperiod},
+           given={Hima\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80a828a0cb352c4cc7ec46dcad82d827}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Jui-Ming},
+           giveni={J\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{93b5b91c90777d9ed33166691c9daddd}
+      \strng{fullhash}{6ce89992048ce18b4d0ca44ef27c0794}
+      \strng{bibnamehash}{93b5b91c90777d9ed33166691c9daddd}
+      \strng{authorbibnamehash}{93b5b91c90777d9ed33166691c9daddd}
+      \strng{authornamehash}{93b5b91c90777d9ed33166691c9daddd}
+      \strng{authorfullhash}{6ce89992048ce18b4d0ca44ef27c0794}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Geoscience}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Co-Variation of Silicate, Carbonate and Sulfide Weathering Drives {{CO2}} Release with Erosion}
+      \field{volume}{14}
+      \field{year}{2021}
+      \field{pages}{211\bibrangedash 216}
+      \range{pages}{6}
+    \endentry
+    \entry{chen2023melamchi}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=a350cda26c745a2cead03f2094e9a4b4}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chan-Mao},
+           giveni={C\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ed78bf64c5d7be6b0fb90174d09c5f4}{%
+           family={Hollingsworth},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22b1524a93f18b910b889c99e3f2c629}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Marin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b301e5f40ea639b188a203cffa60a27}{%
+           family={Zekkos},
+           familyi={Z\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50690575c65f638a16bda1eac2f6e7bd}{%
+           family={Chamlagain},
+           familyi={C\bibinitperiod},
+           given={Deepak},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=994af378b18ba055aa5b34a130e7332f}{%
+           family={Bista},
+           familyi={B\bibinitperiod},
+           given={Sujata},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e4b982bd9b209ee248d4d47e4971bbca}{%
+           family={Siwakoti},
+           familyi={S\bibinitperiod},
+           given={Anuj},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9fe4db9249fe80a520a19fe81d42d0f}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={A.\bibnamedelimi Joshua},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13fc5d0b5ff780fe562f6ba67721a9f6}
+      \strng{fullhash}{bbe04afc6a7907209daa8e7108f588e4}
+      \strng{bibnamehash}{13fc5d0b5ff780fe562f6ba67721a9f6}
+      \strng{authorbibnamehash}{13fc5d0b5ff780fe562f6ba67721a9f6}
+      \strng{authornamehash}{13fc5d0b5ff780fe562f6ba67721a9f6}
+      \strng{authorfullhash}{bbe04afc6a7907209daa8e7108f588e4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The 2021 Melamchi Flood: A Massive Erosional Cascade in the Himalayan Mountains of Central Nepal}
+      \field{year}{2023}
+    \endentry
+    \entry{dhitalGeologyNepalHimalaya2015}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ae73c01741985201b3914b8444ea80ce}{%
+           family={Dhital},
+           familyi={D\bibinitperiod},
+           given={Megh\bibnamedelima Raj},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{ae73c01741985201b3914b8444ea80ce}
+      \strng{fullhash}{ae73c01741985201b3914b8444ea80ce}
+      \strng{bibnamehash}{ae73c01741985201b3914b8444ea80ce}
+      \strng{authorbibnamehash}{ae73c01741985201b3914b8444ea80ce}
+      \strng{authornamehash}{ae73c01741985201b3914b8444ea80ce}
+      \strng{authorfullhash}{ae73c01741985201b3914b8444ea80ce}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-02495-0 978-3-319-02496-7}
+      \field{langid}{english}
+      \field{series}{Regional {{Geology Reviews}}}
+      \field{title}{Geology of the {{Nepal Himalaya}}}
+      \field{year}{2015}
+    \endentry
+    \entry{fontorbeSiliconIsotopicComposition2013}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=dc59554981dbf76f29d8fea49b86ad0c}{%
+           family={Fontorbe},
+           familyi={F\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c83b8260805095fdb7d060f058461ac7}{%
+           family={De\bibnamedelima La\bibnamedelima Rocha},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Christina\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c6aaab05ecde7a38a6db11bc94a7f43}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={Hazel\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0794457f62295aa869aa240de3b8953}{%
+           family={Bickle},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac718258daf61c5d72bc3114e577bdfe}
+      \strng{fullhash}{4719f29b56d7d54f6afd7bd5955be53b}
+      \strng{bibnamehash}{ac718258daf61c5d72bc3114e577bdfe}
+      \strng{authorbibnamehash}{ac718258daf61c5d72bc3114e577bdfe}
+      \strng{authornamehash}{ac718258daf61c5d72bc3114e577bdfe}
+      \strng{authorfullhash}{4719f29b56d7d54f6afd7bd5955be53b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Earth and Planetary Science Letters}
+      \field{langid}{english}
+      \field{title}{The Silicon Isotopic Composition of the {{Ganges}} and Its Tributaries}
+      \field{volume}{381}
+      \field{year}{2013}
+      \field{pages}{21\bibrangedash 30}
+      \range{pages}{10}
+    \endentry
+    \entry{grafGeomorphologicalHydrologicalControls2023}{misc}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=075a5ff6182ccc442b7dda9561616e2e}{%
+           family={Graf},
+           familyi={G\bibinitperiod},
+           given={Emma\bibnamedelimb L.\bibnamedelimi S.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b086ce46be945a477428219fb5de9d8f}{%
+           family={Sinclair},
+           familyi={S\bibinitperiod},
+           given={Hugh\bibnamedelima D.},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da8f39b50af1db2d180dc560641d4c64}{%
+           family={Attal},
+           familyi={A\bibinitperiod},
+           given={Mikaël},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34a53c269701381f10f82fac02766ec0}{%
+           family={Gailleton},
+           familyi={G\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97238bbbfcc74dd0ba3e413cd0982611}{%
+           family={Adhikari},
+           familyi={A\bibinitperiod},
+           given={Basanta\bibnamedelima Raj},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e39ca8274ed82efb2da4061611b537b7}{%
+           family={Baral},
+           familyi={B\bibinitperiod},
+           given={Bishnu\bibnamedelima Raj},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f669f1a71eb4c78dc78bbf8460c73765}
+      \strng{fullhash}{9fa1e91ff83c49234d00b3c0eadf8330}
+      \strng{bibnamehash}{f669f1a71eb4c78dc78bbf8460c73765}
+      \strng{authorbibnamehash}{f669f1a71eb4c78dc78bbf8460c73765}
+      \strng{authornamehash}{f669f1a71eb4c78dc78bbf8460c73765}
+      \strng{authorfullhash}{9fa1e91ff83c49234d00b3c0eadf8330}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Geomorphological and Hydrological Controls on Sediment Export in Earthquake-Affected Catchments in the {{Nepal Himalaya}}}
+      \field{year}{2023}
+    \endentry
+    \entry{kampmanFeldsparDissolutionKinetics2009}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=37097ae1761fcb9154db4af93157e930}{%
+           family={Kampman},
+           familyi={K\bibinitperiod},
+           given={Niko},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9fd6569451183ec899cc2495879079d}{%
+           family={Bickle},
+           familyi={B\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d387a21739eab98d7de853c8edea516}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95c6bb3be9172c7e9d152ebea8b31d4b}{%
+           family={Assayag},
+           familyi={A\bibinitperiod},
+           given={Nelly},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=249898386de1cce0a0c7102ba77d52b1}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={Hazel},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9ca86368db6c6ffab979a1c4a79c4d4c}
+      \strng{fullhash}{1ecb62c731d977b5e479e9b027035f92}
+      \strng{bibnamehash}{9ca86368db6c6ffab979a1c4a79c4d4c}
+      \strng{authorbibnamehash}{9ca86368db6c6ffab979a1c4a79c4d4c}
+      \strng{authornamehash}{9ca86368db6c6ffab979a1c4a79c4d4c}
+      \strng{authorfullhash}{1ecb62c731d977b5e479e9b027035f92}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Earth and Planetary Science Letters}
+      \field{langid}{english}
+      \field{number}{3-4}
+      \field{title}{Feldspar Dissolution Kinetics and {{Gibbs}} Free Energy Dependence in a {{CO2-enriched}} Groundwater System, {{Green River}}, {{Utah}}}
+      \field{volume}{284}
+      \field{year}{2009}
+      \field{pages}{473\bibrangedash 488}
+      \range{pages}{16}
+    \endentry
+    \entry{kattelTemperatureLapseRate2013}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=db931e6d124d19202cc3f74bf6eb3d88}{%
+           family={Kattel},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2063b855442f7b074b8a50bb655b31b0}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=938454f964d6c5f1dff40a53975d6678}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=993762c02295170f26934487b9fe4471}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1338aaf8b46a07ead8f27b0d3cf761d0}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fe80c7c15a16cad75777ed9414dca8d}{%
+           family={Joswiak},
+           familyi={J\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e40509a37c195ff17945d739534c64f}
+      \strng{fullhash}{3396f2679ad02ebfd20ead0743fecf2b}
+      \strng{bibnamehash}{9e40509a37c195ff17945d739534c64f}
+      \strng{authorbibnamehash}{9e40509a37c195ff17945d739534c64f}
+      \strng{authornamehash}{9e40509a37c195ff17945d739534c64f}
+      \strng{authorfullhash}{3396f2679ad02ebfd20ead0743fecf2b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Applied Climatology}
+      \field{langid}{english}
+      \field{number}{3-4}
+      \field{title}{Temperature Lapse Rate in Complex Mountain Terrain on the Southern Slope of the Central {{Himalayas}}}
+      \field{volume}{113}
+      \field{year}{2013}
+      \field{pages}{671\bibrangedash 682}
+      \range{pages}{12}
+    \endentry
+    \entry{kumpChemicalWeatheringAtmospheric2000}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=33e4a65d035f93beb50aeed211e62a4c}{%
+           family={Kump},
+           familyi={K\bibinitperiod},
+           given={Lee\bibnamedelima R.},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a3826fb6544adfbb0ce993aa0bbce70}{%
+           family={Brantley},
+           familyi={B\bibinitperiod},
+           given={Susan\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0fbaa1080e39a2ceedf4318b09b0e85}{%
+           family={Arthur},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7f2eaef0539c516b2b178cb3f7c44064}
+      \strng{fullhash}{bb9354e62e43da9976a6300b2927c7b4}
+      \strng{bibnamehash}{7f2eaef0539c516b2b178cb3f7c44064}
+      \strng{authorbibnamehash}{7f2eaef0539c516b2b178cb3f7c44064}
+      \strng{authornamehash}{7f2eaef0539c516b2b178cb3f7c44064}
+      \strng{authorfullhash}{bb9354e62e43da9976a6300b2927c7b4}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Review of Earth and Planetary Sciences}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Chemical {{Weathering}}, {{Atmospheric CO}}{\textsubscript{2}} , and {{Climate}}}
+      \field{volume}{28}
+      \field{year}{2000}
+      \field{pages}{611\bibrangedash 667}
+      \range{pages}{57}
+    \endentry
+    \entry{maherRoleFluidResidence2011}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=51031fc31795d33b614bfbe5ca0af69e}{%
+           family={Maher},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51031fc31795d33b614bfbe5ca0af69e}
+      \strng{fullhash}{51031fc31795d33b614bfbe5ca0af69e}
+      \strng{bibnamehash}{51031fc31795d33b614bfbe5ca0af69e}
+      \strng{authorbibnamehash}{51031fc31795d33b614bfbe5ca0af69e}
+      \strng{authornamehash}{51031fc31795d33b614bfbe5ca0af69e}
+      \strng{authorfullhash}{51031fc31795d33b614bfbe5ca0af69e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Earth and Planetary Science Letters}
+      \field{langid}{english}
+      \field{number}{1-2}
+      \field{title}{The Role of Fluid Residence Time and Topographic Scales in Determining Chemical Fluxes from Landscapes}
+      \field{volume}{312}
+      \field{year}{2011}
+      \field{pages}{48\bibrangedash 58}
+      \range{pages}{11}
+    \endentry
+    \entry{maherRoleReactionAffinity2009}{article}{}
+      \name{author}{4}{ul=1}{%
+        {{un=0,uniquepart=base,hash=f8db359c98a45fd33fcf9e01d2650975}{%
+           family={Maher},
+           familyi={M\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c662b0cd6d9963a8b5b72a781c72e965}{%
+           family={Steefel},
+           familyi={S\bibinitperiod},
+           given={Carl\bibnamedelima I.},
+           giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=947d1a5b107c93493fc7ade41fec2ff6}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Art\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16c86eaafcf4dbe8cfb2ac8710a47873}{%
+           family={Stonestrom},
+           familyi={S\bibinitperiod},
+           given={Dave\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
+      \strng{fullhash}{80ad22fc4506b1be9ab7e8f3a26973b3}
+      \strng{bibnamehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
+      \strng{authorbibnamehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
+      \strng{authornamehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
+      \strng{authorfullhash}{80ad22fc4506b1be9ab7e8f3a26973b3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geochimica et Cosmochimica Acta}
+      \field{langid}{english}
+      \field{number}{10}
+      \field{title}{The Role of Reaction Affinity and Secondary Minerals in Regulating Chemical Weathering Rates at the {{Santa Cruz Soil Chronosequence}}, {{California}}}
+      \field{volume}{73}
+      \field{year}{2009}
+      \field{pages}{2804\bibrangedash 2831}
+      \range{pages}{28}
+    \endentry
+    \entry{mccallumLimitationsUseEnvironmental2015}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4d7cd9150d1ea514729e7d404698febb}{%
+           family={McCallum},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b7bde1476cba8831d4e6e55488b5469}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Peter\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f45128437d7425d99a92b13c9f47ec7}{%
+           family={Simmons},
+           familyi={S\bibinitperiod},
+           given={Craig\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{104a85d79de992ece00adff2ffb68fb2}
+      \strng{fullhash}{86261b3ebbd9784bd74ede474b7ea1a5}
+      \strng{bibnamehash}{104a85d79de992ece00adff2ffb68fb2}
+      \strng{authorbibnamehash}{104a85d79de992ece00adff2ffb68fb2}
+      \strng{authornamehash}{104a85d79de992ece00adff2ffb68fb2}
+      \strng{authorfullhash}{86261b3ebbd9784bd74ede474b7ea1a5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Groundwater}
+      \field{langid}{english}
+      \field{number}{S1}
+      \field{title}{Limitations of the {{Use}} of {{Environmental Tracers}} to {{Infer Groundwater Age}}}
+      \field{volume}{53}
+      \field{year}{2015}
+      \field{pages}{56\bibrangedash 70}
+      \range{pages}{15}
+    \endentry
+    \entry{medwedeffSurfaceGeomechanicalProperties2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=4a4a7178dc9942f27f1d661829f2f61b}{%
+           family={Medwedeff},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima G.},
+           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=481ddd258c85ea20760f4b8ae1eebcc1}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Marin\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b301e5f40ea639b188a203cffa60a27}{%
+           family={Zekkos},
+           familyi={Z\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9fe4db9249fe80a520a19fe81d42d0f}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={A.\bibnamedelimi Joshua},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50690575c65f638a16bda1eac2f6e7bd}{%
+           family={Chamlagain},
+           familyi={C\bibinitperiod},
+           given={Deepak},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{37fcd5e16d0cbe7a262398b051faf2ca}
+      \strng{fullhash}{e26144754a90a977be05600e118dafbf}
+      \strng{bibnamehash}{37fcd5e16d0cbe7a262398b051faf2ca}
+      \strng{authorbibnamehash}{37fcd5e16d0cbe7a262398b051faf2ca}
+      \strng{authornamehash}{37fcd5e16d0cbe7a262398b051faf2ca}
+      \strng{authorfullhash}{e26144754a90a977be05600e118dafbf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research: Earth Surface}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{title}{Near-{{Surface Geomechanical Properties}} and {{Weathering Characteristics Across}} a {{Tectonic}} and {{Climatic Gradient}} in the {{Central Nepal Himalaya}}}
+      \field{volume}{127}
+      \field{year}{2022}
+      \field{pages}{e2021JF006240}
+      \range{pages}{-1}
+    \endentry
+    \entry{asterGlobalDigitalElevation2018}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3e7c56836b6235841d033e0285732443}{%
+           family={{NASA/METI/AIST/Japan Space Systems}},
+           familyi={N\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=021d901d81a1772a446084c0a5dd8233}{%
+           family={{U.S./Japan ASTER Science Team}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {NASA EOSDIS Land Processes DAAC}%
+      }
+      \strng{namehash}{0d551a2f7fa192953fe971a0702372e1}
+      \strng{fullhash}{0d551a2f7fa192953fe971a0702372e1}
+      \strng{bibnamehash}{0d551a2f7fa192953fe971a0702372e1}
+      \strng{authorbibnamehash}{0d551a2f7fa192953fe971a0702372e1}
+      \strng{authornamehash}{0d551a2f7fa192953fe971a0702372e1}
+      \strng{authorfullhash}{0d551a2f7fa192953fe971a0702372e1}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ASTER Global Digital Elevation Model V003}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://doi.org/10.5067/ASTER/ASTGTM.003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5067/ASTER/ASTGTM.003
+      \endverb
+    \endentry
+    \entry{panthiSpatialTemporalVariability2015}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=d5ae251a294ef82e203c56e3f5f341f0}{%
+           family={Panthi},
+           familyi={P\bibinitperiod},
+           given={Jeeban},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ea70133ccd1cd07526163df996bba27}{%
+           family={Dahal},
+           familyi={D\bibinitperiod},
+           given={Piyush},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4380eba485b12363a7dcc2c11d935e7f}{%
+           family={Shrestha},
+           familyi={S\bibinitperiod},
+           given={Madan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb4deb6a75e3c251d6f6b26e12fdf441}{%
+           family={Aryal},
+           familyi={A\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1642251e4ade12fdf4646d8f4780f22}{%
+           family={Krakauer},
+           familyi={K\bibinitperiod},
+           given={Nir},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2228d8c2f025106a2fa7f9fed77059d9}{%
+           family={Pradhanang},
+           familyi={P\bibinitperiod},
+           given={Soni},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f89bd357f5e08033c4daa029addb153}{%
+           family={Lakhankar},
+           familyi={L\bibinitperiod},
+           given={Tarendra},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=becffaf3dad93091b1c7d661ba0c0fb3}{%
+           family={Jha},
+           familyi={J\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38c381118344f57fd598a1fb456622d6}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Mohan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34117896829672a24cef23b45d46706f}{%
+           family={Karki},
+           familyi={K\bibinitperiod},
+           given={Ramchandra},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{12cdeceacdbee282816a7fc12154f69b}
+      \strng{fullhash}{8844406bf2befa755a20cc3620774ac4}
+      \strng{bibnamehash}{12cdeceacdbee282816a7fc12154f69b}
+      \strng{authorbibnamehash}{12cdeceacdbee282816a7fc12154f69b}
+      \strng{authornamehash}{12cdeceacdbee282816a7fc12154f69b}
+      \strng{authorfullhash}{8844406bf2befa755a20cc3620774ac4}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Spatial and {{Temporal Variability}} of {{Rainfall}} in the {{Gandaki River Basin}} of {{Nepal Himalaya}}}
+      \field{volume}{3}
+      \field{year}{2015}
+      \field{pages}{210\bibrangedash 226}
+      \range{pages}{17}
+    \endentry
+    \entry{pedrazasRelationshipTopographyBedrock2021}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=ccfb4243c0c5cfdfd6bfd8ac5d2f69f4}{%
+           family={Pedrazas},
+           familyi={P\bibinitperiod},
+           given={Michelle\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f472b6c8a0a52664af02b33d020de845}{%
+           family={Hahm},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi Jesse},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee0f690156a01a67917325d3cfd602fd}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Mong-Han},
+           giveni={M\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f610ef322232c5f83ff771750d32bdc8}{%
+           family={Dralle},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bed816ded2fced1f7b8c01a80f464e5d}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Mariel\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b739559bd28e90ba9fb61c9933bfb91}{%
+           family={Breunig},
+           familyi={B\bibinitperiod},
+           given={Rachel\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=340e32e65a5c837c904546b30e145c80}{%
+           family={Fauria},
+           familyi={F\bibinitperiod},
+           given={Kristen\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e95dda290f9faee6009bacd8c72bd27e}{%
+           family={Bryk},
+           familyi={B\bibinitperiod},
+           given={Alexander\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0aa22cea56416774ca7c1b279f0862ce}{%
+           family={Dietrich},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5546a81e03786740a064f1885e43b46}{%
+           family={Rempe},
+           familyi={R\bibinitperiod},
+           given={Daniella\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5832842cb1f852a6a5f15866c734a156}
+      \strng{fullhash}{c1bff9ab88eb3bffedc814606064b7c9}
+      \strng{bibnamehash}{5832842cb1f852a6a5f15866c734a156}
+      \strng{authorbibnamehash}{5832842cb1f852a6a5f15866c734a156}
+      \strng{authornamehash}{5832842cb1f852a6a5f15866c734a156}
+      \strng{authorfullhash}{c1bff9ab88eb3bffedc814606064b7c9}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research: Earth Surface}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{The {{Relationship Between Topography}}, {{Bedrock Weathering}}, and {{Water Storage Across}} a {{Sequence}} of {{Ridges}} and {{Valleys}}}
+      \field{volume}{126}
+      \field{year}{2021}
+      \field{pages}{e2020JF005848}
+      \range{pages}{-1}
+    \endentry
+    \entry{raymoTectonicForcingLate1992}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1c21cb9cd520af8a2ed3b7d29b4a7566}{%
+           family={Raymo},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db5332414d51e489b1dd8df4e59dae2d}{%
+           family={Ruddiman},
+           familyi={R\bibinitperiod},
+           given={W.\bibnamedelimi F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{478cf31d356dd3569690f6e7f6639e0f}
+      \strng{fullhash}{478cf31d356dd3569690f6e7f6639e0f}
+      \strng{bibnamehash}{478cf31d356dd3569690f6e7f6639e0f}
+      \strng{authorbibnamehash}{478cf31d356dd3569690f6e7f6639e0f}
+      \strng{authornamehash}{478cf31d356dd3569690f6e7f6639e0f}
+      \strng{authorfullhash}{478cf31d356dd3569690f6e7f6639e0f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{number}{6391}
+      \field{title}{Tectonic Forcing of Late {{Cenozoic}} Climate}
+      \field{volume}{359}
+      \field{year}{1992}
+      \field{pages}{117\bibrangedash 122}
+      \range{pages}{6}
+    \endentry
+    \entry{shand1999}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c2959d2409b4890f81465894ec83d8c3}{%
+           family={Shand},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21413e0aec6d32e3caa8ced283bcc0cc}{%
+           family={Darbyshire},
+           familyi={D\bibinitperiod},
+           given={D.\bibnamedelimi P.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c68bc2b4886d83b162cb92f0d71152c}{%
+           family={Gooddy},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fbbd337f6e355e8b02c48beabd54fed0}
+      \strng{fullhash}{c4137e05b752256a01d29620eb3dadf5}
+      \strng{bibnamehash}{fbbd337f6e355e8b02c48beabd54fed0}
+      \strng{authorbibnamehash}{fbbd337f6e355e8b02c48beabd54fed0}
+      \strng{authornamehash}{fbbd337f6e355e8b02c48beabd54fed0}
+      \strng{authorfullhash}{c4137e05b752256a01d29620eb3dadf5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Geological Survey}
+      \field{title}{The application of Strontium isotopes to catchment studies: The Plynlimon upland catchment of Central Wales}
+      \field{year}{1999}
+    \endentry
+    \entry{sharma1997}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=006fcd38e312d6ec0479f60c517a3616}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={C.K.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{006fcd38e312d6ec0479f60c517a3616}
+      \strng{fullhash}{006fcd38e312d6ec0479f60c517a3616}
+      \strng{bibnamehash}{006fcd38e312d6ec0479f60c517a3616}
+      \strng{authorbibnamehash}{006fcd38e312d6ec0479f60c517a3616}
+      \strng{authornamehash}{006fcd38e312d6ec0479f60c517a3616}
+      \strng{authorfullhash}{006fcd38e312d6ec0479f60c517a3616}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Treatise on Water Resources of Nepal}
+      \field{year}{1997}
+      \field{pages}{493}
+      \range{pages}{1}
+    \endentry
+    \entry{stallardGeochemistryAmazonInfluence1983}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=12be60360ad1c18961465759219083ef}{%
+           family={Stallard},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=641db2e35e3dcfeef53f5e5c34b43dc4}{%
+           family={Edmond},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da696f1b8c395e74f787d1957d3cc7e3}
+      \strng{fullhash}{da696f1b8c395e74f787d1957d3cc7e3}
+      \strng{bibnamehash}{da696f1b8c395e74f787d1957d3cc7e3}
+      \strng{authorbibnamehash}{da696f1b8c395e74f787d1957d3cc7e3}
+      \strng{authornamehash}{da696f1b8c395e74f787d1957d3cc7e3}
+      \strng{authorfullhash}{da696f1b8c395e74f787d1957d3cc7e3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Journal of Geophysical Research: Oceans}
+      \field{langid}{english}
+      \field{number}{C14}
+      \field{shorttitle}{Geochemistry of the {{Amazon}}}
+      \field{title}{Geochemistry of the {{Amazon}}: 2. {{The}} Influence of Geology and Weathering Environment on the Dissolved Load}
+      \field{volume}{88}
+      \field{year}{1983}
+      \field{pages}{9671\bibrangedash 9688}
+      \range{pages}{18}
+    \endentry
+    \entry{tipperShortTermClimatic2006}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=c29c97038a93015448a02973c9a16232}{%
+           family={Tipper},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=233791d524a44031ecd1749abcf39b39}{%
+           family={Bickle},
+           familyi={B\bibinitperiod},
+           given={Mike\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb70b228fcaba07822d7a9aef290d146}{%
+           family={Galy},
+           familyi={G\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9fe4db9249fe80a520a19fe81d42d0f}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={A.\bibnamedelimi Joshua},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f568166558e262f49b67a005ce352aad}{%
+           family={Pomiès},
+           familyi={P\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c6aaab05ecde7a38a6db11bc94a7f43}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={Hazel\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c95b885f3ac932a1e461c62467fecbd0}
+      \strng{fullhash}{74fe5710e80aa86ebbe3f5b874297a7d}
+      \strng{bibnamehash}{c95b885f3ac932a1e461c62467fecbd0}
+      \strng{authorbibnamehash}{c95b885f3ac932a1e461c62467fecbd0}
+      \strng{authornamehash}{c95b885f3ac932a1e461c62467fecbd0}
+      \strng{authorfullhash}{74fe5710e80aa86ebbe3f5b874297a7d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Geochimica et Cosmochimica Acta}
+      \field{langid}{english}
+      \field{number}{11}
+      \field{shorttitle}{The Short Term Climatic Sensitivity of Carbonate and Silicate Weathering Fluxes}
+      \field{title}{The Short Term Climatic Sensitivity of Carbonate and Silicate Weathering Fluxes: {{Insight}} from Seasonal Variations in River Chemistry}
+      \field{volume}{70}
+      \field{year}{2006}
+      \field{pages}{2737\bibrangedash 2754}
+      \range{pages}{18}
+    \endentry
+    \entry{westTectonicClimaticControls2005}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=791684e4cde39ad38cb709577cd915d7}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ee4c3f830801860c4c152a5b0f2a82e}{%
+           family={Galy},
+           familyi={G\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6c378f5fc088bacf33c6c72f3fd6aef}{%
+           family={Bickle},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9ba4b1a8dce0670222820b2042f024ea}
+      \strng{fullhash}{768c34709e84f888d1074405ce076e78}
+      \strng{bibnamehash}{9ba4b1a8dce0670222820b2042f024ea}
+      \strng{authorbibnamehash}{9ba4b1a8dce0670222820b2042f024ea}
+      \strng{authornamehash}{9ba4b1a8dce0670222820b2042f024ea}
+      \strng{authorfullhash}{768c34709e84f888d1074405ce076e78}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Earth and Planetary Science Letters}
+      \field{langid}{english}
+      \field{number}{1-2}
+      \field{title}{Tectonic and Climatic Controls on Silicate Weathering}
+      \field{volume}{235}
+      \field{year}{2005}
+      \field{pages}{211\bibrangedash 228}
+      \range{pages}{18}
+    \endentry
+    \entry{whiteEffectTimeWeathering2003}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=947d1a5b107c93493fc7ade41fec2ff6}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Art\bibnamedelima F},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a3826fb6544adfbb0ce993aa0bbce70}{%
+           family={Brantley},
+           familyi={B\bibinitperiod},
+           given={Susan\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec17c95e1e07da9fd6272de03f18ff68}
+      \strng{fullhash}{ec17c95e1e07da9fd6272de03f18ff68}
+      \strng{bibnamehash}{ec17c95e1e07da9fd6272de03f18ff68}
+      \strng{authorbibnamehash}{ec17c95e1e07da9fd6272de03f18ff68}
+      \strng{authornamehash}{ec17c95e1e07da9fd6272de03f18ff68}
+      \strng{authorfullhash}{ec17c95e1e07da9fd6272de03f18ff68}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Chemical Geology}
+      \field{langid}{english}
+      \field{number}{3-4}
+      \field{shorttitle}{The Effect of Time on the Weathering of Silicate Minerals}
+      \field{title}{The Effect of Time on the Weathering of Silicate Minerals: Why Do Weathering Rates Differ in the Laboratory and Field?}
+      \field{volume}{202}
+      \field{year}{2003}
+      \field{pages}{479\bibrangedash 506}
+      \range{pages}{28}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem{noauthor_open-file_2004}
-Open-file report.
-\newblock Series: Open-File Report.
-
-\bibitem{acharya_stable_2020}
-Sunil Acharya, Xiaoxin Yang, Tandong Yao, and Dibas Shrestha.
-\newblock Stable isotopes of precipitation in nepal himalaya highlight the topographic influence on moisture transport.
-\newblock 565:22--30.
-
-\bibitem{adhikari_evaluation_2023}
-Tirtha~Raj Adhikari, Binod Baniya, Qiuhong Tang, Rocky Talchabhadel, Manish~Raj Gouli, Bhumi~Raj Budhathoki, and Ram~Prasad Awasthi.
-\newblock Evaluation of post extreme floods in high mountain region: A case study of the melamchi flood 2021 ​at the koshi river basin in nepal.
-\newblock 3(3):437--446.
-
-\bibitem{andermann_impact_2012}
-Christoff Andermann, Laurent Longuevergne, Stéphane Bonnet, Alain Crave, Philippe Davy, and Richard Gloaguen.
-\newblock Impact of transient groundwater storage on the discharge of himalayan rivers.
-\newblock 5(2):127--132.
-
-\bibitem{appelo_geochemistry_2010}
-C.~A.~J. Appelo and Dieke Postma.
-\newblock {\em Geochemistry, groundwater and pollution}.
-\newblock {CRC} Press, 2nd ed., 5th corr. repr edition.
-
-\bibitem{atwood_critical_2023}
-Abra~Catherine Atwood.
-\newblock Critical zone response to perturbation: from mountain building to wildfire.
-
-\bibitem{baniya_climate_2024}
-Binod Baniya, Qiuhong Tang, Tirtha~Raj Adhikari, Gang Zhao, Gebremedhin~Gebremeskel Haile, Madan Sigdel, and Li~He.
-\newblock Climate change induced melamchi extreme flood and environment implication in central himalaya of nepal.
-\newblock 120(12):11009--11029.
-
-\bibitem{benettin_linking_2015}
-Paolo Benettin, Scott~W. Bailey, John~L. Campbell, Mark~B. Green, Andrea Rinaldo, Gene~E. Likens, Kevin~J. {McGuire}, and Gianluca Botter.
-\newblock Linking water age and solute dynamics in streamflow at the {\textless}span style="font-variant:small-caps;"{\textgreater}h{\textless}/span{\textgreater} ubbard {\textless}span style="font-variant:small-caps;"{\textgreater}b{\textless}/span{\textgreater} rook {\textless}span style="font-variant:small-caps;"{\textgreater}e{\textless}/span{\textgreater} xperimental {\textless}span style="font-variant:small-caps;"{\textgreater}f{\textless}/span{\textgreater} orest, {\textless}span style="font-variant:small-caps;"{\textgreater}{NH}{\textless}/span{\textgreater} , {\textless}span style="font-variant:small-caps;"{\textgreater}{USA}{\textless}/span{\textgreater}.
-\newblock 51(11):9256--9272.
-
-\bibitem{bethke_geochemical_nodate}
-Craig~M Bethke.
-\newblock {GEOCHEMICAL} {AND} {BIOGEOCHEMICAL} {REACTION} {MODELING}, second edition.
-
-\bibitem{bickle_discrimination_2015}
-M.~J. Bickle, E.~Tipper, A.~Galy, H.~Chapman, and N.~Harris.
-\newblock On discrimination between carbonate and silicate inputs to himalayan rivers.
-\newblock 315(2):120--166.
-
-\bibitem{bookhagen_toward_2010}
-Bodo Bookhagen and Douglas~W. Burbank.
-\newblock Toward a complete himalayan hydrological budget: Spatiotemporal distribution of snowmelt and rainfall and their impact on river discharge.
-\newblock 115:2009JF001426.
-
-\bibitem{carrera_reactive_2022}
-Jesús Carrera, Maarten~W. Saaltink, Joaquim Soler-Sagarra, Jingjing Wang, and Cristina Valhondo.
-\newblock Reactive transport: A review of basic concepts with emphasis on biochemical processes.
-\newblock 15(3):925.
-
-\bibitem{chen_coupled_2025}
-Mingkun Chen, Lei Gong, Jacques Schott, Peng Lu, Kaiyun Chen, Honglin Yuan, Jian Sun, Si~Athena Chen, John Apps, and Chen Zhu.
-\newblock Coupled feldspar dissolution and secondary mineral precipitation in batch systems: 6. labradorite dissolution, calcite growth, and clay precipitation at 60 °c and {pH} 8.2–8.4.
-\newblock 390:181--198.
-
-\bibitem{david_laboratory_1994}
-Christian David, Teng-Fong Wong, Wenlu Zhu, and Jiaxiang Zhang.
-\newblock Laboratory measurement of compaction-induced permeability change in porous rocks: Implications for the generation and maintenance of pore pressure excess in the crust.
-\newblock 143(1):425--456.
-
-\bibitem{dhital_geology_2015}
-Megh~Raj Dhital.
-\newblock {\em Geology of the Nepal Himalaya}.
-\newblock Regional Geology Reviews. Springer International Publishing.
-
-\bibitem{druhan_influence_2017}
-Jennifer~L. Druhan and Kate Maher.
-\newblock The influence of mixing on stable isotope ratios in porous media: A revised rayleigh model.
-\newblock 53(2):1101--1124.
-
-\bibitem{dubacq_thermodynamics_2022}
-Benoît Dubacq.
-\newblock Thermodynamics of ordering and mixing in plagioclase feldspars: atomistic modelling in favour of landau theory.
-\newblock 177(10):102.
-
-\bibitem{fontorbe_silicon_2013}
-Guillaume Fontorbe, Christina~L. De~La~Rocha, Hazel~J. Chapman, and Michael~J. Bickle.
-\newblock The silicon isotopic composition of the ganges and its tributaries.
-\newblock 381:21--30.
-
-\bibitem{gaillardet_global_1999}
-J.~Gaillardet, B.~Dupré, P.~Louvat, and C.J. Allègre.
-\newblock Global silicate weathering and {CO}2 consumption rates deduced from the chemistry of large rivers.
-\newblock 159(1):3--30.
-
-\bibitem{galy_strontium_1999}
-Albert Galy, Christian France-Lanord, and Louis~A Derry.
-\newblock The strontium isotopic budget of himalayan rivers in nepal and bangladesh.
-\newblock 63(13):1905--1925.
-
-\bibitem{georg_silicon_2007}
-R.B. Georg, B.C. Reynolds, A.J. West, K.W. Burton, and A.N. Halliday.
-\newblock Silicon isotope variations accompanying basalt weathering in iceland.
-\newblock 261(3):476--490.
-
-\bibitem{georg_silicon_2007-1}
-R.B. Georg, B.C. Reynolds, A.J. West, K.W. Burton, and A.N. Halliday.
-\newblock Silicon isotope variations accompanying basalt weathering in iceland.
-\newblock 261(3):476--490.
-
-\bibitem{golla_evolution_2021}
-Jon~K. Golla, Marie~L. Kuessner, Michael~J. Henehan, Julien Bouchez, Daniella~M. Rempe, and Jennifer~L. Druhan.
-\newblock The evolution of lithium isotope signatures in fluids draining actively weathering hillslopes.
-\newblock 567:116988.
-
-\bibitem{goodfellow_chemical_2016}
-Bradley~W. Goodfellow, George~E. Hilley, Samuel~M. Webb, Leonard~S. Sklar, Seulgi Moon, and Christopher~A. Olson.
-\newblock The chemical, mechanical, and hydrological evolution of weathering granitoid.
-\newblock 121(8):1410--1435.
-
-\bibitem{graf_geomorphological_2023}
-Emma L.~S. Graf, Hugh~D. Sinclair, Mikaël Attal, Boris Gailleton, Basanta~Raj Adhikari, and Bishnu~Raj Baral.
-\newblock Geomorphological and hydrological controls on sediment export in earthquake-affected catchments in the nepal himalaya.
-
-\bibitem{hare_continental-scale_2021}
-Danielle~K. Hare, Ashley~M. Helton, Zachary~C. Johnson, John~W. Lane, and Martin~A. Briggs.
-\newblock Continental-scale analysis of shallow and deep groundwater contributions to streams.
-\newblock 12(1):1450.
-
-\bibitem{hille_orographic_nodate}
-Madeline~M Hille.
-\newblock The orographic influence on storm variability, extreme rainfall characteristics and rainfall-triggered landsliding in the central nepalese himalaya.
-
-\bibitem{holland_improved_2011}
-T.~J.~B. Holland and R.~Powell.
-\newblock An improved and extended internally consistent thermodynamic dataset for phases of petrological interest, involving a new equation of state for solids: {THERMODYNAMIC} {DATASET} {FOR} {PHASES} {OF} {PETROLOGICAL} {INTEREST}.
-\newblock 29(3):333--383.
-
-\bibitem{illien_subsurface_2021}
-L.~Illien, C.~Andermann, C.~Sens‐Schönfelder, K.~L. Cook, K.~P. Baidya, L.~B. Adhikari, and N.~Hovius.
-\newblock Subsurface moisture regulates himalayan groundwater storage and discharge.
-\newblock 2(2):e2021AV000398.
-
-\bibitem{jasechko_global_2019}
-Scott Jasechko.
-\newblock Global isotope hydrogeology―review.
-\newblock 57(3):835--965.
-
-\bibitem{jasechko_partitioning_2016}
-Scott Jasechko.
-\newblock Partitioning young and old groundwater with geochemical tracers.
-\newblock 427:35--42.
-
-\bibitem{joshua_west_small-catchment_2002}
-A.~Joshua~West, Mike~J. Bickle, Rob Collins, and James Brasington.
-\newblock Small-catchment perspective on himalayan weathering fluxes.
-\newblock 30(4):355.
-
-\bibitem{kad_recent_2023}
-Pratik Kad and Kyung‐Ja Ha.
-\newblock Recent tangible natural variability of monsoonal orographic rainfall in the eastern himalayas.
-\newblock 128(22):e2023JD038759.
-
-\bibitem{kampman_feldspar_2009}
-Niko Kampman, Mike Bickle, John Becker, Nelly Assayag, and Hazel Chapman.
-\newblock Feldspar dissolution kinetics and gibbs free energy dependence in a {CO}2-enriched groundwater system, green river, utah.
-\newblock 284(3):473--488.
-
-\bibitem{kattel_temperature_2013}
-D.~B. Kattel, T.~Yao, K.~Yang, L.~Tian, G.~Yang, and D.~Joswiak.
-\newblock Temperature lapse rate in complex mountain terrain on the southern slope of the central himalayas.
-\newblock 113(3):671--682.
-
-\bibitem{knapp_new_2019}
-Julia L.~A. Knapp, Colin Neal, Alessandro Schlumpf, Margaret Neal, and James~W. Kirchner.
-\newblock New water fractions and transit time distributions at plynlimon, wales, estimated from stable water isotopes in precipitation and streamflow.
-\newblock 23(10):4367--4388.
-
-\bibitem{knight_impact_2024}
-Alasdair~C.G. Knight, Emily~I. Stevenson, Luke Bridgestock, J.~Jotautas~Baronas, William~J. Knapp, Basanta~Raj Adhikari, Christoff Andermann, and Edward~T. Tipper.
-\newblock The impact of adsorption–desorption reactions on the chemistry of himalayan rivers and the quantification of silicate weathering rates.
-\newblock 641:118814.
-
-\bibitem{kump_chemical_2000}
-Lee~R. Kump, Susan~L. Brantley, and Michael~A. Arthur.
-\newblock Chemical weathering, atmospheric {CO}$_{\textrm{2}}$ , and climate.
-\newblock 28(1):611--667.
-
-\bibitem{kisakurek_li_2005}
-Başak Kısakűrek, Rachael~H. James, and Nigel~B.W. Harris.
-\newblock Li and δ7li in himalayan rivers: Proxies for silicate weathering?
-\newblock 237(3):387--401.
-
-\bibitem{maher_dependence_2010}
-K.~Maher.
-\newblock The dependence of chemical weathering rates on fluid residence time.
-\newblock 294(1):101--110.
-
-\bibitem{maher_role_2011}
-K.~Maher.
-\newblock The role of fluid residence time and topographic scales in determining chemical fluxes from landscapes.
-\newblock 312(1):48--58.
-
-\bibitem{maher_hydrologic_2014}
-K.~Maher and C.~P. Chamberlain.
-\newblock Hydrologic regulation of chemical weathering and the geologic carbon cycle.
-\newblock 343(6178):1502--1504.
-
-\bibitem{maher_hydrologic_2014-1}
-K.~Maher and C.~P. Chamberlain.
-\newblock Hydrologic regulation of chemical weathering and the geologic carbon cycle.
-\newblock 343(6178):1502--1504.
-
-\bibitem{maher_role_2009}
-Kate Maher, Carl~I. Steefel, Art~F. White, and Dave~A. Stonestrom.
-\newblock The role of reaction affinity and secondary minerals in regulating chemical weathering rates at the santa cruz soil chronosequence, california.
-\newblock 73(10):2804--2831.
-
-\bibitem{maher_rates_2004}
-Katharine Maher, Donald~J. {DePaolo}, and Jo~Chiu-Fang Lin.
-\newblock Rates of silicate dissolution in deep-sea sediment: In situ measurement using 234u/238u of pore fluids.
-\newblock 68(22):4629--4648.
-
-\bibitem{marc_long-term_2019}
-Odin Marc, Robert Behling, Christoff Andermann, Jens~M. Turowski, Luc Illien, Sigrid Roessner, and Niels Hovius.
-\newblock Long-term erosion of the nepal himalayas by bedrock landsliding: the role of monsoons, earthquakes and giant landslides.
-\newblock 7(1):107--128.
-
-\bibitem{mccallum_limitations_2015}
-James~L. {McCallum}, Peter~G. Cook, and Craig~T. Simmons.
-\newblock Limitations of the use of environmental tracers to infer groundwater age.
-\newblock 53:56--70.
-
-\bibitem{mcguire_role_2005}
-K.~J. {McGuire}, J.~J. {McDonnell}, M.~Weiler, C.~Kendall, B.~L. {McGlynn}, J.~M. Welker, and J.~Seibert.
-\newblock The role of topography on catchment‐scale water residence time.
-\newblock 41(5):2004WR003657.
-
-\bibitem{medwedeff_nearsurface_2022}
-William~G. Medwedeff, Marin~K. Clark, Dimitrios Zekkos, A.~Joshua West, and Deepak Chamlagain.
-\newblock Near‐surface geomechanical properties and weathering characteristics across a tectonic and climatic gradient in the central nepal himalaya.
-\newblock 127(2):e2021JF006240.
-
-\bibitem{panthi_spatial_2015}
-Jeeban Panthi, Piyush Dahal, Madan Shrestha, Suman Aryal, Nir Krakauer, Soni Pradhanang, Tarendra Lakhankar, Ajay Jha, Mohan Sharma, and Ramchandra Karki.
-\newblock Spatial and temporal variability of rainfall in the gandaki river basin of nepal himalaya.
-\newblock 3(1):210--226.
-
-\bibitem{pedrazas_relationship_2021}
-Michelle~A. Pedrazas, W.~Jesse Hahm, Mong‐Han Huang, David Dralle, Mariel~D. Nelson, Rachel~E. Breunig, Kristen~E. Fauria, Alexander~B. Bryk, William~E. Dietrich, and Daniella~M. Rempe.
-\newblock The relationship between topography, bedrock weathering, and water storage across a sequence of ridges and valleys.
-\newblock 126(4):e2020JF005848.
-
-\bibitem{quade_silicate_2003}
-Jay Quade, Nathan English, and Peter~G {DeCelles}.
-\newblock Silicate versus carbonate weathering in the himalaya: a comparison of the arun and seti river watersheds.
-\newblock 202(3):275--296.
-
-\bibitem{roback_size_2018}
-Kevin Roback, Marin~K. Clark, A.~Joshua West, Dimitrios Zekkos, Gen Li, Sean~F. Gallen, Deepak Chamlagain, and Jonathan~W. Godt.
-\newblock The size, distribution, and mobility of landslides caused by the 2015 mw7.8 gorkha earthquake, nepal.
-\newblock 301:121--138.
-
-\bibitem{soler-sagarra_water_2020}
-Joaquim Soler-Sagarra, Maarten~W. Saaltink, Francesca De~Gaspari, Albert Nardi, and Jesús Carrera.
-\newblock Water mixing approach ({WMA}) for reactive transport modeling.
-
-\bibitem{sprenger_demographics_2019}
-Matthias Sprenger, Christine Stumpp, Markus Weiler, Werner Aeschbach, Scott~T. Allen, Paolo Benettin, Maren Dubbert, Andreas Hartmann, Markus Hrachowitz, James~W. Kirchner, Jeffrey~J. {McDonnell}, Natalie Orlowski, Daniele Penna, Stephan Pfahl, Michael Rinderer, Nicolas Rodriguez, Maximilian Schmidt, and Christiane Werner.
-\newblock The demographics of water: A review of water ages in the critical zone.
-\newblock 57(3):800--834.
-
-\bibitem{stallard_geochemistry_1983}
-R.~F. Stallard and J.~M. Edmond.
-\newblock Geochemistry of the amazon: 2. the influence of geology and weathering environment on the dissolved load.
-\newblock 88:9671--9688.
-
-\bibitem{strandmann_lithium_2021}
-Philip A. E. Pogge~Von Strandmann, Mathieu Dellinger, and A.~Joshua West.
-\newblock {\em Lithium Isotopes: A Tracer of Past and Present Silicate Weathering}.
-\newblock Cambridge University Press, 1 edition.
-
-\bibitem{thiros_constraining_2023}
-Nicholas~E. Thiros, Erica~R. Siirila‐Woodburn, P.~James Dennedy‐Frank, Kenneth~H. Williams, and W.~Payton Gardner.
-\newblock Constraining bedrock groundwater residence times in a mountain system with environmental tracer observations and bayesian uncertainty quantification.
-\newblock 59(2):e2022WR033282.
-
-\bibitem{tipper_isotopic_nodate}
-Edward~T Tipper.
-\newblock The isotopic ﬁngerprint of calcium and magnesium: from the alteration of the continental crust to global budgets.
-
-\bibitem{tipper_short_2006}
-Edward~T. Tipper, Mike~J. Bickle, Albert Galy, A.~Joshua West, Catherine Pomiès, and Hazel~J. Chapman.
-\newblock The short term climatic sensitivity of carbonate and silicate weathering fluxes: Insight from seasonal variations in river chemistry.
-\newblock 70(11):2737--2754.
-
-\bibitem{wen_altitude_2012}
-Rong Wen, {LiDe} Tian, {YongBiao} Weng, {ZhongFang} Liu, and {ZhongPing} Zhao.
-\newblock The altitude effect of δ 18o in precipitation and river water in the southern himalayas.
-\newblock 57(14):1693--1698.
-
-\bibitem{west_tectonic_2005}
-A~West, A~Galy, and M~Bickle.
-\newblock Tectonic and climatic controls on silicate weathering.
-\newblock 235(1):211--228.
-
-\bibitem{west_high_2015}
-A.~J. West, M.~Arnold, G.~{AumaÎtre}, D.~L. Bourlès, K.~Keddadouche, M.~Bickle, and T.~Ojha.
-\newblock High natural erosion rates are the backdrop for present-day soil erosion in the agricultural middle hills of nepal.
-\newblock 3(3):363--387.
-
-\bibitem{white_chemical_1996}
-Art~F. White, Alex~E. Blum, Marjorie~S. Schulz, Tom~D. Bullen, Jennifer~W. Harden, and Maria~L. Peterson.
-\newblock Chemical weathering rates of a soil chronosequence on granitic alluvium: I. quantification of mineralogical and surface area changes and calculation of primary silicate reaction rates.
-\newblock 60(14):2533--2550.
-
-\bibitem{white_effect_2003}
-Art~F White and Susan~L Brantley.
-\newblock The effect of time on the weathering of silicate minerals: why do weathering rates differ in the laboratory and field?
-\newblock 202(3):479--506.
-
-\bibitem{wojtowicz_thermodynamic_nodate}
-John~A Wojtowicz.
-\newblock The thermodynamic basis of the saturation index.
-
-\bibitem{xu_can_2022}
-Bing Xu, Aihong Xie, and Jiangping Zhu.
-\newblock Can water vapor transport over the himalayas above 8000 m asl?—a case study on mt. everest.
-\newblock 14(11):1671.
-
-\end{thebibliography}

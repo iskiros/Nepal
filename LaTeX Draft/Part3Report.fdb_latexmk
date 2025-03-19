@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741965949 "/Users/enrico/Desktop/Part III Project/Code/Nepal-1/LaTeX Draft/Part3Report.tex" "Part3Report.pdf" "Part3Report" 1741965950 2
-  "/Users/enrico/Desktop/Part III Project/Code/Nepal-1/LaTeX Draft/Part3Report.tex" 1741965948 11886 07ecb79381ef1852bd05ed2cb7e5feb9 ""
+["pdflatex"] 1742377724 "/Users/enrico/Desktop/Part III Project/Code/Nepal-1/LaTeX Draft/Part3Report.tex" "Part3Report.pdf" "Part3Report" 1742377724 2
+  "/Users/enrico/Desktop/Part III Project/Code/Nepal-1/LaTeX Draft/Part3Report.tex" 1742377364 13137 bc2dffe72130b49e5120fccc661d07b2 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -146,6 +146,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/multido/multido.sty" 1274110955 814 d89f40f374e3a6b4c98edfaac22a9685 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/multirow/bigdelim.sty" 1615845910 1725 dc3e785065a649e9d009496fedda31d1 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/paracol/paracol.sty" 1546294283 105390 63f76d21815dc2a8cea8ec268adab9f4 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pdfcol/pdfcol.sty" 1663877585 8086 ac143843b6ea88d172677dc3ed532925 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty" 1667072951 6572 ea530fbbe537629fd97736d33babc07d ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty" 1667072951 2224 1230ab76aa62221ccbd90bca8c8c015e ""
@@ -194,6 +195,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty" 1654720880 10214 de3e21cfc0eccc98ca7f8dac0ef263d2 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/tools/longtable.sty" 1654720880 12892 af5f5e872a6e322f3e5ba2c881288a56 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty" 1654720880 4118 0aa319c56935d7d217b6a8bf300b81b7 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty" 1654720880 7147 be6981d9f5d866a5634048c4a11814a9 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty" 1667332637 7392 f19cdc68ae9f1190dbd54eee6d29fb7c ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1253232110 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -205,8 +207,8 @@
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1702375795 7883469 5ffaaaf539eaf2c69b7c3db73807092c ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Part3Report.aux" 0 -1 0 "pdflatex"
-  "Part3Report.tex" 1741965948 11886 07ecb79381ef1852bd05ed2cb7e5feb9 ""
+  "Part3Report.aux" 1742377724 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "Part3Report.tex" 1742377364 13137 bc2dffe72130b49e5120fccc661d07b2 ""
   (generated)
   "Part3Report.aux"
   "Part3Report.log"
