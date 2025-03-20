@@ -174,6 +174,38 @@
       \field{type}{phdthesis}
       \field{year}{2023}
     \endentry
+    \entry{awolayoPyGeochemCalcPython2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b3c7a232dcf325b224662b3fa22f5b40}{%
+           family={Awolayo},
+           familyi={A\bibinitperiod},
+           given={A.\bibnamedelimi N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b1948f72ff63b968b2bc72a874e8f40}{%
+           family={Tutolo},
+           familyi={T\bibinitperiod},
+           given={B.\bibnamedelimi M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cf9877cdf0918c76184dbd6ac8e8dcc7}
+      \strng{fullhash}{cf9877cdf0918c76184dbd6ac8e8dcc7}
+      \strng{bibnamehash}{cf9877cdf0918c76184dbd6ac8e8dcc7}
+      \strng{authorbibnamehash}{cf9877cdf0918c76184dbd6ac8e8dcc7}
+      \strng{authornamehash}{cf9877cdf0918c76184dbd6ac8e8dcc7}
+      \strng{authorfullhash}{cf9877cdf0918c76184dbd6ac8e8dcc7}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical Geology}
+      \field{title}{PyGeochemCalc: A Python Package for Geochemical Thermodynamic Calculations and Software-Specific Thermodynamic Database Production from Ambient to Deep Earth Conditions}
+      \field{volume}{606}
+      \field{year}{2022}
+    \endentry
     \entry{baniyaClimateChangeInduced2024}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=28a1e810329834f3118e5831007aa2aa}{%
@@ -273,12 +305,6 @@
       \field{edition}{1st}
       \field{title}{Atmosphere, Weather and Climate}
       \field{year}{2009}
-      \verb{urlraw}
-      \verb https://doi.org/10.4324/9780203871027
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.4324/9780203871027
-      \endverb
     \endentry
     \entry{bernerRateControlMineral1978}{article}{}
       \name{author}{1}{}{%
@@ -308,9 +334,6 @@
       \field{year}{1978}
       \field{pages}{1235\bibrangedash 1252}
       \range{pages}{18}
-      \verb{doi}
-      \verb 10.2475/ajs.278.9.1235
-      \endverb
     \endentry
     \entry{bethkeGEOCHEMICALBIOGEOCHEMICALREACTION}{article}{}
       \name{author}{1}{}{%
@@ -336,6 +359,60 @@
       \field{journaltitle}{Cambridge University Press}
       \field{title}{{{Geochemical and Biogeochemical reaction}}, {{Second Edition}}}
       \field{year}{2011}
+    \endentry
+    \entry{bickleDiscriminationCarbonateSilicate2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=275658d9eda8eccce2dc1487c1bc3521}{%
+           family={Bickle},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb8b771e48c8bc83c251ed96d0231a2c}{%
+           family={Tipper},
+           familyi={T\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ee4c3f830801860c4c152a5b0f2a82e}{%
+           family={Galy},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0708fa3341be3407920615a8c1c27153}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa2b39de41882e4bc3043fb047452428}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5efcf3bf28015f64a08e1438d82c5bb}
+      \strng{fullhash}{873c96d812af1024e8e12f67ece5f1c9}
+      \strng{bibnamehash}{c5efcf3bf28015f64a08e1438d82c5bb}
+      \strng{authorbibnamehash}{c5efcf3bf28015f64a08e1438d82c5bb}
+      \strng{authornamehash}{c5efcf3bf28015f64a08e1438d82c5bb}
+      \strng{authorfullhash}{873c96d812af1024e8e12f67ece5f1c9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Science}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{title}{On Discrimination between Carbonate and Silicate Inputs to {{Himalayan}} Rivers}
+      \field{volume}{315}
+      \field{year}{2015}
+      \field{pages}{120\bibrangedash 166}
+      \range{pages}{47}
     \endentry
     \entry{bookhagenCompleteHimalayanHydrological2010}{article}{}
       \name{author}{2}{}{%
@@ -371,8 +448,6 @@
       \field{title}{Toward a Complete {{Himalayan}} Hydrological Budget: {{Spatiotemporal}} Distribution of Snowmelt and Rainfall and Their Impact on River Discharge}
       \field{volume}{115}
       \field{year}{2010}
-      \field{pages}{2009JF001426}
-      \range{pages}{-1}
     \endentry
     \entry{bufeCovariationSilicateCarbonate2021}{article}{}
       \name{author}{7}{}{%
@@ -432,7 +507,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Geoscience}
-      \field{langid}{english}
       \field{number}{4}
       \field{title}{Co-Variation of Silicate, Carbonate and Sulfide Weathering Drives {{CO2}} Release with Erosion}
       \field{volume}{14}
@@ -503,8 +577,61 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Hazards Research}
+      \field{number}{3}
       \field{title}{The 2021 Melamchi Flood: A Massive Erosional Cascade in the Himalayan Mountains of Central Nepal}
+      \field{volume}{3}
       \field{year}{2023}
+      \field{pages}{447\bibrangedash 456}
+      \range{pages}{10}
+    \endentry
+    \entry{davidLaboratoryMeasurementCompactioninduced1994}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=32fdeeee25f832488f48c764169f3c9e}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6888a5ee94a96f808a15e948b913652a}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Teng-Fong},
+           giveni={T\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec4fb814757d82fe68130aebe51254ae}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Wenlu},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddd3992632af3f90b46a23eca1debab5}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jiaxiang},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e357d43e21f528e17b2189f8c1ec418}
+      \strng{fullhash}{2b43966f7d6eff02ce9899e2fb77e3c0}
+      \strng{bibnamehash}{0e357d43e21f528e17b2189f8c1ec418}
+      \strng{authorbibnamehash}{0e357d43e21f528e17b2189f8c1ec418}
+      \strng{authornamehash}{0e357d43e21f528e17b2189f8c1ec418}
+      \strng{authorfullhash}{2b43966f7d6eff02ce9899e2fb77e3c0}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{pure and applied geophysics}
+      \field{number}{1-3}
+      \field{shorttitle}{Laboratory Measurement of Compaction-Induced Permeability Change in Porous Rocks}
+      \field{title}{Laboratory Measurement of Compaction-Induced Permeability Change in Porous Rocks: {{Implications}} for the Generation and Maintenance of Pore Pressure Excess in the Crust}
+      \field{volume}{143}
+      \field{year}{1994}
+      \field{pages}{425\bibrangedash 456}
+      \range{pages}{32}
     \endentry
     \entry{dhitalGeologyNepalHimalaya2015}{book}{}
       \name{author}{1}{}{%
@@ -514,9 +641,6 @@
            given={Megh\bibnamedelima Raj},
            giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Cham}%
       }
       \list{publisher}{1}{%
         {Springer International Publishing}%
@@ -533,11 +657,139 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{978-3-319-02495-0 978-3-319-02496-7}
-      \field{langid}{english}
       \field{series}{Regional {{Geology Reviews}}}
       \field{title}{Geology of the {{Nepal Himalaya}}}
       \field{year}{2015}
+    \endentry
+    \entry{downsAmericanMineralogistCrystal2003}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a43df338e8b31b8ad00a9f1fe16cb18f}{%
+           family={Downs},
+           familyi={D\bibinitperiod},
+           given={R.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bfeeace773da5e0c54a0d8af2c531fa3}{%
+           family={Hall-Wallace},
+           familyi={H\bibinithyphendelim W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed3526af7a36fdfc1cb03402cf3be529}
+      \strng{fullhash}{ed3526af7a36fdfc1cb03402cf3be529}
+      \strng{bibnamehash}{ed3526af7a36fdfc1cb03402cf3be529}
+      \strng{authorbibnamehash}{ed3526af7a36fdfc1cb03402cf3be529}
+      \strng{authornamehash}{ed3526af7a36fdfc1cb03402cf3be529}
+      \strng{authorfullhash}{ed3526af7a36fdfc1cb03402cf3be529}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Mineralogist}
+      \field{title}{The {{American Mineralogist Crystal Structure Database}}}
+      \field{volume}{88}
+      \field{year}{2003}
+      \field{pages}{247\bibrangedash 250}
+      \range{pages}{4}
+    \endentry
+    \entry{dreverGeochemistryNaturalWaters1997}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d1bb990cd17da3c016ac361ea74c679e}{%
+           family={Drever},
+           familyi={D\bibinitperiod},
+           given={James\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{d1bb990cd17da3c016ac361ea74c679e}
+      \strng{fullhash}{d1bb990cd17da3c016ac361ea74c679e}
+      \strng{bibnamehash}{d1bb990cd17da3c016ac361ea74c679e}
+      \strng{authorbibnamehash}{d1bb990cd17da3c016ac361ea74c679e}
+      \strng{authornamehash}{d1bb990cd17da3c016ac361ea74c679e}
+      \strng{authorfullhash}{d1bb990cd17da3c016ac361ea74c679e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{langid}{english}
+      \field{title}{The Geochemistry of Natural Waters: Surface and Groundwater Environments}
+      \field{year}{1997}
+    \endentry
+    \entry{druhanIsotopeRatioDischarge2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ef3725f5ef82ad42bb7039796f4ba337}{%
+           family={Druhan},
+           familyi={D\bibinitperiod},
+           given={Jennifer\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb426d950113f5b26d4f28addf3eb051}{%
+           family={Benettin},
+           familyi={B\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8fa6a97679a8af1d7430607aa6f00713}
+      \strng{fullhash}{8fa6a97679a8af1d7430607aa6f00713}
+      \strng{bibnamehash}{8fa6a97679a8af1d7430607aa6f00713}
+      \strng{authorbibnamehash}{8fa6a97679a8af1d7430607aa6f00713}
+      \strng{authornamehash}{8fa6a97679a8af1d7430607aa6f00713}
+      \strng{authorfullhash}{8fa6a97679a8af1d7430607aa6f00713}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Science}
+      \field{number}{5}
+      \field{title}{Isotope Ratio – Discharge Relationships of Solutes Derived From Weathering Reactions}
+      \field{volume}{323}
+      \field{year}{2023}
+    \endentry
+    \entry{dubacqThermodynamicsOrderingMixing2022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7c88ec0f5ead8f5ed396d384faef3129}{%
+           family={Dubacq},
+           familyi={D\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7c88ec0f5ead8f5ed396d384faef3129}
+      \strng{fullhash}{7c88ec0f5ead8f5ed396d384faef3129}
+      \strng{bibnamehash}{7c88ec0f5ead8f5ed396d384faef3129}
+      \strng{authorbibnamehash}{7c88ec0f5ead8f5ed396d384faef3129}
+      \strng{authornamehash}{7c88ec0f5ead8f5ed396d384faef3129}
+      \strng{authorfullhash}{7c88ec0f5ead8f5ed396d384faef3129}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Contributions to Mineralogy and Petrology}
+      \field{langid}{english}
+      \field{number}{10}
+      \field{shorttitle}{Thermodynamics of Ordering and Mixing in Plagioclase Feldspars}
+      \field{title}{Thermodynamics of Ordering and Mixing in Plagioclase Feldspars: Atomistic Modelling in Favour of {{Landau}} Theory}
+      \field{volume}{177}
+      \field{year}{2022}
+      \field{pages}{102}
+      \range{pages}{1}
     \endentry
     \entry{fontorbeSiliconIsotopicComposition2013}{article}{}
       \name{author}{4}{}{%
@@ -585,6 +837,103 @@
       \field{year}{2013}
       \field{pages}{21\bibrangedash 30}
       \range{pages}{10}
+    \endentry
+    \entry{gaillardetGlobalSilicateWeathering1999}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=79da1847c12266fa82ac83a50edabdf7}{%
+           family={Gaillardet},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91cb8c71494292445adaee7801c45291}{%
+           family={Dupré},
+           familyi={D\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e44f3c658ac0b965d3a6c4836141613}{%
+           family={Louvat},
+           familyi={L\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59bd4dbb92c7207cdea7417794e48991}{%
+           family={Allègre},
+           familyi={A\bibinitperiod},
+           given={C.J.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{583339b045cb934cb3f58d801c742f57}
+      \strng{fullhash}{60e2530b6f799ca5e1623bdfa63462fa}
+      \strng{bibnamehash}{583339b045cb934cb3f58d801c742f57}
+      \strng{authorbibnamehash}{583339b045cb934cb3f58d801c742f57}
+      \strng{authornamehash}{583339b045cb934cb3f58d801c742f57}
+      \strng{authorfullhash}{60e2530b6f799ca5e1623bdfa63462fa}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical Geology}
+      \field{number}{1-4}
+      \field{title}{Global Silicate Weathering and {{CO2}} Consumption Rates Deduced from the Chemistry of Large Rivers}
+      \field{volume}{159}
+      \field{year}{1999}
+      \field{pages}{3\bibrangedash 30}
+      \range{pages}{28}
+    \endentry
+    \entry{garrelsOriginChemicalComposition1967}{incollection}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6b8a5b25c1222a68b1e60c03dc8e7c8a}{%
+           family={Garrels},
+           familyi={G\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5af8306c9fea84370347e4f889c5919}{%
+           family={Mackenzie},
+           familyi={M\bibinitperiod},
+           given={F.\bibnamedelimi T.},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=0a3e8d375d87f889f8872476b31fe16c}{%
+           family={Stumm},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington DC}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society}%
+      }
+      \strng{namehash}{e174e2db6d7c6b21f168f97aaf5d2c21}
+      \strng{fullhash}{e174e2db6d7c6b21f168f97aaf5d2c21}
+      \strng{bibnamehash}{e174e2db6d7c6b21f168f97aaf5d2c21}
+      \strng{authorbibnamehash}{e174e2db6d7c6b21f168f97aaf5d2c21}
+      \strng{authornamehash}{e174e2db6d7c6b21f168f97aaf5d2c21}
+      \strng{authorfullhash}{e174e2db6d7c6b21f168f97aaf5d2c21}
+      \strng{editorbibnamehash}{0a3e8d375d87f889f8872476b31fe16c}
+      \strng{editornamehash}{0a3e8d375d87f889f8872476b31fe16c}
+      \strng{editorfullhash}{0a3e8d375d87f889f8872476b31fe16c}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Equilibrium Concepts in Natural Water Systems}
+      \field{chapter}{10}
+      \field{title}{Origin of the Chemical Composition of Some Springs and Lakes}
+      \field{year}{1967}
+      \field{pages}{222\bibrangedash 242}
+      \range{pages}{21}
     \endentry
     \entry{grafGeomorphologicalHydrologicalControls2023}{misc}{}
       \name{author}{6}{}{%
@@ -637,9 +986,169 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{langid}{english}
       \field{title}{Geomorphological and Hydrological Controls on Sediment Export in Earthquake-Affected Catchments in the {{Nepal Himalaya}}}
       \field{year}{2023}
+    \endentry
+    \entry{gran1952}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b9f9e7b2caf22af95d33e97248bea551}{%
+           family={Gran},
+           familyi={G\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society of Chemistry}%
+      }
+      \strng{namehash}{b9f9e7b2caf22af95d33e97248bea551}
+      \strng{fullhash}{b9f9e7b2caf22af95d33e97248bea551}
+      \strng{bibnamehash}{b9f9e7b2caf22af95d33e97248bea551}
+      \strng{authorbibnamehash}{b9f9e7b2caf22af95d33e97248bea551}
+      \strng{authornamehash}{b9f9e7b2caf22af95d33e97248bea551}
+      \strng{authorfullhash}{b9f9e7b2caf22af95d33e97248bea551}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{920}
+      \field{journaltitle}{Analyst}
+      \field{title}{Determination of the equivalence point in potentiometric titrations. Part II}
+      \field{volume}{77}
+      \field{year}{1952}
+      \field{pages}{661\bibrangedash 671}
+      \range{pages}{11}
+    \endentry
+    \entry{grazulisComputingStoichiometricMolecular2015}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=5a2d2b14670da447dafc9692118bf9b5}{%
+           family={Gražulis},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c277e27f554dfa647baf788a973b5c1d}{%
+           family={Merkys},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5be1fb6383ad8233d82d87cb2a9af51}{%
+           family={Vaitkus},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da557f770dc40d9f9031ce10aaa9af58}{%
+           family={Okulič-Kazarinas},
+           familyi={O\bibinithyphendelim K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0064ccc84e30785722e405370e07bc5b}
+      \strng{fullhash}{5f1c50326322fc142b182d7c9ea2d5c0}
+      \strng{bibnamehash}{0064ccc84e30785722e405370e07bc5b}
+      \strng{authorbibnamehash}{0064ccc84e30785722e405370e07bc5b}
+      \strng{authornamehash}{0064ccc84e30785722e405370e07bc5b}
+      \strng{authorfullhash}{5f1c50326322fc142b182d7c9ea2d5c0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Applied Crystallography}
+      \field{number}{1}
+      \field{title}{Computing Stoichiometric Molecular Composition from Crystal Structures}
+      \field{volume}{48}
+      \field{year}{2015}
+      \field{pages}{85\bibrangedash 91}
+      \range{pages}{7}
+    \endentry
+    \entry{HENRY1982381}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=081887968bfcbb7c6e457ac1ae457166}{%
+           family={Henry},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac683930766168d7456e01f9774bfa88}{%
+           family={Navrotsky},
+           familyi={N\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70ea2cd7e609e7c117dc961ff6e9fb20}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={H.\bibnamedelimi D.},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a86c7551a3f01ba66a30e0b4f5b96e4b}
+      \strng{fullhash}{50466f5e4fc09fe8b1f3baee6ea50e9d}
+      \strng{bibnamehash}{a86c7551a3f01ba66a30e0b4f5b96e4b}
+      \strng{authorbibnamehash}{a86c7551a3f01ba66a30e0b4f5b96e4b}
+      \strng{authornamehash}{a86c7551a3f01ba66a30e0b4f5b96e4b}
+      \strng{authorfullhash}{50466f5e4fc09fe8b1f3baee6ea50e9d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geochimica et Cosmochimica Acta}
+      \field{number}{3}
+      \field{title}{Thermodynamics of plagioclase-melt equilibria in the system albite-anorthite-diopside}
+      \field{volume}{46}
+      \field{year}{1982}
+      \field{pages}{381\bibrangedash 391}
+      \range{pages}{11}
+    \endentry
+    \entry{jacksonChemicalDifferentiationCold2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1ff5dd8c9af48c39d48309e3f24e32c}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7ea4504c67d60383b071bf2c4810aa6}{%
+           family={Blundy},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=afaff23683bd5e5297844a82a10fb998}{%
+           family={Sparks},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi S.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a977954ecbb3bf5d137b10adbae86982}
+      \strng{fullhash}{4685541500c8d0133c232c8422500b3c}
+      \strng{bibnamehash}{a977954ecbb3bf5d137b10adbae86982}
+      \strng{authorbibnamehash}{a977954ecbb3bf5d137b10adbae86982}
+      \strng{authornamehash}{a977954ecbb3bf5d137b10adbae86982}
+      \strng{authorfullhash}{4685541500c8d0133c232c8422500b3c}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{7736}
+      \field{title}{Chemical Differentiation, Cold Storage and Remobilization of Magma in the {{Earth}}'s Crust}
+      \field{volume}{564}
+      \field{year}{2018}
+      \field{pages}{405\bibrangedash 409}
+      \range{pages}{5}
     \endentry
     \entry{kampmanFeldsparDissolutionKinetics2009}{article}{}
       \name{author}{5}{}{%
@@ -747,13 +1256,121 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Theoretical and Applied Climatology}
-      \field{langid}{english}
       \field{number}{3-4}
       \field{title}{Temperature Lapse Rate in Complex Mountain Terrain on the Southern Slope of the Central {{Himalayas}}}
       \field{volume}{113}
       \field{year}{2013}
       \field{pages}{671\bibrangedash 682}
       \range{pages}{12}
+    \endentry
+    \entry{kelemenExtractionMidOceanRidge1995}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=60a6edd36dd2dbb8c7a0822d7d914f66}{%
+           family={Kelemen},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ff2a988875294b68a6e45cee8f314c6}{%
+           family={Shimizu},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8f8af912df088c6317d281c482211e7}{%
+           family={Salters},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b6a98c5f6942144dd88a501f69dcf05c}
+      \strng{fullhash}{5d276c1761dfeee8d183e68e861d6af4}
+      \strng{bibnamehash}{b6a98c5f6942144dd88a501f69dcf05c}
+      \strng{authorbibnamehash}{b6a98c5f6942144dd88a501f69dcf05c}
+      \strng{authornamehash}{b6a98c5f6942144dd88a501f69dcf05c}
+      \strng{authorfullhash}{5d276c1761dfeee8d183e68e861d6af4}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{title}{Extraction of Mid-Ocean-Ridge Basalt from the Upwelling Mantle by Focused Flow of Melt in Dunite Channels}
+      \field{volume}{375}
+      \field{year}{1995}
+      \field{pages}{747\bibrangedash 753}
+      \range{pages}{7}
+    \endentry
+    \entry{knightImpactAdsorptionDesorption2024}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=3788326cbca58c15d166ac50fe585f17}{%
+           family={Knight},
+           familyi={K\bibinitperiod},
+           given={Alasdair\bibnamedelima C.G.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8601c93fac0b096827a1ea7e0922156}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={Emily\bibnamedelima I.},
+           giveni={E\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3bf93c7f009fc31e2b4d70b0a3215e31}{%
+           family={Bridgestock},
+           familyi={B\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=987b11a5cd9c7da229ebc50656074ee0}{%
+           family={Jotautas\bibnamedelima Baronas},
+           familyi={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0275f409b12c10056e4c812500715f09}{%
+           family={Knapp},
+           familyi={K\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97238bbbfcc74dd0ba3e413cd0982611}{%
+           family={Adhikari},
+           familyi={A\bibinitperiod},
+           given={Basanta\bibnamedelima Raj},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7572f8d15f16d46e5b218b533460f650}{%
+           family={Andermann},
+           familyi={A\bibinitperiod},
+           given={Christoff},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c29c97038a93015448a02973c9a16232}{%
+           family={Tipper},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{695a243905db39451ac75b7c4552992b}
+      \strng{fullhash}{fe0fef57fc1f06598c6375ce7d3fbb4e}
+      \strng{bibnamehash}{695a243905db39451ac75b7c4552992b}
+      \strng{authorbibnamehash}{695a243905db39451ac75b7c4552992b}
+      \strng{authornamehash}{695a243905db39451ac75b7c4552992b}
+      \strng{authorfullhash}{fe0fef57fc1f06598c6375ce7d3fbb4e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Earth and Planetary Science Letters}
+      \field{langid}{english}
+      \field{title}{The Impact of Adsorption{–}Desorption Reactions on the Chemistry of {{Himalayan}} Rivers and the Quantification of Silicate Weathering Rates}
+      \field{volume}{641}
+      \field{year}{2024}
     \endentry
     \entry{kumpChemicalWeatheringAtmospheric2000}{article}{}
       \name{author}{3}{}{%
@@ -797,6 +1414,35 @@
       \field{pages}{611\bibrangedash 667}
       \range{pages}{57}
     \endentry
+    \entry{lichtner}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fda74add0eb7d7f6726bf8ff5b2ceee5}{%
+           family={Lichtner},
+           familyi={L\bibinitperiod},
+           given={Peter\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fda74add0eb7d7f6726bf8ff5b2ceee5}
+      \strng{fullhash}{fda74add0eb7d7f6726bf8ff5b2ceee5}
+      \strng{bibnamehash}{fda74add0eb7d7f6726bf8ff5b2ceee5}
+      \strng{authorbibnamehash}{fda74add0eb7d7f6726bf8ff5b2ceee5}
+      \strng{authornamehash}{fda74add0eb7d7f6726bf8ff5b2ceee5}
+      \strng{authorfullhash}{fda74add0eb7d7f6726bf8ff5b2ceee5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geochimica et Cosmochimica Acta}
+      \field{number}{1}
+      \field{title}{The quasi-stationary state approximation to coupled mass transport and fluid-rock interaction in a porous medium}
+      \field{volume}{52}
+      \field{year}{1988}
+      \field{pages}{143\bibrangedash 165}
+      \range{pages}{23}
+    \endentry
     \entry{maherRoleFluidResidence2011}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=51031fc31795d33b614bfbe5ca0af69e}{%
@@ -827,8 +1473,44 @@
       \field{pages}{48\bibrangedash 58}
       \range{pages}{11}
     \endentry
+    \entry{maherHydrologicRegulationChemical2014}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=51031fc31795d33b614bfbe5ca0af69e}{%
+           family={Maher},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26b74ff0519c8fb5da1bac3ab4816abc}{%
+           family={Chamberlain},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0d7fb94697917b64cfb46c7a1b44acfa}
+      \strng{fullhash}{0d7fb94697917b64cfb46c7a1b44acfa}
+      \strng{bibnamehash}{0d7fb94697917b64cfb46c7a1b44acfa}
+      \strng{authorbibnamehash}{0d7fb94697917b64cfb46c7a1b44acfa}
+      \strng{authornamehash}{0d7fb94697917b64cfb46c7a1b44acfa}
+      \strng{authorfullhash}{0d7fb94697917b64cfb46c7a1b44acfa}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{langid}{english}
+      \field{number}{6178}
+      \field{title}{Hydrologic {{Regulation}} of {{Chemical Weathering}} and the {{Geologic Carbon Cycle}}}
+      \field{volume}{343}
+      \field{year}{2014}
+      \field{pages}{1502\bibrangedash 1504}
+      \range{pages}{3}
+    \endentry
     \entry{maherRoleReactionAffinity2009}{article}{}
-      \name{author}{4}{ul=1}{%
+      \name{author}{4}{ul=2}{%
         {{un=0,uniquepart=base,hash=f8db359c98a45fd33fcf9e01d2650975}{%
            family={Maher},
            familyi={M\bibinitperiod},
@@ -854,11 +1536,11 @@
            giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
+      \strng{namehash}{dfa447d5cc7ccbe497e1c5c2ccc37cd9}
       \strng{fullhash}{80ad22fc4506b1be9ab7e8f3a26973b3}
-      \strng{bibnamehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
-      \strng{authorbibnamehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
-      \strng{authornamehash}{f7c685fda3647ed70d0c9a9cf0c5b8b9}
+      \strng{bibnamehash}{dfa447d5cc7ccbe497e1c5c2ccc37cd9}
+      \strng{authorbibnamehash}{dfa447d5cc7ccbe497e1c5c2ccc37cd9}
+      \strng{authornamehash}{dfa447d5cc7ccbe497e1c5c2ccc37cd9}
       \strng{authorfullhash}{80ad22fc4506b1be9ab7e8f3a26973b3}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
@@ -867,13 +1549,59 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Geochimica et Cosmochimica Acta}
-      \field{langid}{english}
       \field{number}{10}
       \field{title}{The Role of Reaction Affinity and Secondary Minerals in Regulating Chemical Weathering Rates at the {{Santa Cruz Soil Chronosequence}}, {{California}}}
       \field{volume}{73}
       \field{year}{2009}
       \field{pages}{2804\bibrangedash 2831}
       \range{pages}{28}
+    \endentry
+    \entry{marquesWeatheringZonesMetamorphic2010}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a0486ae10be796ac62466d6ead04bb72}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={E.\bibnamedelimi A.\bibnamedelimi G.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02677bd8e8501dfe002a6c8aa02bed22}{%
+           family={Barroso},
+           familyi={B\bibinitperiod},
+           given={E.\bibnamedelimi V.},
+           giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5d4551bb8c457f7d68871159be94939}{%
+           family={Menezes\bibnamedelima Filho},
+           familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={A.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=117366ef90ddcd3781758abbe6aaa2f1}{%
+           family={Vargas},
+           familyi={V\bibinitperiod},
+           given={E.\bibnamedelimi do\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3e5b77788c886025e4a6daf640418f73}
+      \strng{fullhash}{32aec85da61b00c76e90c631cd880eb5}
+      \strng{bibnamehash}{3e5b77788c886025e4a6daf640418f73}
+      \strng{authorbibnamehash}{3e5b77788c886025e4a6daf640418f73}
+      \strng{authornamehash}{3e5b77788c886025e4a6daf640418f73}
+      \strng{authorfullhash}{32aec85da61b00c76e90c631cd880eb5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Engineering Geology}
+      \field{number}{1–4}
+      \field{title}{Weathering Zones on Metamorphic Rocks from {{Rio de Janeiro}}—Physical, Mineralogical and Geomechanical Characterization}
+      \field{volume}{111}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
     \endentry
     \entry{mccallumLimitationsUseEnvironmental2015}{article}{}
       \name{author}{3}{}{%
@@ -909,7 +1637,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Groundwater}
-      \field{langid}{english}
       \field{number}{S1}
       \field{title}{Limitations of the {{Use}} of {{Environmental Tracers}} to {{Infer Groundwater Age}}}
       \field{volume}{53}
@@ -917,78 +1644,21 @@
       \field{pages}{56\bibrangedash 70}
       \range{pages}{15}
     \endentry
-    \entry{medwedeffSurfaceGeomechanicalProperties2022}{article}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=4a4a7178dc9942f27f1d661829f2f61b}{%
-           family={Medwedeff},
-           familyi={M\bibinitperiod},
-           given={William\bibnamedelima G.},
-           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=481ddd258c85ea20760f4b8ae1eebcc1}{%
-           family={Clark},
-           familyi={C\bibinitperiod},
-           given={Marin\bibnamedelima K.},
-           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1b301e5f40ea639b188a203cffa60a27}{%
-           family={Zekkos},
-           familyi={Z\bibinitperiod},
-           given={Dimitrios},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d9fe4db9249fe80a520a19fe81d42d0f}{%
-           family={West},
-           familyi={W\bibinitperiod},
-           given={A.\bibnamedelimi Joshua},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=50690575c65f638a16bda1eac2f6e7bd}{%
-           family={Chamlagain},
-           familyi={C\bibinitperiod},
-           given={Deepak},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{37fcd5e16d0cbe7a262398b051faf2ca}
-      \strng{fullhash}{e26144754a90a977be05600e118dafbf}
-      \strng{bibnamehash}{37fcd5e16d0cbe7a262398b051faf2ca}
-      \strng{authorbibnamehash}{37fcd5e16d0cbe7a262398b051faf2ca}
-      \strng{authornamehash}{37fcd5e16d0cbe7a262398b051faf2ca}
-      \strng{authorfullhash}{e26144754a90a977be05600e118dafbf}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Geophysical Research: Earth Surface}
-      \field{langid}{english}
-      \field{number}{2}
-      \field{title}{Near-{{Surface Geomechanical Properties}} and {{Weathering Characteristics Across}} a {{Tectonic}} and {{Climatic Gradient}} in the {{Central Nepal Himalaya}}}
-      \field{volume}{127}
-      \field{year}{2022}
-      \field{pages}{e2021JF006240}
-      \range{pages}{-1}
-    \endentry
     \entry{asterGlobalDigitalElevation2018}{misc}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=3e7c56836b6235841d033e0285732443}{%
-           family={{NASA/METI/AIST/Japan Space Systems}},
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9b0326df470b4ab42b1f75f931e59300}{%
+           family={{NASA Space Systems}},
            familyi={N\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=021d901d81a1772a446084c0a5dd8233}{%
-           family={{U.S./Japan ASTER Science Team}},
-           familyi={U\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {NASA EOSDIS Land Processes DAAC}%
       }
-      \strng{namehash}{0d551a2f7fa192953fe971a0702372e1}
-      \strng{fullhash}{0d551a2f7fa192953fe971a0702372e1}
-      \strng{bibnamehash}{0d551a2f7fa192953fe971a0702372e1}
-      \strng{authorbibnamehash}{0d551a2f7fa192953fe971a0702372e1}
-      \strng{authornamehash}{0d551a2f7fa192953fe971a0702372e1}
-      \strng{authorfullhash}{0d551a2f7fa192953fe971a0702372e1}
+      \strng{namehash}{9b0326df470b4ab42b1f75f931e59300}
+      \strng{fullhash}{9b0326df470b4ab42b1f75f931e59300}
+      \strng{bibnamehash}{9b0326df470b4ab42b1f75f931e59300}
+      \strng{authorbibnamehash}{9b0326df470b4ab42b1f75f931e59300}
+      \strng{authornamehash}{9b0326df470b4ab42b1f75f931e59300}
+      \strng{authorfullhash}{9b0326df470b4ab42b1f75f931e59300}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{extradatescope}{labelyear}
@@ -997,12 +1667,6 @@
       \field{labeltitlesource}{title}
       \field{title}{ASTER Global Digital Elevation Model V003}
       \field{year}{2018}
-      \verb{urlraw}
-      \verb https://doi.org/10.5067/ASTER/ASTGTM.003
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.5067/ASTER/ASTGTM.003
-      \endverb
     \endentry
     \entry{panthiSpatialTemporalVariability2015}{article}{}
       \name{author}{10}{}{%
@@ -1169,8 +1833,6 @@
       \field{title}{The {{Relationship Between Topography}}, {{Bedrock Weathering}}, and {{Water Storage Across}} a {{Sequence}} of {{Ridges}} and {{Valleys}}}
       \field{volume}{126}
       \field{year}{2021}
-      \field{pages}{e2020JF005848}
-      \range{pages}{-1}
     \endentry
     \entry{raymoTectonicForcingLate1992}{article}{}
       \name{author}{2}{}{%
@@ -1271,6 +1933,46 @@
       \field{pages}{493}
       \range{pages}{1}
     \endentry
+    \entry{singhWeatheringPotentialIndex1987}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e8655effbc94dd23ad066b93000fb063}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e187c5a69fe58df7cca38b249dbcf9b}{%
+           family={Upadhyay},
+           familyi={U\bibinitperiod},
+           given={V.\bibnamedelimi K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7308ed786f4f0e133a08199872f5b395}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c03316d8587bfb427ef479f618d4f380}
+      \strng{fullhash}{7a3fc5e09c4aceb8a35f89cd1f6bb81b}
+      \strng{bibnamehash}{c03316d8587bfb427ef479f618d4f380}
+      \strng{authorbibnamehash}{c03316d8587bfb427ef479f618d4f380}
+      \strng{authornamehash}{c03316d8587bfb427ef479f618d4f380}
+      \strng{authorfullhash}{7a3fc5e09c4aceb8a35f89cd1f6bb81b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Indian Academy of Sciences (Earth and Planetary Sciences)}
+      \field{title}{Weathering Potential Index for Rocks Based on Density and Porosity Measurements}
+      \field{volume}{96}
+      \field{year}{1987}
+      \field{pages}{239\bibrangedash 247}
+      \range{pages}{9}
+    \endentry
     \entry{stallardGeochemistryAmazonInfluence1983}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=12be60360ad1c18961465759219083ef}{%
@@ -1369,6 +2071,68 @@
       \field{pages}{2737\bibrangedash 2754}
       \range{pages}{18}
     \endentry
+    \entry{vaitkusWorkflowDerivingChemical2023}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=a5be1fb6383ad8233d82d87cb2a9af51}{%
+           family={Vaitkus},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c277e27f554dfa647baf788a973b5c1d}{%
+           family={Merkys},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed672ca836275d1410d065dc23abef0a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10d665f492672c3c4446e53ec0dd7020}{%
+           family={Quirós},
+           familyi={Q\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e8579f8f58309c4b20b3ae5e73075df}{%
+           family={Thiessen},
+           familyi={T\bibinitperiod},
+           given={P.\bibnamedelimi A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef01b952daaa5489bf996326ce292221}{%
+           family={Bolton},
+           familyi={B\bibinitperiod},
+           given={E.\bibnamedelimi E.},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a2d2b14670da447dafc9692118bf9b5}{%
+           family={Gražulis},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a65397d41389a019ef27ca66f41909b0}
+      \strng{fullhash}{7c9e6db14d93c209fb2562910e5eeda1}
+      \strng{bibnamehash}{a65397d41389a019ef27ca66f41909b0}
+      \strng{authorbibnamehash}{a65397d41389a019ef27ca66f41909b0}
+      \strng{authornamehash}{a65397d41389a019ef27ca66f41909b0}
+      \strng{authorfullhash}{7c9e6db14d93c209fb2562910e5eeda1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Cheminformatics}
+      \field{title}{A Workflow for Deriving Chemical Entities from Crystallographic Data and Its Application to the Crystallography Open Database}
+      \field{volume}{15}
+      \field{year}{2023}
+    \endentry
     \entry{westTectonicClimaticControls2005}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=791684e4cde39ad38cb709577cd915d7}{%
@@ -1447,6 +2211,32 @@
       \field{year}{2003}
       \field{pages}{479\bibrangedash 506}
       \range{pages}{28}
+    \endentry
+    \entry{wojtowiczThermodynamicBasisSaturation}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38e3c045973ad0ef8d58f2a16b438e08}{%
+           family={Wojtowicz},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{38e3c045973ad0ef8d58f2a16b438e08}
+      \strng{fullhash}{38e3c045973ad0ef8d58f2a16b438e08}
+      \strng{bibnamehash}{38e3c045973ad0ef8d58f2a16b438e08}
+      \strng{authorbibnamehash}{38e3c045973ad0ef8d58f2a16b438e08}
+      \strng{authornamehash}{38e3c045973ad0ef8d58f2a16b438e08}
+      \strng{authorfullhash}{38e3c045973ad0ef8d58f2a16b438e08}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Consulting Chemist}
+      \field{langid}{english}
+      \field{title}{The {{Thermodynamic Basis}} of the {{Saturation Index}}}
+      \field{year}{2001}
     \endentry
   \enddatalist
 \endrefsection

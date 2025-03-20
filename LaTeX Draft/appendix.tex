@@ -36,6 +36,8 @@
 
 \section*{Appendix 1: Rain and Hydrothermal Correction Equations}
 \addcontentsline{toc}{section}{Appendix 1: Rain and Hydrothermal Correction Equations}
+\phantomsection
+\label{app:rain_hydrothermal}
 
 
 Spring water is corrected for rain input according to the average concentration for the closest rain sample collected in this field season. To remove the contribution of the rain the following formula is used for any element X:
@@ -58,9 +60,9 @@ Once the samples have been corrected for rain input, the remaining $[Cl]^{-}$ is
 
 \begin{equation}
 [X]_{hydrothermal-corrected}  = [X]_{rain-corrected} - \frac{[X]}{[Cl]}_{highest-Cl} * [Cl]_{rain-corrected}
-\end{equation}\\
+\end{equation}
 
-This ensures that all chloride in the corrected sample is removed. The correction uses ionic ratios from the most concentrated water source, which acts as a proxy for the sediment imparting its signature.  In this way, the correction does not affect samples which do not have high Cl (and hence do not have a large hydrothermal contribution), but does decrease the concentration of ions for those that do. In the following sections, samples are plotted with the evaporite correction applied where possible. Only in those cases where no chloride was measured is the evaporite correction not applied.
+This ensures that all chloride in the corrected sample is removed. The correction uses ionic ratios from the most concentrated water source, which acts as a proxy for the sediment imparting its signature.  In this way, the correction does not affect samples which do not have high Cl (and hence do not have a large hydrothermal contribution), but does decrease the concentration of ions for those that do.
 
 \newpage
 
@@ -84,13 +86,13 @@ This ensures that all chloride in the corrected sample is removed. The correctio
 
 
 
-\subsection*{Fontorbe et al. (2013) Model Derivation}
+\subsection*{\textcite{fontorbeSiliconIsotopicComposition2013} Model Derivation}
 \vspace{-5mm}
 {\footnotesize
 
 \noindent\rule{\textwidth}{0.5pt}
 
-This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths. The model is initially built to predict Si concentrations, but in this study it is adapted to calculate residence times.
+This model investigates silicon isotopic composition in the Ganges River, assuming constant reaction rates along flow paths. The model is initially built to predict DSi concentrations, but in this study it is adapted to calculate residence times.
 
 \begin{multicols}{2}
 
@@ -152,7 +154,7 @@ To simplify, we introduce non-dimensional variables:
 
 \begin{multicols}{2} % --- break6 --- Explain Damköhler number
     
-    The Damköhler number (\(N_D\)) describes the relative importance of kinetic vs transport-controlled settings (Bethke, 2008):
+    The Damköhler number (\(N_D\)) describes the relative importance of kinetic vs transport-controlled settings \parencite{bethkeGEOCHEMICALBIOGEOCHEMICALREACTION}:
     \vspace{10mm}
     \columnbreak
     \begin{equation}
@@ -233,6 +235,8 @@ To simplify, we introduce non-dimensional variables:
 $C$ is the concentration at the end of the flow path, which is taken to be equal to the concentration of each spring, assuming each spring represents a unique flow path. Note that given these units, the calculation gives time in \( 10^{-3} \)s. This is converted to years for practical use.\\
 
 \begin{table}[H]
+    \setcounter{table}{0}  % Reset table counter to 0
+    \renewcommand{\thetable}{A\arabic{table}}  
     \centering
     %\renewcommand{\arraystretch}{1.3} % Adjust row height
     \begin{tabular}{|c|c|c|c|}
@@ -256,7 +260,7 @@ $C$ is the concentration at the end of the flow path, which is taken to be equal
         $X$ & Volume fraction of mineral in rock & $g_{min}/g_{rock}$ & 0.2$^*$ \\
         \hline
     \end{tabular}
-    \caption{Key parameters and definitions for the Fontorbe model. Starred terms are values used for calculation.}
+    \caption{Key parameters and definitions for the Fontorbe model. $^*$ - Values used for calculation.}
     \label{tab:parameters3}
 \end{table}
     
@@ -280,19 +284,19 @@ $C$ is the concentration at the end of the flow path, which is taken to be equal
 ]
 
 
-\subsection*{Maher (2011) Model Derivation}
+\subsection*{\textcite{maherRoleFluidResidence2011} Model Derivation}
 \vspace{-5mm}
 {\footnotesize
 
 \noindent\rule{\textwidth}{0.5pt}
 
-This model describes a reaction-based approach to solute transport, following Maher and Chamberlain (2014). Maher (2011) suggests a dissolution rate law which decreases linearly to zero at equilibrium. The first-order differential equation governing transport and reaction is:
+This model describes a reaction-based approach to solute transport, following \textcite{maherHydrologicRegulationChemical2014}. \textcite{maherRoleFluidResidence2011} suggests a dissolution rate law which decreases linearly to zero at equilibrium. The first-order differential equation governing transport and reaction is:
 
 \begin{equation}
     \frac{dC}{dt} = -\frac{q}{\theta} \frac{dC}{dz} + \sum_i \mu_i R_{d,i} \left( 1 - \left( \frac{C}{C_{eq}} \right)^{n_i} \right)^{m_i} - \sum_i \mu_i R_{p,i} \left( 1 - \left( \frac{C}{C_{eq}} \right)^{n_i} \right)^{m_i}
 \end{equation}\\
 
-Where \( C \) is the concentration, \( q \) is the fluid flux, \( \theta \) is the volumetric water content, \( z \) is the position along the flow path, \( \mu \) is the stoichiometric coefficient, \( R \) is the rate of reaction for dissolution and precipitation respectively, \( C_{eq} \) is the equilibrium concentration, and \( n \) and \( m \) are non-linear parameters (Maher and Chamberlain, 2014). Defining the net reaction rate for a set of packets $i$:
+Where \( C \) is the concentration in $\mu$mol/L, \( q \) is the flow rate in m/s, \( \theta \) is the volumetric water content in m$^3$, \( z \) is the position along the flow path in m, \( \mu \) is the stoichiometric coefficient dependent on the reacting minerals, \( R \) is the rate of reaction for dissolution and precipitation respectively in mol/L/s, \( C_{eq} \) is the equilibrium concentration in $\mu$mol/L, and \( n \) and \( m \) are non-linear parameters \parencite{maherRoleFluidResidence2011}. Defining the net reaction rate for a set of packets $i$:
 
 \begin{equation}
     R_n = \sum_i \mu_i R_{d,i} - \sum_i \mu_i R_{p,i}
@@ -301,10 +305,10 @@ Where \( C \) is the concentration, \( q \) is the fluid flux, \( \theta \) is t
 Maher and Chamberlain describe that the reaction rate decreases linearly with approach to equilibrium.
 
 \begin{equation}
-    \frac{dc}{dt} = R_n \left( 1 - \frac{C}{C_{eq}} \right)
+    \frac{dC}{dt} = R_n \left( 1 - \frac{C}{C_{eq}} \right)
 \end{equation}
 
-Solving for \( C \), following Maher and Chamberlain (2014):
+Solving for \( C \), following \textcite{maherHydrologicRegulationChemical2014}:
 
 \begin{equation}
     C = C_0 \exp \left( -\frac{R_n \theta h}{q C_{eq}} \right) + C_{eq} \left( 1 - \exp \left( -\frac{R_n \theta h}{q C_{eq}} \right) \right)
@@ -325,7 +329,7 @@ c(T_f) = c_0 \exp\left(-\frac{R_n T_f}{c_{\text{eq}}} \right) + c_{\text{eq}} \l
 
 \begin{multicols}{2}
 
-Following Maher and Chamberlain (2014), this can be rewritten as:
+Following \textcite{maherHydrologicRegulationChemical2014}, this can be rewritten as:
 \columnbreak
 \begin{equation}
     C =  \frac{C_{\text{0}}}{1 + \tau D_w / q} + C_{\text{eq}} \frac{\tau D_w / q}{1 + \tau D_w / q}
@@ -377,7 +381,8 @@ Note that given these units, the calculation gives time in \( 10^{-3} \)s. This 
         \hline  % DOUBLE BOLD LINE
         \multicolumn{4}{|c|}{\textbf{Maher}} \\  
         \hline
-        \textbf{Parameter} & \textbf{Definition} & \textbf{Units} & \textbf{Formula (Value)} \\  
+        \textbf{Parameter} & \textbf{Definition} & \textbf{Units} & \textbf{Formula (Value)} \\ 
+        \hline 
         $\phi$ & Porosity & - & 0.1$^*$ \\
         $h$ & Length of flow path & m & Variable \\
         $q$ & Flow rate & m/s & Variable \\
@@ -393,7 +398,7 @@ Note that given these units, the calculation gives time in \( 10^{-3} \)s. This 
         $T_f$ & Residence time & s & $T_f = \frac{h \phi}{q}$ \\
         \hline
     \end{tabular}
-    \caption{Key parameters and definitions for the Maher model. Starred terms are values used for calculation.}
+    \caption{Key parameters and definitions for the Maher model.  $^*$ - Values used for calculation.}
     \label{tab:parameters4}
 \end{table}
 
